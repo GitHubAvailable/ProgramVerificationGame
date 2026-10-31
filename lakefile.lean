@@ -7,12 +7,16 @@ def leanVersion : String := s!"v{Lean.versionString}"
 /--
 Use the GameServer from a `lean4game` folder lying next to the game on your local computer.
 Activated with `lake update -Klean4game.local`.
+
+Note: Lake 4.35 replaced `Dependency.version?` (an `Option String`) with
+`Dependency.version` (an `InputVer`), so the GameSkeleton spelling of these two
+declarations has been updated accordingly.
 -/
 def LocalGameServer : Dependency := {
   name := `GameServer
   scope := "hhu-adam"
   src? := DependencySrc.path "../lean4game/server"
-  version? := none
+  version := .none
   opts := ∅
 }
 
@@ -24,7 +28,7 @@ def RemoteGameServer : Dependency := {
   name := `GameServer
   scope := "hhu-adam"
   src? := DependencySrc.git "https://github.com/leanprover-community/lean4game.git" leanVersion "server"
-  version? := s!"git#{leanVersion}"
+  version := .git leanVersion
   opts := ∅
 }
 
@@ -51,7 +55,13 @@ require "leanprover-community" / mathlib @ git leanVersion
 ```
  -/
 
--- require "leanprover-community" / mathlib @ git leanVersion
+/-
+CSlib supplies the computer-science abstractions this game teaches: deterministic automata,
+labelled transition systems with executions, simulation/bisimulation, and verified sorting.
+CSlib publishes a tag `v4.X.0` for each Lean release, so `leanVersion` pins it to the same
+release as the toolchain and the GameServer. CSlib pulls in Mathlib at the matching tag.
+-/
+require "leanprover" / cslib @ git leanVersion
 
 /-!
 # PACKAGE CONFIGURATION

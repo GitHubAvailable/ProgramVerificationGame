@@ -1,0 +1,32 @@
+en,zh,note
+state,状态,polysemous — also an English verb ("state the obligation")
+transition,转移,
+labelled transition system,带标号转移系统,LTS
+deterministic automaton,确定性自动机,DA
+run,运行,polysemous — also a noun for one execution and a verb in ordinary prose
+execution,执行,a finite sequence of transitions (MTr)
+reachable,可达,
+trace,迹,polysemous — also an English verb ("trace it back through the map")
+specification,规约,never 规范 — reserve 规约 for the formal artefact
+precondition,前置条件,
+postcondition,后置条件,
+contract,契约,
+invariant,不变式,
+safety property,安全性性质,
+simulation,模拟,one-way; see 双模拟 for bisimulation
+bisimulation,双模拟,
+refinement,精化,not 细化
+trace inclusion,迹包含,
+observation model,观察模型,
+sorted,排好序,appears as 排好序的 and 已排好序
+permutation,排列,
+cost model,开销模型,costs are annotations, never measured runtime
+monad homomorphism,monad 同态,keep "monad" untranslated
+induction hypothesis,归纳假设,
+goal,目标,
+hypothesis,假设,
+tactic,策略,
+theorem,定理,
+world,世界,a node of the game's dependency tree
+level,关卡,polysemous — 本关 is fine inside a level
+inventory,物品栏,the unlocked tactics/theorems/definitions panel

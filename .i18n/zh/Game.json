@@ -1,0 +1,1046 @@
+{"§0. There is no §1-transition from §2 to §3, so §4 is already false:\n§5.":
+ "§0。从 §2 到 §3 没有 §1 转移，所以 §4 本身就是假的：§5。",
+ "§0. The specification answers by standing still — §1 — and §2\nstill stands for §3: §4, then §5.":
+ "§0。规约用原地不动来应答——§1——而 §2 仍然代表 §3：先 §4，再 §5。",
+ "§0, answered by §1. Name the answering state and let §2\ndischarge both the transition and the relation:\n§3.":
+ "§0，由 §1 应答。把用来应答的那个状态命名出来，再让 §2\n把转移和关系两边都了结：\n§3。",
+ "§0, answered by §1.": "§0，由 §1 应答。",
+ "§0, answered by the specification's own §1:\n§2, then §3.":
+ "§0，由规约自己的 §1 应答：先 §2，再 §3。",
+ "§0, answered by the same step §1 — which is exactly why this\ndirection works.":
+ "§0，由同一步 §1 应答——而这恰恰就是这个方向行得通的原因。",
+ "§0 was too weak because it forgot to say the result is *one of the arguments*. Add\nthat clause and you get a specification worth the name:\n\n§1\n\nBefore asking whether this one is strong enough, check that it is not *too* strong — that the\nfunction you had in mind actually satisfies it. A specification nothing can meet is useless in\na different way, and you will meet one of those shortly.\n\nSo: prove that §2 satisfies §3. The bounds are Mathlib's §4 and\n§5. For the new clause you have to say which of the two arguments the maximum is,\nand that depends on which is bigger — so split on §6, which gives you §7 in\none branch and §8 in the other.":
+ "§0 太弱，是因为它忘了说结果是*两个参数之一*。把这一条加上，\n你就得到一个配得上这名字的规约：\n\n§1\n\n在问这个够不够强之前，先检查它不是*太*强——也就是你心里想的那个函数\n确实满足它。一个谁也满足不了的规约是另一种意义上的无用，而你很快\n就会遇到一个。\n\n那么：证明 §2 满足 §3。两个界是 Mathlib 的 §4 和\n§5。对新加的那一条，你得说出最大值是两个参数中的哪一个，\n而这取决于哪个更大——所以对 §6 做分情形，它在一个分支给你 §7，\n在另一个分支给你 §8。",
+ "§0 unfolds to: for all §1, if §2 and §3, then\n§4. Introduce all of them.":
+ "§0 展开后是：对一切 §1，若 §2 且 §3，则 §4。把它们统统引入。",
+ "§0 turns §1 into a statement about lengths. The specification's pop\nneeds §2, which now follows by arithmetic — as does the new length.\n§3.":
+ "§0 把 §1 变成一个关于长度的陈述。规约的弹出需要 §2，\n而它现在由算术推出——新的长度也一样。§3。",
+ "§0 turns the reversed list into a concatenation, §1\nsplits the sum over it, and §2 handles the reversed tail:\n§3.":
+ "§0 把反转后的列表变成一次拼接，§1 把和沿着它拆开，\n而 §2 处理反转后的尾部：§3。",
+ "§0 tells you what §1 is, and then the lengths match.":
+ "§0 告诉你 §1 是什么，然后长度就对上了。",
+ "§0 takes one transition on §1 and leaves you running the rest of\nthe word from the new state — which is exactly where the induction hypothesis §2\napplies.":
+ "§0 在 §1 上走一步转移，余下的词则留给你从新状态读起——\n而这恰好正是归纳假设 §2 用得上的地方。",
+ "§0 takes a hypothesis apart according to a pattern: §1 splits a\nconjunction or an existential, and §2 splits a disjunction into two goals. §3 in a\npattern position substitutes an equation instead of naming it.":
+ "§0 按一个模式把假设拆开：§1 拆开合取或存在量词，\n而 §2 把析取拆成两个目标。模式里的 §3 会把一个等式代入，\n而不是给它起名字。",
+ "§0 supplies the witness §1 for a goal §2 and then tries to discharge what\nremains. §3 supplies several witnesses at once.":
+ "§0 为目标 §2 提供见证 §1，并尝试解决剩下的部分。\n§3 可以一次提供多个见证。",
+ "§0 stays in front and §1 is inserted into the tail. §2,\nthen put §3 on the front of the induction hypothesis and swap the first two elements:\n§4.":
+ "§0 留在前面，而 §1 被插进尾部。先 §2，然后在归纳假设前面放上 §3，\n再把前两个元素对调：§4。",
+ "§0 stays at the front and §1 is inserted into the tail, so the induction\nhypothesis §2 describes the tail. §3 gets you to a goal that is\npure propositional rearrangement, which §4 finishes.":
+ "§0 留在最前面，而 §1 被插进尾部，所以归纳假设 §2 描述的是尾部。\n§3 把你带到一个纯粹是命题重排的目标，由 §4 收尾。",
+ "§0 splits the proof into the case where §1 holds and the case where it does\nnot, naming the assumption §2 in each. Prefer it to §3 when you want the condition under\na name you choose, which is usually when the condition is what the proof turns on.":
+ "§0 把证明拆成 §1 成立与不成立两种情形，并在每种情形里\n把该假设命名为 §2。当你希望条件带上一个自己选的名字时——通常也就是\n条件正是证明的关键时——优先用它而不是 §3。",
+ "§0 splits the proof into one case per constructor of §1. Each case can be\nfocused with a bullet §2, in constructor order.\n\nFor taking apart a hypothesis rather than a value, see §3 and §4.":
+ "§0 把证明按 §1 的构造子拆成每个一个情形。每种情形都可以用聚焦点\n§2 单独处理，顺序与构造子一致。\n\n要拆开的若是一个假设而不是一个值，见 §3 与 §4。",
+ "§0 splits a goal containing §1 into one goal per branch, adding the\ncondition (or its negation) as a hypothesis in each. Pair it with §2 when the branches\ndiffer only arithmetically.":
+ "§0 把含有 §1 的目标拆成每个分支一个目标，并在每个目标里\n把条件（或它的否定）作为假设加进来。当各分支只在算术上不同时，把它和 §2\n搭配使用。",
+ "§0 simplifies the goal using the library's simplification lemmas. §1 additionally\nunfolds the definition §2 or uses the extra lemma §3, and §4 simplifies a hypothesis.\n§5 restricts it to exactly the lemmas you list, which is how you unfold one step\nwithout the rest of the simp set rearranging the goal.\n\nSee also §6 and §7.":
+ "§0 用库里的化简引理化简目标。§1 还会\n展开定义 §2 或用上额外的引理 §3，而 §4 化简的是假设。\n§5 把它限制在你列出的那些引理上，这正是只展开一步、\n又不让 simp 集合把目标重排的办法。\n\n另见 §6 与 §7。",
+ "§0 simplifies every hypothesis and the goal together, using each to simplify the\nothers. Reach for it when a case split has left several concrete facts lying around and you\nwant them combined; reach for plain §1 when you know which one matters.":
+ "§0 把每个假设和目标一起化简，并用它们互相化简。\n当一次分情形在周围留下好几条具体事实、而你想把它们合起来用时，就找它；\n当你知道关键是哪一条时，找普通的 §1。",
+ "§0 simplifies both the term §1 and the goal, then closes the goal with the\nresult. §2 additionally unfolds §3. It is the way to land on an induction\nhypothesis that is almost, but not syntactically, the goal.":
+ "§0 把项 §1 和目标都化简，然后用化简结果关掉目标。\n§2 还会额外展开 §3。当归纳假设几乎、但不是字面上就是目标时，\n正是用它落上去。",
+ "§0 says §1 is preserved by *one* transition: whenever §2 holds before a step, it\nholds after it. This is the only thing you ever have to check by hand.":
+ "§0 表示 §1 在*一次*转移下得以保持：只要 §2 在某一步之前成立，\n在这一步之后它也成立。这是你唯一需要手工验证的东西。",
+ "§0 says §1 is preserved by *entire executions* of any length. §2 implies it,\nwhich is the point of §3.":
+ "§0 表示 §1 在*任意长度的整条执行*下得以保持。§2 蕴涵它，\n而这正是 §3 的用意所在。",
+ "§0 says §1 is a simulation: whenever §2 and §3\ntakes a §4-step to §5, the state §6 can answer with a §7-step to some §8 with\n§9 again.\n\nThe direction matters. A simulation says the *second* system can match the first, so it bounds\nthe first system's behavior by the second's.":
+ "§0 表示 §1 是一个模拟关系：只要 §2 且 §3\n沿 §4 走一步到 §5，状态 §6 就能以一步 §7 应答，到达某个 §8，并且 §9 重新成立。\n\n方向很要紧。模拟关系说的是*第二个*系统能跟上第一个，因此它用第二个系统的行为\n界定了第一个系统的行为。",
+ "§0 says §1 is a permutation of §2: same elements, same multiplicities, possibly\ndifferent order. A sorting function must return a permutation of its input — otherwise\nreturning §3 would be \"sorted\".":
+ "§0 表示 §1 是 §2 的一个排列：元素相同、重数相同，次序可以不同。\n排序函数必须返回输入的一个排列——否则直接返回 §3 也算“排好序”了。",
+ "§0 says §1 holds for every pair of elements with §2 occurring before\n§3 in §4. With §5 it is exactly \"§6 is sorted\".":
+ "§0 表示对 §4 中每一对元素，只要 §2 排在 §3 之前，§1 就成立。\n取 §5 时，它恰好就是“§6 已排好序”。",
+ "§0 says there is a finite execution from §1 to §2 performing exactly the\nsequence of labels §3. It is built from two rules: an empty execution stays put, and one\ntransition followed by an execution is an execution.":
+ "§0 表示存在一条从 §1 到 §2 的有限执行，所走的标号序列恰为 §3。\n它由两条规则搭成：空执行原地不动；一次转移接上一条执行仍是一条执行。",
+ "§0 says the two states offer an observer exactly the same\nwords. Bisimilarity implies it; it does not imply bisimilarity, because a trace set forgets\n*when* a choice was made.":
+ "§0 说这两个状态提供给观察者的词完全相同。\n双模拟蕴涵它；它不蕴涵双模拟，因为迹集合会忘掉\n选择是*何时*做出的。",
+ "§0 says that §1 is one of §2 and §3, **and** is at least as large as both.\nUnlike §4 it pins its implementation down completely: every function satisfying\nit is §5.":
+ "§0 说 §1 是 §2 与 §3 之一，**并且**不小于两者。\n与 §4 不同，它把自己的实现完全钉死：任何满足它的函数\n都是 §5。",
+ "§0 says that §1 is at least §2 and at least §3, for all §4 and §5. It\nis a *proposed* specification of a maximum function — and one of World 2's lessons is that it\nis too weak to pin one down.":
+ "§0 表示对所有 §4 和 §5，§1 既不小于 §2 也不小于 §3。\n它是对取最大值函数*提议*的一份规约——而第 2 世界的一课正是：\n它太弱，钉不死任何一个函数。",
+ "§0 says *some* bisimulation relates §1 and §2. It is\nthe largest bisimulation, so exhibiting any one of them establishes it.":
+ "§0 说*存在某个*双模拟关联 §1 与 §2。它是\n最大的双模拟，所以给出其中任何一个就足以确立它。",
+ "§0 satisfies the proposed contract and is not §1. So the contract\ndoes not say what its author meant.\n\nThis is the everyday failure mode of specification: not a *false* statement, but a true one\nthat permits implementations you would reject. The repair is to say more — that the result is\none of the arguments, or that it is below every other upper bound — and the habit is to\nchallenge each contract by asking which wrong program could still satisfy it.\n\nNote what you did *not* need: no transition systems, no automata. A pure function's contract\nis just a proposition about it. State machines are a model for programs that carry state, not\na prerequisite for verifying everything.":
+ "§0 满足所提议的契约，却不是 §1。所以这份契约并没有说出它作者的本意。\n\n这是规约最日常的失效方式：不是一条*假*命题，而是一条真命题，\n却放行了你本会拒绝的实现。补救之道是多说一些——结果必须是两个参数之一，\n或者它不大于任何别的上界——而要养成的习惯是：对每一份契约都追问一句，\n还有哪个错误的程序照样能满足它。\n\n也请留意你*不*需要什么：没有转移系统，没有自动机。纯函数的契约\n不过是关于它的一条命题。状态机是给带状态的程序用的模型，\n而不是验证一切东西的前提。",
+ "§0 runs the automaton §1 from state §2 over the whole word §3, returning the\nstate it ends in. It is CSlib's *extended* transition function, defined as\n§4, so §5 and reading §6 takes one transition and\ncontinues.":
+ "§0 让自动机 §1 从状态 §2 出发读完整个词 §3，返回它停在的状态。\n这是 CSlib 的*扩展*转移函数，定义为 §4，因此 §5，\n而读入 §6 则是先走一步转移再继续。",
+ "§0 rewrites with §1 and then closes the goal with a hypothesis from the context. It is\na rewrite and an assumption lookup in one step, and it is the usual way to finish once a\nrewrite has made the goal match something you already have.":
+ "§0 先用 §1 改写，再用上下文里的某个假设关掉目标。它把一次改写\n和一次假设查找合成一步，也是改写之后目标恰好对上你已有的东西时惯常的收尾方式。",
+ "§0 rewrites the goal using the equation §1, left to right. §2 rewrites right to\nleft, and §3 rewrites in a hypothesis instead of the goal.\n\nSee also §4, which rewrites and then closes the goal with an assumption.":
+ "§0 用等式 §1 从左往右改写目标。§2 从右往左\n改写，而 §3 改写的是某个假设而不是目标。\n\n另见 §4，它先改写、再用上下文里的假设关掉目标。",
+ "§0 rewrites both sides and lands on the\ninduction hypothesis.":
+ "§0 把两边都改写，落到归纳假设上。",
+ "§0 restates the current goal as §1, which must be definitionally equal to it. It is\nuseful to make an unfolding step visible, or to tell Lean how you want to read the goal.":
+ "§0 把当前目标重述为 §1，二者必须定义相等。当你想让某一步展开显形，\n或想告诉 Lean 你打算如何理解这个目标时，它很有用。",
+ "§0 requires one relation to answer challenges from **both**\nsystems: every step of either side is matched by a step of the other on the same label,\nlanding in related states. It is strictly stronger than a simulation each way by two unrelated\nrelations.":
+ "§0 要求同一个关系应对**两边**系统的挑战：\n任一边的每一步，都被另一边同标号的一步所匹配，\n并落在仍然相关的状态上。它严格强于由两个互不相干的关系给出的\n双向模拟。",
+ "§0 replaces §1 by its definition. Useful when a contract is stated about a defined\nfunction and the proof needs to see the branches inside it.":
+ "§0 把 §1 替换成它的定义。当契约是关于一个已定义函数的陈述，\n而证明需要看到它内部的分支时，这很有用。",
+ "§0 replaces the pair by its components, so the goal becomes a statement\nabout §1 and §2.":
+ "§0 把序对换成它的两个分量，于是目标变成一个关于 §1 与 §2 的陈述。",
+ "§0 relates each state of §1 to the state of §2 with the same\nremaining behavior. It is a simulation in that direction, and no relation is one in the other.":
+ "§0 把 §1 的每个状态与 §2 中剩余行为相同的状态关联起来。\n它在这个方向上是一个模拟，而反方向上没有任何关系是模拟。",
+ "§0 relates both §1 and §2 to §3, because the step between them is invisible. It\nis a weak bisimulation, not a bisimulation.":
+ "§0 把 §1 和 §2 都与 §3 关联，因为它们之间的那一步不可见。\n它是一个弱双模拟，而不是双模拟。",
+ "§0 reduces the goal to the hypotheses of §1. If §2 and the goal is §3, what\nremains is §4. Use it to work backwards from the goal towards what you already know.":
+ "§0 把目标归约为 §1 的前提。若 §2 而目标是 §3，剩下的\n就是 §4。当你想从目标倒推回已知事实时用它。",
+ "§0 reads the §1-th element of §2, returning §3 when the index is out of\nrange — the behaviour of a language without bounds checks, modelled as a total Lean function\nwith a documented default.":
+ "§0 读出 §2 的第 §1 个元素，下标越界时返回 §3——\n这是不做边界检查的语言的行为，这里建模成一个带有明确默认值的\n全函数。",
+ "§0 reads the §1-th element of §2 and returns §3 when the index is out\nof range, so that a caller cannot mistake a failure for data.":
+ "§0 读出 §2 的第 §1 个元素，下标越界时返回 §3，\n这样调用方就不会把一次失败误当成数据。",
+ "§0 proves identities that hold in any commutative ring — expanding products, collecting\nterms, rearranging sums. Use it for the algebraic step §1 cannot do, such as expanding\n§2.":
+ "§0 证明在任意交换环中都成立的恒等式——展开乘积、合并同类项、\n重排求和。当 §1 做不了某个代数步骤时用它，例如展开\n§2。",
+ "§0 proves an auxiliary fact §1 and adds it to the context as §2. This is\nhow you build a proof out of lemmas you establish along the way.":
+ "§0 证明辅助事实 §1，并以 §2 的名字加入上下文。\n你就是这样用沿途建立的引理搭出一个证明的。",
+ "§0 proves a goal whose truth Lean can compute outright: a statement about concrete\nvalues, built from decidable predicates. It is how you check a worked example — and its limit\nis the reason the rest of the game exists, since no computation settles a statement about\ninfinitely many inputs.":
+ "§0 直接通过计算证明目标：目标是关于具体\n值的陈述，由可判定谓词构成。检验一个已算好的例子就用它——而它的局限\n正是这个游戏余下部分存在的理由，因为没有任何计算能了结一个关于\n无穷多输入的陈述。",
+ "§0 proves a goal by structural induction. Write\n§1 to put §2 back under the induction hypothesis — essential when\nthe statement must hold for *every* starting state, not just the one you began with.":
+ "§0 用结构归纳法证明目标。写成\n§1 可以把 §2 重新置于归纳假设之下——当命题必须对*每一个*\n起始状态成立、而不只是对你出发的那一个成立时，这一步必不可少。",
+ "§0 performs §1: the output, with no preparation.": "§0 执行 §1：直接输出，没有任何准备。",
+ "§0 performs §1: internal preparation, then the visible output.":
+ "§0 执行 §1：先做内部准备，再给出可见的输出。",
+ "§0 now says §1 is §2 for some non-negative §3. Name that §4, keep the\nsign fact, and substitute the equation: §5.":
+ "§0 现在说 §1 对某个非负的 §3 而言就是 §2。给那个 §4 起名字，\n留下符号那条事实，并把等式代入：§5。",
+ "§0 now says some natural number is smaller than §1, which is §2.\n§3 evaluates the length and finds the contradiction.":
+ "§0 现在说某个自然数小于 §1，而后者是 §2。\n§3 把长度算出来并找到那个矛盾。",
+ "§0 moves the assumption of an implication, or the bound variable of a §1, into the\ncontext under the name §2. Use it whenever the goal starts with §3 or §4.":
+ "§0 把蕴涵的前提，或 §1 所绑定的变量，以名字 §2 移入\n上下文。只要目标以 §3 或 §4 开头，就可以用它。",
+ "§0 marks one label §1 as internal — a step the system really takes that an\nobserver cannot detect. Weak bisimilarity is bisimilarity that ignores such steps.":
+ "§0 把一个标号 §1 标记为内部的——系统确实迈出、但观察者\n无法察觉的一步。弱双模拟就是忽略这类步骤的双模拟。",
+ "§0 makes the goal readable, then §1 plus §2\nfinishes it.":
+ "§0 让目标变得好读，接着 §1 加上 §2 就能收尾。",
+ "§0 keeps the non-negative entries of §1 and doubles them. Its contract has to\nbe assembled from the contracts of §2 and §3, which is the point of it.":
+ "§0 保留 §1 中非负的元素并把它们加倍。它的契约必须\n由 §2 和 §3 各自的契约拼装出来，这正是它的用处。",
+ "§0 keeps both continuations open until after the §1.": "§0 把两条后续都保留到 §1 之后。",
+ "§0 is §1: insertion sort instrumented with the cost\nmodel. §2 is the sorted list, §3 the comparison count.":
+ "§0 即 §1：带开销模型插桩的插入排序。\n§2 是排好序的列表，§3 是比较次数。",
+ "§0 is §1 written the other way round, and reads better when you are\nnaming the parts of a fact you just proved. §2 names one component and\nsubstitutes the other.":
+ "§0 就是反过来写的 §1，当你要给刚证出来的事实的各部分命名时读起来更顺。\n§2 给一个分量起名字，并把另一个代入。",
+ "§0 is §1 with holes: write §2 wherever you want to leave a subgoal open.\n§3 is the usual way to split a goal §4 while supplying structure at once.":
+ "§0 是带洞的 §1：在你想留下子目标的地方写 §2。\n要拆分目标 §4 并同时给出结构，惯用写法是 §3。",
+ "§0 is §1 with an §2 pattern: it introduces a hypothesis and takes it apart\nin one step. §3 is how you assume an existential and immediately name its\nwitness and its property — which is what proving a negation usually starts with.":
+ "§0 是带 §2 模式的 §1：它把一个假设引入进来，并在同一步里拆开。\n§3 正是你假设一个存在陈述并立刻给出它的见证和性质的写法——\n而证明一个否定通常就从这里开始。",
+ "§0 is what the algorithm computes. §1 is what it cost.\n\nInsertion sort's cost depends on the input, not only its size. On an already-sorted list every\ninsertion stops at the first comparison, so sorting §2 elements costs §3. On a\nreverse-sorted list every insertion walks the whole prefix, so the cost grows quadratically.\n\nBoth lists below have four elements. Show that the second costs strictly more than the first.\n\nThis is the observation that makes a cost model worth having: it distinguishes inputs that an\n§4 statement about the worst case does not.":
+ "§0 是算法算出的东西。§1 是它花掉的东西。\n\n插入排序的开销取决于输入，而不只取决于输入的大小。在一个已排好序的列表上，每次插入都在\n第一次比较时就停下，所以排 §2 个元素花 §3。在一个逆序的列表上，每次插入都要走完整个前缀，\n于是开销按平方增长。\n\n下面两个列表都有四个元素。表明第二个严格地花得更多。\n\n正是这个观察让一个开销模型值得拥有：它区分开那些关于最坏情形的 §4 陈述所区分不开的输入。",
+ "§0 is the sum of a list of natural numbers, defined by recursion from the front.":
+ "§0 是一个自然数列表的和，从表头开始递归定义。",
+ "§0 is the step insertion sort repeats: walk along §1 from the front,\ncomparing §2 with each element using the monadic comparison §3, and put §4 in front of the\nfirst element it does not exceed. It stops comparing as soon as it has found the place.":
+ "§0 是插入排序反复执行的那一步：沿着 §1 从前往后走，\n用 monad 化的比较 §3 把 §2 与每个元素比较，并把 §4 放到\n第一个不小于它的元素前面。一找到位置就停止比较。",
+ "§0 is the set of operation sequences the stack implementation can perform from\nstack §1.":
+ "§0 是栈的实现从栈 §1 出发能执行的操作序列之集合。",
+ "§0 is the set of operation sequences the counter specification permits from\ncount §1.":
+ "§0 是计数器规约从计数 §1 出发所允许的操作序列之集合。",
+ "§0 is the set of label sequences the system can actually perform starting\nfrom §1. It is the *observation model*: two states with the same traces are\nindistinguishable to someone who only watches the labels.":
+ "§0 是系统从 §1 出发实际能走出的标号序列之集合。\n它就是*观察模型*：两个迹相同的状态，对一个只看标号的观察者而言无从分辨。",
+ "§0 is the same sum computed the way a loop computes it: carry a running\naccumulator and return it at the end. Proving it agrees with §1 is World 3's exercise in\ngeneralising an induction hypothesis.":
+ "§0 用循环的算法算同一个和：带着一个累加器往前走，\n最后把它返回。证明它与 §1 一致，是第三世界里\n推广归纳假设的练习。",
+ "§0 is the right statement wrapped in §1 and phrased with a §2. Unfold the\ntwo definitions in the hypothesis and the goal at once: §3.":
+ "§0 是对的陈述，只是裹在 §1 里，并且用 §2 来表述。把两个定义在假设和目标里\n一次性展开：§3。",
+ "§0 is the recognition condition. For a §1 it\nunfolds to §2: run the machine over the word and ask whether it\nfinished in an accepting state. The set of accepted words is the machine's *language*.":
+ "§0 是识别条件。对 §1 而言它\n展开为 §2：让机器读完这个词，再问它是否\n停在接受状态。被接受的词的集合就是这台机器的*语言*。",
+ "§0 is the pair §1. It exists so that one contract can talk about the\nquotient and the remainder together, which is the only way either of them is characterised.":
+ "§0 是序对 §1。它存在的理由是让一个契约能同时谈论商和余数，\n而这也是刻画它们两者的唯一办法。",
+ "§0 is the larger of §1 and §2. World 2 asks what it takes to characterise it: being\nan upper bound of both is necessary, but — as you will show — not sufficient.":
+ "§0 是 §1 与 §2 中较大的那个。第 2 世界要问的是：刻画它需要什么？\n“同时是二者的上界”是必要的，但——正如你将证明的——并不充分。",
+ "§0 is the cost-tracking monad: a value §1 paired with an\naccumulated cost §2. Binding two computations adds their costs.\n\nThe costs are *annotations in a declared cost model*, not measured runtime.":
+ "§0 是记录开销的 monad：一个值 §1 配上累计开销 §2。\n把两个计算绑定起来，开销相加。\n\n这些开销是*在一个明确声明的开销模型下的标注*，不是实测运行时间。",
+ "§0 is the *saturated* transition relation: a §1-step with any amount\nof internal work allowed before and after, and §2 itself answerable by standing still.":
+ "§0 是*饱和*转移关系：一步 §1，前后允许夹杂任意多的\n内部工作，而 §2 本身可以用原地不动来应答。",
+ "§0 is supposed to hold for *every* list. Ask it about the empty one:\n§1.":
+ "§0 本该对*每个*列表都成立。拿空列表去问它：\n§1。",
+ "§0 is sorted — equal neighbours are fine, because §1 is reflexive. §2 is not.\n\nThat is one half of the contract. The next two levels show that it is only half, by exhibiting\ntwo programs that each satisfy one half and are plainly not sorting algorithms.":
+ "§0 是排好序的——相等的相邻元素没问题，因为 §1 是自反的。§2 不是。\n\n这是契约的一半。接下来两关通过举出两个各满足一半、却显然不是排序算法的程序，\n表明它确实只是一半。",
+ "§0 is simulated by §1, so by §2 every behavior of the early\nchooser is a behavior of the late one.\n\nLook at where the two §3-steps went. Both §4 and §5 were answered by the *same* state\n§6, because §7 has kept both options open and can therefore match either commitment. A\nsimulation is allowed to be many-to-one like that.\n\nWhich should make you suspicious about the other direction, where the single state §8 would\nhave to be matched by a single state of §9 — and neither §10 nor §11 can do\neverything §12 can.":
+ "§0 被 §1 所模拟，所以由 §2，早做选择者的每条行为都是晚做选择者的一条行为。\n\n看看那两条 §3 步去了哪里。§4 和 §5 都被*同一个*状态 §6 应答，\n因为 §7 把两个选项都留着，因而能匹配任何一种承诺。模拟是允许这样多对一的。\n\n而这该让你对另一个方向起疑：在那边，单个状态 §8 得被 §9 的单个状态匹配——\n而 §10 和 §11 谁也做不到 §12 能做的一切。",
+ "§0 is not reachable by an §1 from §2 either.": "§0 同样不是从 §2 出发经一个 §1 可达的。",
+ "§0 is insertion sort written directly: sort the tail, then insert the head into the\nresult.":
+ "§0 是直接写出的插入排序：先排好尾部，再把表头插进\n结果里。",
+ "§0 is concretely unsorted, so §1.": "§0 具体地没有排好序，所以 §1。",
+ "§0 is an ordinary recursive Lean function returning §1 exactly when the word\n§2 contains an odd number of §3s. It is the *specification* against which the parity\nautomaton is checked.":
+ "§0 是一个普通的递归 Lean 函数：当词 §2 中 §3 的个数为奇数时返回 §1。\n它就是用来检验奇偶自动机的*规约*。",
+ "§0 is about every starting state. The claim you actually wanted is about one of\nthem: the machine, started where machines start, computes the parity of its input.\n\n§1\n\nThat generality was forced on you by the induction. Now you get it back as a convenience: a\ntheorem proved for all §2 can be *used* at whichever §3 you like, and §4 is\n§5.\n\nSo rewrite with §6, and finish by computing §7.":
+ "§0 是关于每个起始状态的。你真正想要的论断只关于其中一个：\n机器从机器该出发的地方出发，算出的就是它输入的奇偶性。\n\n§1\n\n那份一般性是归纳法逼你要的。现在它作为便利还给你：一个对所有 §2\n证明过的定理，可以*用*在你喜欢的任何 §3 上，而 §4 就是\n§5。\n\n所以用 §6 改写，再把 §7 算出来收尾。",
+ "§0 is a §1, so there are only two possibilities. Split them with §2,\nand each goal becomes a concrete computation that §3 closes.\n\nWrite §4 to do both at once.":
+ "§0 是一个 §1，所以只有两种可能。用 §2 把它们拆开，\n于是每个目标都变成一个具体的计算，由 §3 关掉。\n\n写 §4 可以一次做完两件事。",
+ "§0 is a §1 together with a set §2 of accepting\nstates — the textbook deterministic finite automaton. It turns a machine that *computes* a\nfinal state into one that *recognises* a set of words.":
+ "§0 是 §1 加上一个接受状态集 §2——\n也就是教科书里的确定性有限自动机。它把一台*计算*终止状态的机器，\n变成一台*识别*一组词的机器。",
+ "§0 is a transition system over a room's occupancy, with a capacity of ten. It exists to\nshow that §1 applies unchanged to a system it was not written for.":
+ "§0 是一个以房间人数为状态的转移系统，容量为十。它的作用是\n表明 §1 可以原封不动地用在一个并非为它而写的系统上。",
+ "§0 is a transition system over a pair of bucket contents. Nothing in its transition\nrelation mentions the total, so conservation of the total is something to be proved — and it\nis the strengthening that makes the bound on one bucket inductive.":
+ "§0 是一个以两个桶的存量构成的序对为状态的转移系统。它的转移关系里\n完全没有提到总量，所以总量守恒是需要被证明的事——而它正是让\n单个桶的上界变成归纳式的那个加强。",
+ "§0 is a labelled transition system: a relation\n§1. Unlike an automaton it may offer several transitions for\nthe same label, or none, which is what makes it the right model for a program whose steps can\nbe blocked or can choose.":
+ "§0 是带标号转移系统：一个关系 §1。\n与自动机不同，它对同一个标号可以给出多条转移，也可以一条都没有；\n正因如此，它才是那些步骤可能被阻塞、或可能有所选择的程序的合适模型。",
+ "§0 is a deterministic automaton: a transition function\n§1 together with a distinguished §2.\n\nIt is CSlib's model of a machine whose next state is *determined* by the current state and the\nsymbol it reads — the operational picture of a program with no choices in it.":
+ "§0 是确定性自动机：一个转移函数\n§1，外加一个特别指定的 §2。\n\n这是 CSlib 对这样一类机器的建模：它的下一个状态由当前状态和读入的符号*唯一确定*——\n也就是一个没有任何选择的程序的操作式图景。",
+ "§0 is CSlib's insertion sort over an arbitrary monad, with §1 the\n(monadic) comparison. Instantiating it at §2 recovers Mathlib's §3;\ninstantiating it at §4 gives a version that counts comparisons.":
+ "§0 是 CSlib 在任意 monad 上写出的插入排序，其中 §1 是（monad 化的）比较。\n把它实例化到 §2 就还原成 Mathlib 的 §3；\n实例化到 §4 则得到一个会统计比较次数的版本。",
+ "§0 is CSlib's convenient form of weak bisimulation: the challenge is\na single transition and the answer is a saturated one. §1\nturns it into §2.":
+ "§0 是 CSlib 给出的便于使用的弱双模拟形式：挑战是\n单独一个转移，而应答是一个饱和转移。§1\n把它转成 §2。",
+ "§0 inserts §1 into §2 in front of the first element it does not exceed. If §3 is\nsorted then so is the result, which is the data-structure invariant of World 3.":
+ "§0 把 §1 插入 §2 中第一个不小于它的元素之前。若 §3 已\n排好序，结果也排好序，这就是第三世界的数据结构不变式。",
+ "§0 goes straight to the front, so the two lists are equal and nothing needs\nrearranging. §1, then §2.":
+ "§0 直接排到最前面，所以两个列表相等，没有什么要重排的。先 §1，再 §2。",
+ "§0 goes at the front, and the rest of the list is untouched, so membership is\nimmediate: §1.":
+ "§0 排到最前面，而列表其余部分原封不动，所以属于关系是立刻的：§1。",
+ "§0 forces §1 into the range §2: it returns §3 if §4 is below the\nrange, §5 if above, and §6 otherwise. Its contract only makes sense when §7.":
+ "§0 把 §1 压进区间 §2：若 §4 低于区间则返回 §3，\n高于则返回 §5，否则返回 §6。它的契约只有在 §7 时才有意义。",
+ "§0 exposes the single comparison, and\n§1 charges it and pushes the cost through the bind.":
+ "§0 把那一次比较暴露出来，而 §1 给它计费，并把开销推过 bind。",
+ "§0 exposes one recursive call followed by one\ninsertion, and §1 shows that their costs\nadd.":
+ "§0 把一次递归调用接上一次插入暴露出来，而 §1 表明它们的开销相加。",
+ "§0 evaluates and proves numeric goals, including ones beyond the linear arithmetic\n§1 handles. Use it to discharge a concrete computation that a counterexample depends on.":
+ "§0 对数值目标求值并证明，包括超出 §1 所处理的线性算术的那些。\n用它来了结一个反例所依赖的具体计算。",
+ "§0 eliminates a variable using an equation §1 (or §2), replacing §3\neverywhere. Use it after inverting a transition to learn what the next state is.":
+ "§0 借助等式 §1（或 §2）消去一个变量，把 §3 处处替换掉。\n在反演一次转移、搞清下一个状态是什么之后，可以用它。",
+ "§0 discharges goals about linear arithmetic over §1 and §2, including §3, §4, §5,\n§6 and numerals. It is meant for routine arithmetic side conditions, and it knows that\nsubtraction on §7 truncates.\n\nFor numeric goals beyond linear arithmetic see §8; for a goal Lean can simply compute,\nsee §9.":
+ "§0 处理关于 §1 与 §2 上线性算术的目标，包括 §3、§4、§5、\n§6 以及数字字面量。它是为例行的算术旁条件准备的，而且它知道\n§7 上的减法是截断的。\n\n超出线性算术的数值目标见 §8；Lean 能直接算出来的目标，\n见 §9。",
+ "§0 counts the §1s in §2, the way an ordinary program with a counter\nvariable would. The parity automaton is an *abstraction* of it: it keeps only the parity of\nthis count, which is all the answer depends on.":
+ "§0 数出 §2 中 §1 的个数，就像一个带计数器变量的\n普通程序那样。奇偶自动机是它的*抽象*：只保留这个计数的奇偶性，\n而答案所依赖的也只有这一点。",
+ "§0 compares two numbers and charges one tick. It fixes World 4's cost model: a\ncomparison costs §1, everything else is free.":
+ "§0 比较两个数并计一次时钟。它确定了第 4 世界的开销模型：\n一次比较花费 §1，其余一切免费。",
+ "§0 commits to a continuation as part of the §1. It offers an observer the same\nwords as §2 and is nevertheless not interchangeable with it.":
+ "§0 在 §1 的同时就承诺了一条后续。它提供给观察者的词\n与 §2 完全相同，却仍然不能与它互换。",
+ "§0 closes the goal with the term §1. It is the most direct way to finish a proof once\nyou know which theorem applies.":
+ "§0 用项 §1 直接闭合目标。一旦你知道该用哪条定理，这是最直接的收尾方式。",
+ "§0 closes goals that are true by propositional logic alone — rearrangements of §1, §2,\n§3 and §4 over facts already in the context. It is for the bookkeeping at the end of a\n§5, not for the mathematics.":
+ "§0 只靠命题逻辑就能关掉目标——把上下文中已有的事实按 §1、§2、\n§3、§4 重新排布。它用于 §5 收尾后的那点杂务，\n而不是用于数学本身。",
+ "§0 closes a goal §1 when both sides compute to the same value.":
+ "当等式两边计算结果相同时，§0 闭合目标 §1。",
+ "§0 closes a goal that holds by definition, in particular §1. It is what proves that\na concrete transition of a small system really is a transition, when the transition relation\nwas defined by a §2 returning §3.":
+ "§0 关掉按定义即成立的目标，特别是 §1。当转移关系是用一个返回 §3 的\n§2 定义的时候，小系统的一个具体转移确实是转移，正是由它来证明。",
+ "§0 chooses the second disjunct of a goal §1, leaving §2. See also §3.":
+ "§0 选择目标 §1 的第二个析取支，留下 §2。另见 §3。",
+ "§0 carries the assumption §1. It is fair to ask whether that assumption is\ndoing anything, or whether it is there out of habit.\n\nThe way to find out is to try to do without it. If the postcondition held regardless, the\nprecondition would be removable. Show instead that it is **not**: find values of §2, §3\nand §4 for which the conclusion of §5 is false.\n\nThink about what §6 does when the range is empty — when §7. The first branch fires\non §8 and returns §9, which is above §10. So §11, §12, §13 should do it.\n\nAs in World 1, an existence claim is settled by producing the thing, and then checking it.":
+ "§0 带着假设 §1。有理由问问这个假设究竟起不起作用，\n还是只是出于习惯摆在那里。\n\n弄清楚的办法是试着不要它。如果后置条件无论如何都成立，那前置条件就可以去掉。\n请反过来表明它**不能**去掉：找出一组 §2、§3\n和 §4 的值，使得 §5 的结论为假。\n\n想一想区间为空时——也就是 §7 时——§6 会做什么。第一个分支在\n§8 时触发并返回 §9，而它高于 §10。所以 §11、§12、§13 应该就行。\n\n和第一世界一样，存在性论断靠把那个东西拿出来、再检查一下来了结。",
+ "§0 can do §1 but not §2. The mirror image of the §3 case.":
+ "§0 能做 §1 但不能做 §2。§3 那一情形的镜像。",
+ "§0 can do §1 but not §2. Ask the simulation to answer §3 and there is\nnowhere for it to go: §4, then\n§5.":
+ "§0 能做 §1 但不能做 §2。让模拟去应答 §3，它无处可去：§4，然后 §5。",
+ "§0 applies to any starting state, so it applies to this one.\n§1 rewrites the left-hand side.":
+ "§0 对任何起始状态都适用，所以对这一个也适用。\n§1 改写左边。",
+ "§0 applies the single constructor of the goal. For §1 it produces the two\ngoals §2 and §3.":
+ "§0 应用目标唯一的构造子。对 §1 它会产生\n§2 和 §3 两个目标。",
+ "§0 and §1 choose which side of a goal §2 you intend to prove. §3 leaves §4;\n§5 leaves §6.":
+ "§0 与 §1 用来选择你打算证明目标 §2 的哪一侧。§3 留下 §4；\n§5 留下 §6。",
+ "§0 (also written §1) is the type of integers: whole numbers, positive, negative or zero.\nUnlike §2, subtraction never truncates, which is why World 2's balances and bounds live here.":
+ "§0（也写作 §1）是整数类型：正的、负的或零的整数。\n与 §2 不同，这里的减法从不截断——第 2 世界的余额与上下界正因如此才落在这里。",
+ "§0\n§1\n\nA monad homomorphism §2 commutes with §3: pushing §4 through the whole sort is\nthe same as applying it to each comparison. Combined with §5, this turns\nthe timed sort into the ordinary one.":
+ "§0\n§1\n\nmonad 同态 §2 与 §3 可交换：把 §4 推过整个排序，\n等同于把它作用到每一次比较上。再与 §5 合起来，\n就把计时版排序化归为普通版排序。",
+ "§0\n§1\n\n**Refinement for free.** Once you have exhibited a simulation relating an implementation state\nto a specification state, every behavior of the implementation is a behavior the\nspecification permits. You never have to reason about whole traces directly.":
+ "§0\n§1\n\n**白得的精化。** 一旦你给出了一个把实现状态与规约状态关联起来的模拟关系，\n实现的每一个行为就都是规约所允许的行为。你从不需要直接对整条迹做推理。",
+ "§0\n\n§1 is associative, so it does not matter whether you combine the parity you have already\naccumulated with the next symbol, or the next symbol with the parity of the rest.":
+ "§0\n\n§1 满足结合律，所以你是把已累积的奇偶性与下一个符号合并，\n还是把下一个符号与其余部分的奇偶性合并，并无区别。",
+ "§0\n\n§1 does not characterise §2: some function satisfies it while disagreeing with\n§3 somewhere.":
+ "§0\n\n§1 并不能刻画 §2：有函数满足它，却在某处与 §3 不一致。",
+ "§0\n\n§1 can perform a saturated §2: the invisible step, then the visible one. This is the\ncomposite with which the delayed implementation answers the specification's immediate output.":
+ "§0\n\n§1 可以走出一步饱和的 §2：先是那步不可见的，再是可见的。延迟实现\n正是用这个复合步骤来应答规约那一下立即的输出。",
+ "§0\n\nWithout §1, the conclusion of §2 fails.": "§0\n\n没有 §1，§2 的结论就不成立。",
+ "§0\n\nWhen the second argument dominates, the maximum is the second argument.":
+ "§0\n\n当第二个参数占优时，最大值就是第二个参数。",
+ "§0\n\nWhen the first argument dominates, the maximum is the first argument.":
+ "§0\n\n当第一个参数占优时，最大值就是第一个参数。",
+ "§0\n\nThrowing the cost away is a monad homomorphism: the result of a cost-annotated computation is\nwhat you would have got without the annotations. This is what lets correctness proofs about\nthe plain algorithm carry over to the instrumented one.":
+ "§0\n\n把开销丢掉是一个 monad 同态：带开销标注的计算所得的结果，\n与不加标注时所得的结果相同。正因如此，关于朴素算法的正确性证明\n才能原封不动地转移到插桩版本上。",
+ "§0\n\nThe system that chooses early is simulated by the one that chooses late.":
+ "§0\n\n早做选择的那个系统被晚做选择的那个所模拟。",
+ "§0\n\nThe sum of a concatenation is the sum of the parts.":
+ "§0\n\n一次拼接的和，就是各段的和。",
+ "§0\n\nThe strengthened specification admits exactly one implementation: any function satisfying it\nis §1.":
+ "§0\n\n加强后的规约恰好只容许一个实现：任何满足它的函数都是 §1。",
+ "§0\n\nThe room's occupancy never exceeds its capacity.":
+ "§0\n\n房间的人数从不超出它的容量。",
+ "§0\n\nThe remainder is smaller than the divisor — the second half of the division contract, and the\nhalf that needs the divisor to be positive.":
+ "§0\n\n余数小于除数——这是除法契约的后一半，也是需要除数为正的\n那一半。",
+ "§0\n\nThe parity automaton, run from any state over any word, lands in the state obtained by\ncombining the parity it already had with the parity of the word it read.":
+ "§0\n\n奇偶自动机从任意状态出发读完任意词后，所停的状态，就是把它原有的奇偶性\n与所读之词的奇偶性合并而得的那一个。",
+ "§0\n\nThe parity automaton's final state says exactly whether the counting program's counter would\nhave ended up odd.":
+ "§0\n\n奇偶自动机的终止状态恰好说明计数程序的计数器最后会不会是奇数。",
+ "§0\n\nThe maximum of two numbers is at least the second of them.":
+ "§0\n\n两数的最大值不小于其中第二个。",
+ "§0\n\nThe maximum of two numbers is at least the first of them.":
+ "§0\n\n两数的最大值不小于其中第一个。",
+ "§0\n\nThe list-based stack and the counter specification are bisimilar under the relation that a\nlist stands for its length.":
+ "§0\n\n在「一个列表代表它的长度」这个关系之下，基于列表的栈与计数器规约是双模拟的。",
+ "§0\n\nThe language recognised by the parity automaton is exactly the set of words containing an odd\nnumber of §1s.":
+ "§0\n\n奇偶自动机识别的语言，恰好是含有奇数个 §1 的词所构成的集合。",
+ "§0\n\nThe implementation with an internal step and the specification without one answer each\nother's visible challenges, up to invisible work.":
+ "§0\n\n带一步内部工作的实现与不带内部工作的规约，在容许不可见工作的意义下互相应答对方的可见挑战。",
+ "§0\n\nThe first bucket never holds more than five tokens — proved via the stronger, inductive\nproperty that the total is conserved.":
+ "§0\n\n第一个桶里从不超过五枚令牌——通过「总量守恒」这个更强的、归纳式的性质证明。",
+ "§0\n\nThe execution of no steps, which goes nowhere. One of the two constructors you induct on when\nproving a safety property by hand.":
+ "§0\n\n零步的执行，哪儿也没去。手工证明安全性性质时，你要对之做归纳的两个\n构造子之一。",
+ "§0\n\nThe empty list has no elements — which is why no function can return a valid index into it.":
+ "§0\n\n空列表没有元素——这正是没有任何函数能返回一个指向它的合法下标的原因。",
+ "§0\n\nThe cost-annotated sort computes what a sort should compute.":
+ "§0\n\n带开销标注的排序算出了一个排序该算出的东西。",
+ "§0\n\nThe cost-annotated insertion sort returns a sorted list which is a permutation of its input.":
+ "§0\n\n带开销标注的插入排序返回一个排好序的列表，而它是输入的一个排列。",
+ "§0\n\nThe cost-annotated insertion sort performs at most quadratically many comparisons, in the\ndeclared cost model.":
+ "§0\n\n在所声明的开销模型下，带开销标注的插入排序至多做平方量级次比较。",
+ "§0\n\nThe accumulator version of the sum never returns less than it was given.":
+ "§0\n\n带累加器的求和版本，返回的值从不少于它被给定的那个。",
+ "§0\n\nThe accumulator version of the sum computes the same answer as the recursive one.":
+ "§0\n\n带累加器的求和版本算出的答案，与递归版本相同。",
+ "§0\n\nThe account stays in credit — proved by induction over the execution, with no library help.":
+ "§0\n\n账户始终不透支——对执行做归纳证明，没有借助库。",
+ "§0\n\nStarted in its own start state, the parity automaton computes exactly §1.":
+ "§0\n\n从自己的起始状态出发时，奇偶自动机算出的恰好是 §1。",
+ "§0\n\nSorting does not change how many elements there are.":
+ "§0\n\n排序不改变元素的个数。",
+ "§0\n\nSortedness alone does not specify sorting: a function returning the empty list satisfies it.":
+ "§0\n\n单有排好序并不能刻画排序：一个返回空列表的函数就满足它。",
+ "§0\n\nRunning a machine over the empty word leaves it where it was.":
+ "§0\n\n让机器读完空词，它还停在原地。",
+ "§0\n\nReversing moves the head to the end, turning a statement about §1 into a statement\nabout §2.":
+ "§0\n\n反转把表头挪到末尾，于是关于 §1 的陈述变成了关于 §2 的\n陈述。",
+ "§0\n\nReversing a list leaves its sum unchanged.": "§0\n\n反转一个列表不改变它的和。",
+ "§0\n\nRelating a list to its length is a simulation of the counter specification by the list-based\nstack.":
+ "§0\n\n把一个列表与它的长度关联起来，是基于列表的栈对计数器规约的一个模拟。",
+ "§0\n\nReading two §1s returns the parity automaton to whichever state it started in.":
+ "§0\n\n读两个 §1 会把奇偶自动机带回它出发时所在的那个状态。",
+ "§0\n\nReading the word §1 leaves the parity automaton in its §2 state.":
+ "§0\n\n读完词 §1 后，奇偶自动机停在它的 §2 状态。",
+ "§0\n\nReading the first symbol of a word performs one transition, and then the rest of the word is\nread from the new state. This is the equation that turns \"running a machine\" into a recursion\nyou can do induction on.":
+ "§0\n\n读入一个词的首个符号就走一步转移，余下的部分再从新状态读起。\n正是这条等式把“运行一台机器”变成了一个你可以对之做归纳的递归。",
+ "§0\n\nQuotient and remainder satisfy the two-part division contract whenever the divisor is\npositive.":
+ "§0\n\n只要除数为正，商与余数就满足两部分的除法契约。",
+ "§0\n\nPutting the same element on the front of two rearrangements leaves them rearrangements.":
+ "§0\n\n在两个互为重排的列表前面放上同一个元素，它们仍然互为重排。",
+ "§0\n\nPeel one step off an execution, or build one on. Use it to exhibit a concrete behavior one\ntransition at a time.":
+ "§0\n\n从一段执行上剥下一步，或者往上搭一步。用它可以一个转移一个转移地\n给出一条具体的行为。",
+ "§0\n\nOut of range, the checked lookup reports failure rather than inventing a value.":
+ "§0\n\n越界时，带检查的读取报告失败，而不是编造一个值。",
+ "§0\n\nOne transition followed by an execution. The other constructor, and the one that carries the\ninduction step.":
+ "§0\n\n一个转移之后接着一段执行。另一个构造子，也是承载归纳步骤的那个。",
+ "§0\n\nOne step of the monadic sort: sort the tail, then insert the head.":
+ "§0\n\n单子化排序的一步：先排好尾部，再把表头插进去。",
+ "§0\n\nOne step of the monadic insertion: compare, then either stop or recurse. Rewriting with it is\nhow a cost argument gets at the single comparison a step performs.":
+ "§0\n\n单子化插入的一步：比较，然后要么停下，要么继续递归。用它改写，正是\n开销论证触及某一步所做的那一次比较的办法。",
+ "§0\n\nOne more element makes a list one longer. It is the arithmetic the cost induction needs when\nit moves from §1 to §2.":
+ "§0\n\n多一个元素，列表就长一。开销的归纳从 §1 走到 §2 时需要的就是这点算术。",
+ "§0\n\nOn indices that are in range, the checked lookup returns exactly the unchecked one's answer.":
+ "§0\n\n在范围内的下标上，带检查的读取返回的恰好是不带检查那个的答案。",
+ "§0\n\nNothing is lost by dividing: the quotient times the divisor, plus the remainder, is the\noriginal. The first half of the division contract.":
+ "§0\n\n做除法不会丢失任何东西：商乘以除数，加上余数，就是\n原来的数。这是除法契约的前一半。",
+ "§0\n\nNo total function can return a valid index into every list, because the empty list has none.":
+ "§0\n\n没有全函数能对每个列表都返回一个合法下标，因为空列表一个也没有。",
+ "§0\n\nNo simulation relates the late chooser to the early one: simulation is genuinely\ndirectional.":
+ "§0\n\n没有模拟把晚做选择者与早做选择者关联起来：模拟确实是有方向的。",
+ "§0\n\nMathlib's §1 satisfies the strengthened specification.":
+ "§0\n\nMathlib 的 §1 满足加强后的规约。",
+ "§0\n\nMathlib's insertion sort returns a sorted list, provided the order is total and transitive.":
+ "§0\n\n只要序是完全的且传递的，Mathlib 的插入排序返回的就是一个排好序的列表。",
+ "§0\n\nMathlib's insertion sort returns a permutation of its input: nothing is lost, nothing is\ninvented.":
+ "§0\n\nMathlib 的插入排序返回输入的一个排列：没有丢失什么，也没有凭空多出什么。",
+ "§0\n\nMathlib's general reflexivity lemma, for any relation §1 carrying a §2 instance.\n\nIt appears in the inventory here for a duller reason than it deserves: §3's zero-step\nconstructor is also called §4, so writing §5 as a case name mentions this\nname, and the game checks every name a proof mentions.":
+ "§0\n\nMathlib 的一般自反性引理，适用于任何带有 §2 实例的关系 §1。\n\n它出现在物品栏里的理由比它本身乏味：§3 的零步构造子也叫 §4，\n所以把 §5 写成情形名就提到了这个名字，而游戏会检查证明所提到的每个名字。",
+ "§0\n\nInsertion sort's comparison count depends on the input, not only on its length.":
+ "§0\n\n插入排序的比较次数取决于输入，而不只取决于它的长度。",
+ "§0\n\nInsertion sort returns a sorted list.": "§0\n\n插入排序返回一个排好序的列表。",
+ "§0\n\nInsertion sort returns a permutation of its input.":
+ "§0\n\n插入排序返回其输入的一个排列。",
+ "§0\n\nInsertion sort is correct: its output is sorted and is a permutation of its input.":
+ "§0\n\n插入排序是正确的：它的输出排好序，并且是其输入的一个排列。",
+ "§0\n\nInsertion rearranges rather than changes: the result is a permutation of the input with the\nnew element added.":
+ "§0\n\n插入是重排而不是改动：结果是输入添上新元素后的一个排列。",
+ "§0\n\nInserting §1 into §2 produces a list whose elements are exactly §3 together with those of\n§4.":
+ "§0\n\n把 §1 插进 §2 得到的列表，其元素恰好是 §3 连同 §4 的那些元素。",
+ "§0\n\nInserting into a sorted list leaves it sorted.":
+ "§0\n\n插进一个排好序的列表，它仍然排好序。",
+ "§0\n\nIn range, the checked indexing returns the element the unchecked indexing would.":
+ "§0\n\n在范围内时，带检查的取下标返回的正是不带检查的取下标会返回的元素。",
+ "§0\n\nHowever long the traffic-light controller runs, it never enters its failure state.":
+ "§0\n\n不论交通灯控制器运行多久，它都不会进入故障状态。",
+ "§0\n\nExchanging the first two elements is a rearrangement. With §1 and §2 it is\nall the permutation algebra insertion sort needs.":
+ "§0\n\n交换前两个元素是一次重排。它与 §1、§2 合起来，就是插入排序所需的\n全部排列代数。",
+ "§0\n\nEvery state of the parity automaton is reached by some input word.":
+ "§0\n\n奇偶自动机的每个状态都被某个输入词抵达。",
+ "§0\n\nEvery sequence of operations the list-based stack can perform is one the counter\nspecification permits.":
+ "§0\n\n基于列表的栈能执行的每一个操作序列，都是计数器规约所允许的。",
+ "§0\n\nEvery list is a rearrangement of itself — which is exactly why the permutation clause alone\ndoes not specify sorting.":
+ "§0\n\n每个列表都是它自己的一个重排——这恰恰就是为什么单有排列这一条\n并不能刻画排序。",
+ "§0\n\nEvery element of the output is non-negative and even.":
+ "§0\n\n输出的每个元素都非负且是偶数。",
+ "§0\n\nDiscarding the cost turns the instrumented sort into Mathlib's ordinary insertion sort.":
+ "§0\n\n把开销丢掉，就把被插桩的排序变成了 Mathlib 普通的插入排序。",
+ "§0\n\nCosts add along a sequence of computations. It is the only thing about §1 a cost proof\nreally needs, and it is why the cost of a sort is the sum of the costs of its insertions.":
+ "§0\n\n开销沿着一串计算累加。这是一个开销证明关于 §1 真正需要知道的\n唯一一件事，也是为什么一次排序的开销就是它各次插入开销之和。",
+ "§0\n\nClamping into a non-empty range produces a value inside that range.":
+ "§0\n\n压进一个非空区间，得到的值落在那个区间里面。",
+ "§0\n\nChain two rearrangements.": "§0\n\n把两次重排串起来。",
+ "§0\n\nChain two inequalities. In the sortedness proof it is what carries *§1 is below the head*\nthrough to *§2 is below everything after the head*.":
+ "§0\n\n把两个不等式串起来。在排好序的证明里，正是它把*§1 不大于表头*\n传递成*§2 不大于表头之后的一切*。",
+ "§0\n\nBisimilarity gives trace equivalence for free; trace equivalence does not give bisimilarity.":
+ "§0\n\n双模拟白送你迹等价；迹等价不送你双模拟。",
+ "§0\n\nBisimilar states offer an observer the same words. Proving the strong relation first makes the\nweak one free.":
+ "§0\n\n双模拟的状态提供给观察者的词相同。先证明那个强关系，弱的那个就白得了。",
+ "§0\n\nBeing a permutation alone does not specify sorting: the identity function satisfies it.":
+ "§0\n\n单是一个排列并不能刻画排序：恒等函数就满足它。",
+ "§0\n\nAny two elements of a linear order are comparable. Split on it when the answer depends on\nwhich of two values is larger.":
+ "§0\n\n线序中任意两个元素都可比较。当答案取决于两个值中哪个更大时，就对它做分情形。",
+ "§0\n\nAny real transition is in particular a saturated one, with no internal work around it.":
+ "§0\n\n任何真实的转移本身就是一个饱和转移，只是前后没有夹杂内部工作。",
+ "§0\n\nAn element survives a filter exactly when it was there and passes the test. Together with\n§1 this is how the contract of a composition is assembled from its parts.":
+ "§0\n\n一个元素能通过 filter，当且仅当它原本就在那里并且通过了检验。它与\n§1 合起来，就是一个复合函数的契约如何由各部分的契约拼装出来。",
+ "§0\n\nAn element of a mapped list came from an element of the original.":
+ "§0\n\nmap 之后的列表里的元素，来自原列表里的某个元素。",
+ "§0\n\nAn account that starts in credit stays in credit, whatever finite sequence of deposits and\nwithdrawals is performed.":
+ "§0\n\n一个从不欠款开始的账户，无论执行怎样有限的一串存取操作，都始终不欠款。",
+ "§0\n\nAdding to a natural number does not decrease it. It is the single-step fact behind *this\naccumulator never goes down*.":
+ "§0\n\n给自然数做加法不会让它变小。这是*这个累加器永远不下降*背后的\n单步事实。",
+ "§0\n\nA §1-challenge may be answered by standing still: doing nothing is a saturated §2-step.":
+ "§0\n\n一个 §1 挑战可以用原地不动来应答：什么都不做就是一步饱和的 §2。",
+ "§0\n\nA worked example and a worked non-example of the sortedness predicate.":
+ "§0\n\n排好序这个谓词的一个正例与一个反例。",
+ "§0\n\nA word is a trace exactly when some execution performs it. Proving membership therefore means\nproducing the execution.":
+ "§0\n\n一个词是迹，当且仅当某段执行把它走完。因此证明它属于迹集合，就意味着\n把那段执行拿出来。",
+ "§0\n\nA list is sorted when its head is below everything after it and its tail is sorted. This is\nthe lemma that takes sortedness apart and puts it back together.":
+ "§0\n\n一个列表排好序，当且仅当它的表头不大于其后的一切，并且它的尾部排好序。\n正是这条引理把排好序拆开又装回去。",
+ "§0\n\nA concrete behavior of the list-based stack, exhibited by the execution that performs it.":
+ "§0\n\n基于列表的栈的一条具体行为，由执行它的那段运行给出。",
+ "§0\n\nA bisimulation answers challenges in both directions, so in particular it answers them in one.\nThis is how a proof that no simulation exists rules out bisimulation too.":
+ "§0\n\n双模拟能应答两个方向的挑战，所以特别地也能应答一个方向的。\n一个「不存在模拟」的证明，正是这样同时排除掉双模拟的。",
+ "§0\n\n**The reusable safety theorem.** If §1 survives one transition, it survives an execution of\nany length. You prove the single-step case — a finite, concrete obligation — and CSlib gives\nyou the statement about all finite executions, with no induction on your side.":
+ "§0\n\n**那条可复用的安全性定理。** 如果 §1 能挺过一次转移，它就能挺过任意长度的执行。\n你只需证明单步的情形——一个有限而具体的义务——CSlib 就把关于一切有限执行的结论\n交给你，归纳一步也不用你做。",
+ "level completed! 🎉": "关卡完成！🎉",
+ "level completed with warnings… 🎭": "关卡完成，但有警告…… 🎭",
+ "intermediate goal solved! 🎉": "中间目标已解决！🎉",
+ "You proved an **operational** description (step through the word, carrying a state) and a\n**denotational** one (recurse on the word's structure) describe the same function — for every\ninput, not for a handful of examples you tried.\n\nNotice what carried the proof: you never unfolded §0 into a §1. You used the two\nequations that describe how a machine runs — nothing on the empty word, one transition on a\ncons — and the rest was algebra. That is what makes this argument reusable.\n\nSpecialising §2 to §3 now gives the correctness of the machine itself.":
+ "你证明了一种**操作式**描述（带着状态逐符号走过这个词）与一种**指称式**描述\n（沿词的结构做递归）刻画的是同一个函数——对每一个输入都成立，\n而不只是对你碰巧试过的那几个例子。\n\n留意是什么撑起了这个证明：你从未把 §0 展开成 §1。你用的是描述机器如何运行的\n那两条等式——空词上什么也不做，cons 上走一步转移——余下的全是代数。\n正因如此，这套论证才可复用。\n\n现在把 §2 特化到 §3，就得到了机器本身的正确性。",
+ "You proved a property of *every* finite execution of the system, and the only thing you\nchecked by hand was what one deposit and one withdrawal do.\n\nThis is the first of the game's two clear wins from CSlib. The induction over executions is\nnot hard, but it is the same induction every time, for every system and every invariant. It\nlives in §0 so that you never write it again — and because it is stated for\nan arbitrary §1 and an arbitrary predicate, it applies to the next system you model without\nany changes.\n\nKeep the shape in mind: **find the invariant, prove it survives one step, inherit the rest.**":
+ "你证明了该系统*每一条*有限执行都具有的一条性质，而你亲手验证的，\n只有一次存款和一次取款各自做了什么。\n\n这是本游戏中 CSlib 两处明显收益中的第一处。对执行作归纳并不难，\n但每一次都是同一个归纳，对每一个系统、每一条不变式都如此。它被安放在 §0 里，\n好让你再也不必重写一遍——而且因为它是针对任意的 §1 和任意的谓词叙述的，\n它不加改动就能用在你建模的下一个系统上。\n\n记住这个套路：**找到不变式，证明它能挺过一步，其余的自然继承下来。**",
+ "You now have the one-step fact §0. §1 upgrades it to\nthe whole execution — apply it to §2 and §3.":
+ "你现在有了单步的事实 §0。§1 把它提升到整条执行上——把它作用到 §2 与 §3 上。",
+ "You have to *build* a counterexample function. Anything that overshoots will do — try\n§0.":
+ "你得*造*一个反例函数出来。任何“超出一点”的东西都行——试试 §0。",
+ "You have the two halves. State the contract from Level 3 and discharge it.\n\n§0\n\nThe proof is the pair of theorems you already have. That is deliberate: a correctness theorem\nshould be a thin statement over results proved elsewhere, because it is the statement users\nread and the statement that must not drift. If this level were hard, the decomposition would\nbe wrong.":
+ "两半你都有了。把第三关的契约陈述出来并了结它。\n\n§0\n\n证明就是你已经有的那一对定理。这是有意的：一个正确性定理应当是架在别处证出的结果之上的\n一层薄薄的陈述，因为它是用户会读的那个陈述，也是不能走样的那个陈述。\n如果这一关很难，那说明分解做错了。",
+ "You have characterised the machine's language: not *these words are accepted*, but *these and\nno others*.\n\nNotice the division of labour. §0 contributed the definition of acceptance, which is\nthe same for every deterministic automaton anyone will ever write. §1\ncontributed the one fact specific to this machine. The general definition and the specific\ntheorem met, and the result was a statement about an infinite set of words.\n\nThat division is what a library is for, and it is the shape of everything that follows.":
+ "你刻画了这台机器的语言：不是*这些词被接受*，而是*这些、且仅有这些*。\n\n请注意分工。§0 提供了接受的定义，而这个定义对任何人将来会写的\n任何确定性自动机都是同一个。§1 提供了这台机器特有的那一个事实。\n一般的定义和具体的定理相遇，结果是一个关于无穷多个词的陈述。\n\n这种分工正是库存在的理由，也是后面一切的形状。",
+ "You can now describe what a program does. This world is about saying what it *should* do.\n\nA specification in Lean is an ordinary proposition: a precondition on the input, a\npostcondition relating input to output, and an arrow between them. No separate program logic,\nno Hoare triples — for a pure function the arrow *is* the contract.\n\nThe work is rarely in proving a contract. It is in noticing that the contract you wrote is not\nthe one you meant. So this world spends its time on the ways a specification goes wrong: too\nweak, and it admits programs you would reject; too strong, and no program can satisfy it; and\nmissing an assumption, so that it is simply false.\n\nBy the end you will have seen the sharpest standard there is — a contract that pins its\nimplementation down completely — and the reason you do not always want it.":
+ "你现在能描述一个程序做了什么。本世界讲的是说出它*应当*做什么。\n\nLean 里的规约就是一个普通命题：一个关于输入的前置条件，一个把输入与输出联系起来的\n后置条件，以及它们之间的一个箭头。没有另一套程序逻辑，没有 Hoare 三元组——\n对纯函数而言，那个箭头*就是*契约。\n\n难处很少在于证明一个契约。难处在于察觉你写下的契约并不是你想说的那个。所以本世界\n把时间花在规约会出错的那几种方式上：太弱，它就容纳你会拒绝的程序；太强，就没有程序\n能满足它；还有少了一条假设，于是它干脆就是假的。\n\n到本世界结束时，你会见到最锋利的那个标准——一个把自己的实现完全钉死的契约——\n以及你为什么并不总想要它。",
+ "Worlds 1 and 2 gave you one model and one contract at a time. This world is about proofs that\ndo not have to be redone.\n\nThe central idea is the **invariant**: a property that holds at the start and survives every\nsingle step, and therefore holds forever. Stated that way it is a theorem about transition\nsystems in general, not about your program — which means somebody can prove it once and\neverybody can use it. CSlib has, and you will prove the same safety property twice, once by\nhand and once by appealing to it, so that the difference is visible rather than asserted.\n\nYou will also meet the other kinds of reuse: a helper lemma factored out because the larger\nargument needs it, an invariant of a data structure rather than of a machine, and an\nequivalence between two functions that lets you transport what you know about one onto the\nother.\n\nAnd you will meet the thing that makes invariant proofs hard — that the property you want is\nusually not the property you can prove, and has to be strengthened first.":
+ "第一、第二世界每次给你一个模型和一个契约。本世界讲的是不必重做的证明。\n\n核心想法是**不变式**：一个在起点成立、并且挺得过每一步的性质，因而永远成立。\n这样一说，它就是一个关于一般转移系统的定理，而不是关于你的程序的——\n这意味着可以由某个人证明一次，而所有人都能用。CSlib 已经证了，\n而你会把同一条安全性性质证两遍，一遍手工，一遍靠调用它，好让差别是看得见的而不是被断言的。\n\n你还会遇到另外几种复用：因为更大的论证需要而被提取出来的辅助引理；\n属于数据结构而不是属于机器的不变式；以及两个函数之间的等价，\n它让你把关于其中一个所知道的搬运到另一个上。\n\n你还会遇到让不变式证明变难的那件事——你想要的性质通常不是你能证明的那个，\n必须先被加强。",
+ "World 3 proved that §0 preserves sortedness. That is the first obligation. Here is the\nsecond, for the same operation: **inserting §1 into §2 produces a rearrangement of\n§3.**\n\n§4 was close but not enough. It says which elements are present; a permutation also has\nto account for how many times each occurs. §5 tracks that.\n\nThe induction has the same two branches as before. When §6 the result is literally\n§7, so there is nothing to rearrange. When §8 the result is §9,\nand the induction hypothesis says §10 is a rearrangement of §11 — so\n§12 rearranges to §13, which is §14 with the first two\nelements swapped.\n\nThree lemmas do it: §15 puts the same element on the front of both sides,\n§16 exchanges the first two, and §17 chains them. Write them out by\nname rather than with dot notation — §18 is shorter, but the game resolves the field of a\nprojection as a name in its own right, and §19 on its own is a different theorem.":
+ "第三世界证明了 §0 保持排好序。那是第一项义务。这里是同一个操作的第二项：\n**把 §1 插进 §2 得到的是 §3 的一个重排。**\n\n§4 很接近，但还不够。它说的是哪些元素在场；而一个排列还得交代每个元素出现几次。\n§5 记录这件事。\n\n归纳和之前一样有那两个分支。当 §6 时结果字面上就是 §7，所以没有什么要重排的。\n当 §8 时结果是 §9，而归纳假设说 §10 是 §11 的一个重排——于是\n§12 重排成 §13，也就是把 §14 的前两个元素对调。\n\n三条引理完成这件事：§15 在两边前面放上同一个元素，§16 对调前两个，\n而 §17 把它们串起来。把它们按名字写出来，不要用点记号——§18 更短，\n但游戏会把投影的字段当作一个独立的名字去解析，而单独的 §19 是另一个定理。",
+ "World 3 is done, and it is worth collecting what it was about.\n\n**Induction follows the recursion.** A function defined on lists is proved about by induction\non lists; an execution built by §0 is proved about by induction on executions.\n\n**Strengthen until it is inductive.** Three times now the statement you wanted was not the\nstatement you could prove: the parity automaton's starting state, the two buckets' total, the\naccumulator. Each time the repair was to prove more, not less.\n\n**Factor by shape, not by interest.** §1 and §2 are dull theorems that made\ntwo interesting ones easy.\n\n**Reuse theorems, not arguments.** §3 did for the room exactly what it did for\nthe account, with nothing rewritten. That is what distinguishes a library from a habit.\n\nWorld 4 puts all four to work on one algorithm.":
+ "第三世界结束了，值得把它讲的东西收拢一下。\n\n**归纳顺着递归走。**在列表上定义的函数，用对列表的归纳来证明；由 §0 搭起来的执行，\n用对执行的归纳来证明。\n\n**加强到它成为归纳式为止。**到现在已经三次，你想要的陈述不是你能证明的那个：\n奇偶自动机的起始状态、两个桶的总量、累加器。每一次的修补都是多证一点，而不是少证一点。\n\n**按形状提取，不按趣味提取。**§1 和 §2 是两个乏味的定理，却让两个有趣的变得容易。\n\n**复用定理，而不是论证。**§3 为房间做的事，与它为账户做的事一模一样，一个字都没改写。\n这正是库与习惯的区别。\n\n第四世界把这四条一起用在一个算法上。",
+ "World 2 proved contracts of functions that look at their input once. This world is about\nfunctions defined by recursion, and the proofs that follow their shape.\n\n§0\n\nHere is a fact about it that no finite number of examples establishes: **summing a\nconcatenation is the same as summing the pieces and adding.**\n\nThe proof is induction on the first list, and it works because §1 recurses the same way\n§2 does. On §3 both sides collapse. On §4 both sides peel off one §5, and what\nis left is the induction hypothesis.\n\nNothing here needs §6: the statement quantifies over §7, but §8 never changes\nas the recursion proceeds.":
+ "第二世界证明的是只看输入一次的函数的契约。本世界讲的是由递归定义的函数，\n以及顺着它们的形状走的证明。\n\n§0\n\n这是一个关于它的事实，而任何有限多的例子都确立不了它：**把一次拼接求和，\n与把各段分别求和再相加，结果相同。**\n\n证明是对第一个列表做归纳，而它之所以行得通，是因为 §1 递归的方式与 §2 相同。\n在 §3 上两边都塌缩。在 §4 上两边都剥下一个 §5，剩下的就是归纳假设。\n\n这里不需要 §6：陈述对 §7 做了全称量化，但随着递归推进 §8 从不改变。",
+ "With §0, §1, §2 and §3 in the context the goal is linear. §4.":
+ "上下文里有了 §0、§1、§2 和 §3，目标就是线性的了。§4。",
+ "With §0 the right-hand side is §1, so §2 makes the\ngoal §3. Then §4, §5, §6 and §7 together force it, and\n§8 can see that once the disjunction is in the context.":
+ "有了 §0，右边就是 §1，所以 §2 把目标变成\n§3。接着 §4、§5、§6 和 §7 合起来就逼出了它，而一旦那个析取\n进了上下文，§8 就能看出来。",
+ "With an empty range there is nowhere inside it to land, so §0 cannot put anything there.\nThe precondition is load-bearing.\n\nThis is a habit worth keeping. Every assumption in a theorem is a promise the caller has to\nkeep, and an assumption nobody needs is a promise you extracted for nothing. When you write a\ncontract, ask of each hypothesis: what breaks without it? If nothing does, delete it. If\nsomething does, you have just learned what the function actually requires.\n\nThe next three levels ask the mirror question — not *is this assumption needed* but *is this\nconclusion enough*.":
+ "区间为空时里面根本没有地方可落，所以 §0 没法把任何东西放进去。\n前置条件是承重的。\n\n这个习惯值得保留。定理里的每个假设都是调用方必须兑现的承诺，而一个没人需要的\n假设，就是你白要来的一份承诺。写契约时，对每条假设都问一句：没有它什么会坏掉？\n如果什么都不坏，就删掉它。如果有东西坏掉，你就刚刚弄清了这个函数真正要求什么。\n\n接下来三关问的是镜像的问题——不是*这条假设是否必要*，而是*这个结论是否够用*。",
+ "Which word you need depends on which state §0 is, so split first: §1.":
+ "你需要哪个词取决于 §0 是哪个状态，所以先拆开：§1。",
+ "Which argument the maximum equals depends on which is bigger.\n§0 splits into those two cases.":
+ "最大值等于哪个参数取决于哪个更大。\n§0 把它拆成那两种情形。",
+ "Which States Can You Reach": "哪些状态是可达的",
+ "Where the New Element Goes": "新元素去了哪里",
+ "What the Machine Computes": "机器算的是什么",
+ "What remains: every element of §0 is at least §1. Take one, and use\n§2 to find out what it is: §3, §4.":
+ "剩下的是：§0 的每个元素都不小于 §1。取一个出来，再用 §2 弄清它是什么：\n§3，§4。",
+ "What remains: every element of §0 is at least §1. Take one with\n§2, and §3 splits it into *it is §4* or *it is in §5*.":
+ "剩下的是：§0 的每个元素都不小于 §1。用 §2 取一个出来，\n而 §3 把它拆成*它是 §4*或者*它在 §5 里*。",
+ "What remains is §0 — the theorem you\nproved one level ago.":
+ "剩下的是 §0——你上一关刚证过的那个定理。",
+ "What remains is that §0 is not a permutation of §1, which §2 decides.":
+ "剩下的是 §0 不是 §1 的排列，这由 §2 判定。",
+ "What is left is §0. Unfold §1 on the\nsingleton with §2 and finish with §3.":
+ "剩下的是 §0。用 §2 把单元素列表上的 §1 展开，\n再用 §3 收尾。",
+ "What is left is §0. The start state is\n§1, and §2 is §3 — §4 unfolds the machine far enough to see\nthat and then finishes.":
+ "剩下的是 §0。起始状态是\n§1，而 §2 就是 §3——§4 把机器展开到足以看出这一点，\n然后就收尾了。",
+ "What is left is exactly §0.": "剩下的恰好就是 §0。",
+ "What an Observer Sees": "观察者看到什么",
+ "What Sorted Means": "排好序是什么意思",
+ "Verify a Complete Implementation": "验证一个完整的实现",
+ "Unfold §0 on §1. What is left is a question about how §2\nbrackets, and §3 answers it.":
+ "在 §1 上展开 §0。剩下的是一个关于 §2 如何结合的问题，而 §3 回答了它。",
+ "Unfold §0 on both sides — §1 also rewrites with the induction\nhypothesis §2 — and then the two sides differ only in how the additions are\nbracketed, which §3 settles.":
+ "把两边的 §0 都展开——§1 同时还用归纳假设 §2 改写——\n之后两边就只差加法如何加括号了，而 §3 了结它。",
+ "Unfold §0 and compute. §1 followed by §2 evaluates the\nbranches and finds the contradiction.":
+ "把 §0 展开并计算。§1 接上 §2 会把各分支\n求值出来，并找到那个矛盾。",
+ "Unfold the definition: §0. What is left is the arithmetic side\ncondition, which §1 discharges from §2.":
+ "把定义展开：§0。剩下的是那个算术旁条件，由 §1 从 §2 把它了结。",
+ "Unfold the acceptance condition and the machine:\n§0. Membership in the one-element set\n§1 is just an equation, so simp will clear that away too.":
+ "把接受条件和机器都展开：\n§0。属于单元素集合\n§1 不过是一个等式，所以 simp 也会把它清掉。",
+ "Unfold both definitions, then split on what §0 is. Once that is a\nconcrete §1 or §2, §3 pins down §4 and §5 finishes the\narithmetic.":
+ "把两个定义都展开，然后对 §0 是什么做分情形。一旦它是具体的\n§1 或 §2，§3 就把 §4 钉死，而 §5 完成剩下的\n算术。",
+ "Unfold both definitions and use the in-range assumption to evaluate the indexing:\n§0.":
+ "把两个定义都展开，并用「在范围内」这条假设把取下标求值出来：\n§0。",
+ "Understand Program Behavior": "理解程序的行为",
+ "Two §0s, so the parity is even, so the machine ends in §1. The automaton agrees.\n\nThat is testing, and it is worth doing: it is how you find out that you wrote down the machine\nyou meant. But notice what it does not tell you. There are infinitely many words, and you have\nchecked one. The rest of this world is about the other thing you can do.":
+ "两个 §0，所以奇偶性是偶，所以机器停在 §1。自动机与此一致。\n\n这就是测试，而且值得做：你正是这样才发现自己写下的机器确实是心里想的\n那台。但请注意它没有告诉你什么。词有无穷多个，而你检验了一个。\n本世界余下的部分，讲的是你还能做的另一件事。",
+ "Two things left: that your function really is an upper bound, and that it differs from\n§0 somewhere. Split them with §1.":
+ "还剩两件事：你的函数确实是个上界，以及它在某处与 §0 不同。用 §1 把它们拆开。",
+ "Two systems that offer an observer exactly the same words, and differ in when they decide.\n\n§0 does an §1, and *then* either a §2 or a §3:\n\n§4\n\n§5 has two different §6-steps, one of which has already committed to §7 and the\nother to §8:\n\n§9\n\nAn observer sees §10, then §11 or §12, from either. But the systems are not interchangeable,\nand this level and the next show in which direction they fail to be.\n\nStart with the direction that works. Every move §13 makes can be answered by\n§14, because §15 can still do whatever §16 or §17 can. The relation is\n\n§18\n\nProve it is a simulation. Both systems are finite, so splitting on every state, label and\ntarget settles most of it outright; the handful of goals that survive are the real steps, and\neach needs the state §19 answers with.":
+ "两个系统提供给观察者完全相同的词，区别在于它们何时做决定。\n\n§0 先做一个 §1，*然后*做 §2 或 §3 之一：\n\n§4\n\n§5 有两条不同的 §6 步，其中一条已经承诺 §7，另一条已经承诺 §8：\n\n§9\n\n观察者从任一个系统看到的都是 §10，然后是 §11 或 §12。但这两个系统不可互换，\n而本关和下一关会表明它们在哪个方向上不可互换。\n\n从行得通的那个方向开始。§13 所做的每一步都能被 §14 应答，因为 §15 仍然能做\n§16 或 §17 能做的任何事。关系是\n\n§18\n\n证明它是一个模拟。两个系统都是有限的，所以对每个状态、标号和目标做分情形，大部分就直接了结了；\n活下来的那几个目标是真正的步骤，每一个都需要给出 §19 用来应答的那个状态。",
+ "Two steps, chained. §0 moves from §1 to\n§2, and §3 moves from there to §4:\n§5.":
+ "两步，串起来。§0 把你从 §1 带到 §2，而 §3 从那里带到 §4：§5。",
+ "Two programs, one answer. §0 recurses and adds on the way back out; §1 carries a\nrunning accumulator and returns it at the end — which is what a loop compiles to:\n\n§2\n\nProve they agree: §3.\n\nTry it directly and the induction fails, for exactly the reason World 1's §4 failed.\nThe recursive call is §5, not §6, so an induction hypothesis\nabout the accumulator §7 is useless — you need one about *every* accumulator.\n\nSo prove the general statement first:\n\n§8\n\nand read the answer off at §9. This is the same manoeuvre as World 1, in a setting with\nno machine in sight: the accumulator is the state, and a statement about one starting state\ndoes not induct.":
+ "两个程序，一个答案。§0 一路递归下去再在回来的路上做加法；§1 带着一个\n运行中的累加器，最后把它返回——这正是循环编译出来的样子：\n\n§2\n\n证明它们一致：§3。\n\n直接去试，归纳会失败，原因恰好和第一世界的 §4 失败时一样。\n递归调用是 §5，不是 §6，所以一个关于累加器 §7 的归纳假设毫无用处——\n你需要的是关于*每个*累加器的。\n\n所以先证明一般的陈述：\n\n§8\n\n再在 §9 处把答案读出来。这和第一世界是同一招，只是场景里连机器的影子都没有：\n累加器就是状态，而一个关于单个起始状态的陈述归纳不起来。",
+ "Two of the three clauses are Mathlib lemmas. §0\nsupplies them and leaves you the interesting one.":
+ "三条里有两条是 Mathlib 的引理。§0\n把它们供上，留给你有意思的那一条。",
+ "Two obligations, one implementation, and neither obligation would have been enough alone.\n\nThat is the pattern you will see again in the capstone. Real contracts are conjunctions,\nbecause a single property is almost never specific enough to rule out the degenerate\nimplementations: returning nothing, returning the input unchanged, returning zero. When you\nwrite a specification, the useful question is not *is this true of my program* but *what else\nis this true of*.":
+ "两项义务、一个实现，而两项义务单拿出任何一项都不够。\n\n这正是你在压轴部分会再次见到的模式。真实的契约都是合取，因为单个性质几乎从不\n足够具体到排除那些退化的实现：什么也不返回、原样返回输入、返回零。写规约时，\n有用的问题不是*这对我的程序成立吗*，而是*这还对什么成立*。",
+ "Two levels, two theorems, and the second needed the first.\n\nThat is worth pausing on, because it is the only way large proofs are ever built. §0\nis not interesting in itself — nobody wants to know it. It is interesting because it is the\nright *shape*: it says what happens to §1 when a list is built by §2, and anything that\nbuilds lists with §3 can now be reasoned about.\n\nChoosing lemmas by shape rather than by interest is the skill. A good one is stated in terms\nof the operations your proofs actually produce.":
+ "两关，两个定理，而第二个用上了第一个。\n\n这值得停一下，因为大的证明从来只能这样搭起来。§0 本身并不有趣——\n没人想知道它。它有趣是因为它的*形状*对：它说的是当一个列表由 §2 搭起来时\n§1 会怎样，于是任何用 §3 搭列表的东西现在都能推理了。\n\n按形状而不是按趣味来挑引理，这是手艺所在。好的引理是用你的证明真正产生的那些运算\n来陈述的。",
+ "Two independent claims. §0 splits them.": "两个互相独立的论断。§0 把它们拆开。",
+ "Two genuinely different obligations, discharged against a library implementation you never had\nto unfold.\n\nNotice precisely what transferred and what did not. §0 transferred, because discarding the\ncost is a homomorphism and homomorphisms preserve the result. §1 did not, and could not:\nit is exactly the information the homomorphism forgets. No theorem about §2\ncan say anything about it, because §3 does not have it.\n\nSo a statement about the comparison count has to be proved in the cost monad, by induction,\nfrom scratch. That is the last level of the core path.":
+ "两项真正不同的义务，对照一个你从来不必展开的库实现办妥了。\n\n请准确地注意什么转移了、什么没有。§0 转移了，因为把开销丢掉是一个同态，而同态保持结果。\n§1 没有，而且不可能：它恰恰是同态所遗忘的那部分信息。关于 §2 的任何定理都\n说不出关于它的任何事情，因为 §3 根本就没有它。\n\n所以一个关于比较次数的陈述，必须在开销 monad 里、用归纳、从头证起。\n那就是核心路线的最后一关。",
+ "Two buckets hold five tokens between them. A move takes one token from one bucket and puts it\nin the other:\n\n§0\n\nYou want: *the first bucket never holds more than five.*\n\nTry to prove that the way you proved the last two, with the property §1, and\nit fails — and the failure is instructive rather than technical. From the state §2 the\nproperty holds, a §3 move is legal because the second bucket is non-empty, and it leads to\n§4 where the property is false. One step destroys it. The property is **not inductive**.\n\nOf course §5 is not a state the system can actually be in: there are only five tokens.\nBut the single-step obligation does not know that. It asks about *every* state satisfying the\nproperty, including the unreachable ones.\n\nThe repair is to prove something stronger — the thing that is actually true of every reachable\nstate, namely that the total is conserved:\n\n§6\n\n*That* survives a move, and it implies what you wanted. Finding such a strengthening is the\ncentral difficulty of invariant-based verification, and there is no recipe; the honest advice\nis that your invariant must explain why the bad states cannot arise, not merely assert they do\nnot.":
+ "两个桶一共装着五枚令牌。一次移动把一枚令牌从一个桶取出放进另一个桶：\n\n§0\n\n你想要的是：*第一个桶里从不超过五枚。*\n\n照你证明前两关的办法，用性质 §1 去试，它会失败——\n而这个失败是有教益的，不是技术性的麻烦。从状态 §2 出发，该性质成立，\n一次 §3 移动是合法的，因为第二个桶非空，而它通向 §4，在那里该性质为假。\n一步就把它破坏了。这个性质**不是归纳式的**。\n\n当然 §5 并不是这个系统真能处于的状态：一共只有五枚令牌。但单步义务不知道这件事。\n它问的是*每个*满足该性质的状态，包括那些不可达的。\n\n修补办法是证明更强的东西——那个对每个可达状态都确实成立的东西，也就是总量守恒：\n\n§6\n\n*那个*能挺过一次移动，而且它蕴涵你想要的东西。找到这样的加强是基于不变式的验证的\n核心难点，而且没有配方；诚实的建议是：你的不变式必须解释为什么坏状态不会出现，\n而不只是断言它们没出现。",
+ "To answer, the implementation needs a non-empty list. Split: §0. The\nempty case contradicts §1 together with §2, and the non-empty case supplies the\ntail.":
+ "要应答，实现需要一个非空的列表。拆开：§0。空的那种情形与 §1 连同 §2 矛盾，\n而非空的那种给出尾部。",
+ "Three comparisons against six.\n\nKeep the two fields apart in your head, because they behave very differently under the\nreasoning that follows. §0 is the answer, and the answer does not depend on the\ninstrumentation — which is exactly what the next level turns into a theorem. §1 is the\ninstrumentation, and nothing about the plain algorithm can tell you anything about it.\n\nThat asymmetry is the shape of the rest of this world: one obligation that transfers for free,\nand one that has to be proved where it lives.":
+ "三次比较对六次。\n\n把这两个字段在脑子里分开，因为在接下来的推理下它们的表现非常不同。§0 是答案，\n而答案不依赖于插桩——这恰恰就是下一关要变成定理的东西。§1 是插桩，\n而关于那个朴素算法的任何事情都没法告诉你关于它的任何事情。\n\n这份不对称就是本世界余下部分的形状：一项义务白白转移过来，另一项必须在它所在的地方证明。",
+ "Then split on the comparison: §0.": "然后对那个比较做分情形：§0。",
+ "Then split on the comparison: if the element belongs here the recursion stops, and\notherwise the induction hypothesis §0 bounds the rest.\n§1.":
+ "然后对那个比较做分情形：如果元素就该放在这里，递归就停下；否则归纳假设 §0 给出其余部分的界。\n§1。",
+ "The two operations of World 3's room: §0 and §1. A §2 label records which\nhappened.":
+ "第三世界那个房间的两种操作：§0 与 §1。一个 §2 标号记录\n发生的是哪一种。",
+ "The two algorithms compute the same list.\n\nThis is the game's second clear win from CSlib, and it is a different kind of win from the\nfirst. §0 in World 3 saved you an induction you knew how to do. This saves you\nsomething you would probably not have thought to do at all: the observation that\ninstrumentation is a homomorphism, and that homomorphisms commute with the whole algorithm,\nturns *reprove everything in the cost monad* into one rewrite.\n\nNeither library states the composite. You built it, out of two general theorems, and the two\nlevels that follow spend it.":
+ "两个算法算出同一个列表。\n\n这是游戏里第二处「库值回票价」的明证，而且它与第一处是不同类型的收益。\n第三世界的 §0 替你省下了一次你本来就会做的归纳。这一处替你省下的，是一件你多半根本\n想不到要去做的事：注意到插桩是一个同态，而同态与整个算法交换，于是\n*把一切都在开销 monad 里重证一遍*就变成了一次改写。\n\n两个库都没有陈述这个复合。是你把它搭起来的，用两条一般的定理搭的，\n而接下来两关把它花掉。",
+ "The traffic-light controller. Each tick advances §0, and nothing\nleads into §1 — which is why, started in §2, it never gets there.":
+ "交通灯控制器。每一拍推进 §0，而且没有任何转移\n通向 §1——这正是它从 §2 出发后永远到不了那里的原因。",
+ "The strengthened statement covers the start state too, and §0 is not §1.":
+ "加强后的陈述也覆盖了起始状态，而 §0 不是 §1。",
+ "The strengthened contract is satisfiable, and §0 satisfies it.\n\nThat is only half of what you want to know. A contract can be satisfiable and still be wrong —\n§1 was. The question the next level settles is whether this one is tight: whether\nit leaves room for any implementation other than the one you meant.":
+ "加强后的契约是可满足的，而 §0 满足它。\n\n这只是你想知道的一半。一个契约可以既可满足又是错的——§1 就是。\n下一关要了结的问题是，这一个是否紧：它有没有给除了你本来想要的那个之外的\n实现留下余地。",
+ "The step §0 has to be answered. Ask the simulation for the answer:\n§1.":
+ "那一步 §0 必须被应答。向模拟索要这个应答：§1。",
+ "The statement about the start state is not strong enough to induct on. State the\nstrengthened version first:\n§0":
+ "关于起始状态的陈述不够强，没法对它做归纳。先把加强后的版本\n陈述出来：\n§0",
+ "The stack and the counter are bisimilar. Neither can be distinguished from the other by any\nobserver, however it interacts.\n\nThat is a much stronger statement than the refinement of Level 5, and it is the one you would\nwant before replacing a component in a system you do not control. Refinement promises the\nreplacement does nothing the specification forbids. Bisimulation promises it does nothing\ndifferent at all.\n\nBoth were proved from a local, one-step condition, over states that are not even the same\ntype. The list carries strictly more information than the count — the identity of the items —\nand the relation simply ignores it. That is the sense in which the counter is an *abstraction*\nof the stack, and it is the same idea you met in World 1, now between two systems rather than\nbetween a machine and a program.":
+ "栈与计数器是双模拟的。任何观察者，不论如何交互，都无法把其中一个与另一个区分开。\n\n这比第五关的精化强得多，而且正是你在替换一个你无法掌控的系统里的组件之前会想要的那个。\n精化承诺的是替换者不做规约所禁止的事。双模拟承诺的是它根本不做任何不同的事。\n\n两者都是从一个局部的单步条件证出来的，而所涉的状态连类型都不相同。列表携带的信息严格多于计数——\n那些东西各自的身份——而关系干脆忽略它。正是在这个意义上计数器是栈的一个*抽象*，\n而这与你在第一世界遇到的是同一个想法，只是现在发生在两个系统之间，而不是机器与程序之间。",
+ "The second push takes it to §0.": "第二次压入把它带到 §0。",
+ "The same theorem, a system it was never written for, and no new induction.\n\nThis is the first of the game's two demonstrations that a library earns its keep. The saving\nis not the handful of lines you did not type. It is that §0 is stated for an\narbitrary §1 and an arbitrary predicate, so the next system you model — and the one after\nthat — gets its safety proof by the same two steps, forever.\n\nCompare that with Level 3, where the induction was yours and would have to be written again\nhere. Same result, same difficulty of the interesting part, and a difference that compounds.":
+ "同一个定理、一个它从未为之而写的系统，以及零次新的归纳。\n\n这是游戏里两处「库值回票价」演示中的第一处。省下的不是你没敲的那几行。\n省下的是：§0 是对任意 §1 和任意谓词陈述的，所以你建模的下一个系统——\n再下一个也一样——都能用同样的两步拿到它的安全性证明，永远如此。\n\n拿它和第三关比一比：在那里归纳是你自己做的，而在这里还得再写一遍。\n同样的结果，有意思的部分同样难，而差别会不断累积。",
+ "The same lift, for the other obligation.\n\n§0 is §1. By §2 that is a permutation of\n§3, and by the induction hypothesis §4 is a permutation of §5, so\n§6 is a permutation of §7. Chain the two and you are done.\n\n§8 lifts a permutation under a §9, and §10 chains. Both appeared\nin Level 4; this level is about putting them together in the other order.":
+ "另一项义务的同样一次提升。\n\n§0 就是 §1。由 §2，它是 §3 的一个排列；而由归纳假设，§4 是 §5 的一个排列，\n所以 §6 是 §7 的一个排列。把两者串起来就完事了。\n\n§8 把一个排列在 §9 之下提升，而 §10 做串接。两者都在第四关出现过；\n本关讲的是把它们按另一个顺序拼起来。",
+ "The reverse of the empty list is itself, so both sides are §0. §1 closes\nit.":
+ "空列表的反转就是它自己，所以两边都是 §0。§1 关掉它。",
+ "The result is §0. The tail is sorted by §1, and §2\nsays inserting into a sorted list leaves it sorted:\n§3.":
+ "结果是 §0。尾部由 §1 排好序，而 §2 说插进一个排好序的列表会让它仍然排好序：\n§3。",
+ "The result is §0. The tail is sorted by the induction hypothesis:\n§1, then §2.":
+ "结果是 §0。尾部由归纳假设排好序：§1，然后 §2。",
+ "The result is §0. Build it with §1 twice — the inner one\nis just §2 again:\n§3, then\n§4.":
+ "结果是 §0。用两次 §1 把它搭起来——里面那次就是 §2 本身：\n§3，然后 §4。",
+ "The replacement is safe, and that is a different theorem from the replacement being faithful.\n\nKeep the two apart whenever you argue that one component may stand in for another. *It behaves\nthe same* and *it fails well* are both worth having, neither implies the other, and conflating\nthem is how a migration gets signed off on half the evidence.\n\nFrom here on the systems have state, the observations are sequences rather than single\nanswers, and *behaves the same* needs a much more careful definition.":
+ "替换者是安全的，而这与「替换者是忠实的」是两个不同的定理。\n\n每当你论证某个组件可以顶替另一个时，都把这两件事分开。*它表现相同*和*它失败得体面*都值得拥有，\n两者谁也不蕴涵谁，而把它们混为一谈，正是一次迁移凭一半证据就被签字放行的来由。\n\n从这里起，系统带有状态，观察结果是序列而不是单个答案，而*表现相同*需要一个仔细得多的定义。",
+ "The parity automaton read as an acceptor: §0 with §1. The words it\naccepts are exactly those containing an odd number of §2s.":
+ "把奇偶自动机当作接受器来看：§0 配上 §1。它接受的词\n恰好是含有奇数个 §2 的那些词。",
+ "The parity automaton of World 1: its state is §0 exactly when it has read an odd number of\n§1 symbols. Reading §2 from state §3 moves it to §4, and it starts in §5.":
+ "第 1 世界的奇偶自动机：当它读入的 §1 符号个数为奇数时，状态恰为 §0。\n从状态 §3 读入 §2 会移动到 §4，而它从 §5 出发。",
+ "The operations observable at the interface of a stack: §0 and §1.":
+ "在栈的接口上可观察到的操作：§0 与 §1。",
+ "The operations a bank account accepts: §0 and §1.": "银行账户接受的操作：§0 与 §1。",
+ "The observable actions of World 5's choice systems: §0, then one of §1 and §2.":
+ "第五世界两个选择系统的可观察动作：§0，然后是 §1 与 §2 之一。",
+ "The most famous contract in programming is the one for integer division, and it has two parts\nthat only mean something together:\n\n§0\n\nThe first says nothing was lost. The second says the remainder was reduced as far as it goes.\nDrop the first and §1 is fine; drop the second and §2 is fine. Neither\nis division.\n\n§3 returns the pair §4. Prove it satisfies both clauses — under the\nprecondition §5, which you should expect by now to be load-bearing. (It is: Lean defines\n§6, so the second clause fails outright at §7.)\n\nTwo library facts do the work, and the contract is written in the direction they state it:\n§8 is the first clause and\n§9 is the second.":
+ "编程里最有名的契约是整数除法的那个，它有两部分，只有合起来才有意义：\n\n§0\n\n第一条说什么也没丢。第二条说余数已经减到不能再减。去掉第一条，§1 也行；\n去掉第二条，§2 也行。两者都不是除法。\n\n§3 返回序对 §4。证明它满足两条——在前置条件 §5 之下，\n到现在你该料到它是承重的了。（它确实是：Lean 定义 §6，所以第二条在\n§7 时直接不成立。）\n\n两条库里的事实完成这件事，而契约就按它们陈述的方向写：\n§8 是第一条，\n§9 是第二条。",
+ "The mirror image.": "镜像的一半。",
+ "The machine starts in §0, so it is already there. The empty word will do:\n§1, and the remaining goal computes.":
+ "机器从 §0 出发，所以它本来就在那里。空词就够了：\n§1，剩下的目标自己算得出来。",
+ "The machine read nothing, so it has not moved. §0 says exactly\nthat.":
+ "机器什么也没读，所以它没有移动。§0 说的正是这件事。",
+ "The machine is correct: on every input, the state it stops in is the parity of what it read.\n\nIt is worth being precise about what the generalisation bought you. It was not a stronger\n*result* — this level's statement is what you cared about, and the general one followed from\nnothing extra. It was a stronger *induction hypothesis*. Strengthening the claim to make the\ninduction go through, then specialising at the end, is a move you will use for the rest of\nthe game.":
+ "机器是对的：对每个输入，它停在的状态就是它所读内容的奇偶性。\n\n值得把这份推广究竟换来了什么说清楚。它换来的不是更强的*结果*——\n本关的陈述才是你在意的，而一般的那个并没有额外用上什么就推出了它。\n它换来的是更强的*归纳假设*。把论断加强以便归纳走得通，最后再特化回去，\n是你在这个游戏余下部分还会反复用到的一招。",
+ "The machine and the program agree — and they agree even though their states are not the same\nkind of thing.\n\nThat is what an abstraction is: a map from the states a program really has to a smaller set\nthat still determines the answer. Picking a good one is most of the art of verification. Too\ncoarse and the property you want stops following; too fine and you have not simplified\nanything.\n\nYou now have the whole vocabulary: states, transitions, runs, reachability, invariants, and\nabstraction. World 2 changes the subject — from describing what a program does to saying what\nit *should* do.":
+ "机器和程序一致——而且它们一致，尽管它们的状态根本不是同一类东西。\n\n抽象就是这么回事：从程序真正拥有的那些状态，映到一个仍然决定答案的\n更小集合。挑一个好的抽象是验证这门手艺的大半。太粗，你想要的性质就推不出来；\n太细，你其实什么也没简化。\n\n现在整套词汇你都有了：状态、转移、运行、可达性、不变式，以及抽象。\n第二世界换一个话题——从描述程序做了什么，转到说明它*应当*做什么。",
+ "The loop and the recursion agree, for every list.\n\nThis is **functional equivalence**, and it is the first time in the game two different programs\nhave been compared rather than one program compared with a specification. It is the question\nWorld 5 is entirely about, in settings where the two programs do not even have the same type.\n\nThe technique is worth naming, because you have now used it three times: in World 1 for the\nautomaton's starting state, in World 1 again for the traffic light, and here for an\naccumulator. Whenever a recursive call changes something the statement mentions, the statement\nmust quantify over that thing before the induction, not after.":
+ "循环与递归一致，对每个列表都如此。\n\n这就是**函数等价**，也是游戏里第一次比较两个不同的程序，而不是拿一个程序去对规约。\n第五世界整个讲的就是这个问题，而且是在两个程序连类型都不相同的场景里。\n\n这个技巧值得点名，因为你现在已经用过三次了：第一世界里为自动机的起始状态，\n第一世界里又为交通灯，以及这里为一个累加器。只要递归调用改变了陈述所提到的某样东西，\n陈述就必须在归纳*之前*对那样东西做量化，而不是之后。",
+ "The last two levels asked whether an implementation meets its contract. This one asks the\nharder question: whether the contract is the one you meant.\n\nSuppose someone proposes this specification for a two-argument maximum:\n\n§0\n\nIt is true of §1. It reads plausibly. And it is **too weak**: it pins down an upper bound,\nbut says nothing about the result being one of the two arguments, or about it being the\n*least* such bound.\n\nThe way to show a specification is too weak is to exhibit a second implementation that\nsatisfies it and is nevertheless wrong. Not an argument in prose — a witness.":
+ "前两关问的是一个实现是否满足它的契约。这一关问的是更难的问题：\n这个契约是不是你本来想要的那个。\n\n假设有人为二元最大值提出了这个规约：\n\n§0\n\n它对 §1 成立。读起来也像那么回事。而它**太弱**：它钉住了一个上界，\n却完全没说结果是两个参数之一，也没说它是*最小*的这样的界。\n\n表明一个规约太弱的办法，是举出第二个满足它、却仍然是错的实现。\n不是一段散文论证——是一个见证。",
+ "The invariant holds: insertion never breaks sortedness.\n\nCompare the shape with the transition-system proofs earlier in this world. There, an invariant\nwas a property of states, preserved by each transition. Here it is a property of a data\nstructure, preserved by each operation. The second is not a metaphor for the first — it is the\nsame idea, and the reason a §0 does not appear as an §1 is only that there is one\noperation and no notion of *the current list* persisting between calls.\n\nIn World 4 this lemma becomes one of the two halves of a correctness proof for a real sorting\nalgorithm. The other half is the permutation property, and the structure of its proof will\nlook familiar.":
+ "不变式成立：插入从不破坏排好序。\n\n把它的形状和本世界前面那些转移系统的证明比一比。在那里，不变式是状态的性质，\n被每个转移所保持。在这里，它是数据结构的性质，被每个操作所保持。后者不是前者的比喻——\n它就是同一个想法，而一个 §0 之所以没有以 §1 的面目出现，只是因为这里只有一个操作，\n也没有「当前这个列表」在两次调用之间持续存在的概念。\n\n在第四世界，这条引理会成为一个真实排序算法的正确性证明的两半之一。另一半是排列性质，\n而它那个证明的结构你会觉得眼熟。",
+ "The implementation challenges. §0, then split on everything and let\n§1 discard the impossible combinations:\n§2.":
+ "实现发起挑战。先 §0，然后对一切做分情形，让 §1 把不可能的组合丢掉：§2。",
+ "The implementation and the specification are weakly bisimilar: §0, via\n§1.\n\nWeak bisimilarity is what you usually want when comparing an implementation with a\nspecification, because specifications are written without the implementation's bookkeeping and\nshould not have to anticipate it. The cost of the weakening is real, though, and worth\nknowing: weak bisimilarity cannot see how *much* internal work is done, so a system that\ndiverges — spinning on §2 forever and never producing the output — is weakly bisimilar to one\nthat produces it immediately. If termination matters, weak bisimilarity is not the relation\nthat establishes it, and CSlib's §3 and §4 are where to look instead.\n\nOne relation left to discuss, which is the one you have been using all along without being\nasked to choose it.":
+ "实现与规约是弱双模拟的：§0，经由 §1。\n\n在把一个实现与一个规约作比较时，你通常想要的就是弱双模拟，因为规约是在不考虑实现的记账的情况下\n写出来的，也不该被要求去预见那些记账。不过这次弱化的代价是真实的，而且值得知道：\n弱双模拟看不出内部工作做了*多少*，所以一个发散的系统——永远在 §2 上空转、从不产出输出——\n与一个立刻产出输出的系统是弱双模拟的。如果终止性要紧，弱双模拟不是确立它的那个关系，\n而 CSlib 的 §3 与 §4 才是该去看的地方。\n\n还剩一个关系要讨论，而它正是你一路在用、却从没被要求去挑选的那个。",
+ "The identity function, its permutation proof, and an unsorted input:\n§0.":
+ "恒等函数、它的排列证明，以及一个没有排好序的输入：§0。",
+ "The hard part is already a theorem. §0 converts\n§1 into the trace inclusion, given that the starting states are related by\n§2: §3.":
+ "难的部分已经是一条定理了。§0 把 §1 转成迹包含，前提是起始状态由 §2 关联：§3。",
+ "The four states of World 1's traffic-light controller: §0, §1, §2, and the\nfailure state §3.":
+ "第一世界交通灯控制器的四个状态：§0、§1、§2，以及\n故障状态 §3。",
+ "The first of the two obligations, for the whole algorithm, in three lines.\n\nCount what those three lines rest on: an induction here, §0 from World 3, §1\nunderneath that, and §2 from the library. Four small results, each proved\nwhere it was easiest, composing into a statement about an algorithm.\n\nHad you tried to prove this directly about §3, you would have had to do all of it at\nonce, inside a single induction, with the comparison case split nested inside the list case\nsplit. That proof exists and people write it. It is about four times as long and nobody can\nread it.":
+ "两项义务中的第一项，对整个算法而言，三行搞定。\n\n数一数那三行靠的是什么：这里的一次归纳、第三世界的 §0、它下面的 §1，\n以及库里的 §2。四个小结果，各自在最容易证的地方证出来，组合成一个关于算法的陈述。\n\n假如你当初试着直接对 §3 证明这件事，你就得一次把这一切都做完，塞在同一次归纳里面，\n而且比较的分情形还嵌套在列表的分情形里面。那个证明是存在的，也有人写。\n它大约长四倍，而且没人读得下去。",
+ "The first half is exactly the simulation you already proved. Supply it and keep the\nsecond: §0.":
+ "前一半恰好就是你已经证过的那个模拟。把它供上，留下后一半：§0。",
+ "The controller never breaks, and you proved it without examining a single run.\n\nWhat carried the argument was not anything about traffic lights. It was the pattern: a\nproperty true at the start, preserved by one step, and therefore true always. The property has\na name — an **invariant** — and the pattern is the single most useful idea in program\nverification.\n\nYou did the induction by hand here. In World 3 you will meet the same argument again, stated\nonce and for all as a theorem about transition systems in general, and you will not have to\nwrite it again.":
+ "控制器永远不会出故障，而你没有考察任何一次运行就证明了它。\n\n承载这个论证的不是任何关于交通灯的东西。它是这个模式：一个在起点为真、\n被一步保持、因而永远为真的性质。这个性质有个名字——**不变式**——\n而这个模式是程序验证中最有用的单个想法。\n\n这里的归纳是你手工做的。在第三世界你会再次遇到同一个论证，它被一劳永逸地\n陈述成一个关于一般转移系统的定理，于是你不必再写一遍。",
+ "The contract of a composition, assembled from the contracts of its parts.\n\nThat is the only way proofs survive contact with real code. Nobody verifies a thousand-line\nfunction; they verify the twenty functions it calls and compose the results. The composition\nstep is where the reasoning happens, and you have just done one: the §0 gave you the\nprecondition that the §1's postcondition needed.\n\nWorld 2 is done. You can write a contract, check it is satisfiable, check it is tight, check\nits assumptions are needed, and assemble it from smaller ones. World 3 is about making the\nproofs themselves reusable.":
+ "一个复合函数的契约，由它各部分的契约拼装而成。\n\n这是证明在与真实代码接触后得以幸存的唯一方式。没有人去验证一个一千行的函数；\n人们验证它调用的那二十个函数，再把结果组合起来。推理发生在组合这一步上，\n而你刚刚做了一次：§0 给了你 §1 的后置条件所需要的前置条件。\n\n第二世界结束了。你会写契约、会检查它可满足、会检查它紧、会检查它的假设是必要的，\n也会用更小的契约把它拼起来。第三世界讲的是如何让证明本身可以复用。",
+ "The contract is settled:\n\n§0\n\nTwo obligations, each ruling out a program the other admits. Everything else in this world is\nthe work of discharging them for a real algorithm — first one you can see all of, then CSlib's\ncost-annotated one.":
+ "契约定下来了：\n\n§0\n\n两项义务，各自排除掉对方所容纳的一个程序。本世界其余的一切，都是为一个真实的算法把它们\n了结的工作——先是一个你能从头看到尾的，然后是 CSlib 那个带开销标注的。",
+ "The contract is not merely hard to meet — it is impossible, and the empty list is the whole\nreason.\n\nBoth failures you have now seen come from the same place: the contract and the intention came\napart at a case nobody pictured. Too weak, and §0 let through a function that\novershoots. Too strong, and this one lets through nothing at all. Neither mistake is visible\nfrom reading the proposition; both are visible the moment you ask about the boundary.\n\nThe repair here is not to weaken the postcondition but to add a precondition — §1 —\nor to change the return type to §2 so the function can say *no answer*. That second\noption is a real design choice, and World 5 comes back to it.":
+ "这个契约不只是难以满足——它是不可能满足的，而空列表就是全部原因。\n\n你现在见过的这两种失败都出自同一处：契约与意图在一个谁也没设想过的情形上\n分了家。太弱，于是 §0 放进来一个会超出的函数。太强，于是这一个什么也放不进来。\n两个错误从读命题本身都看不出来；而一旦你去问边界，两个都看得出来。\n\n这里的修补不是削弱后置条件，而是加一个前置条件——§1——\n或者把返回类型改成 §2，好让函数能说*没有答案*。后一个选项是一个真正的\n设计抉择，第五世界会再回到它。",
+ "The claim was that §0 is general. Here is the test of it.\n\nA room with a capacity of ten, as a transition system over its occupancy:\n\n§1\n\nDifferent state type — §2 instead of §3. Different labels. Different property. Nothing in\ncommon with the bank account except the shape.\n\nProve that the room never exceeds its capacity. You should find that your proof from the last\nlevel transfers almost unchanged, which is the whole point: you are not reusing an argument,\nyou are reusing a *theorem*, and a theorem does not care what it is applied to.":
+ "刚才的说法是 §0 具有一般性。这里就是对它的检验。\n\n一个容量为十的房间，建模成以人数为状态的转移系统：\n\n§1\n\n不同的状态类型——§2 而不是 §3。不同的标号。不同的性质。除了形状之外，\n与银行账户没有任何共同之处。\n\n证明这个房间从不超出容量。你应该会发现上一关的证明几乎原封不动就能搬过来，\n而这正是要点：你复用的不是一段论证，而是一个*定理*，\n而定理不在乎自己被用在什么上面。",
+ "The capstone. Prove that sorting a list of §0 elements never costs more than §1\ncomparisons.\n\nNothing you have done so far helps directly. §2 is about §3, and the whole\npoint of the previous level was that it says nothing about §4. There is no theorem in\neither library whose statement is this one. You are going to do an induction, and you need two\ningredients before you can start.\n\n**One insertion is linear.** §5 compares the new element with the elements\nof the list from the front and stops when it finds its place, so it performs at most as many\ncomparisons as the list is long. That is an induction on the list, using\n§6 to expose one step and §7's §8 to see that costs add.\n\n**The sorted list has the same length.** Insertion sort's recursive call produces a list the\nsame length as its input, which is what makes the first ingredient useful at each step. You\ncould prove that by a second induction, but you do not have to — §9 says the\nresult is §10, and §11 says that preserves length.\nA use for the bridge in a proof that is otherwise entirely about cost.\n\nWith both in hand, the induction is arithmetic: sorting §12 costs what sorting §13 cost,\nplus at most §14 for the insertion, and §15.":
+ "压轴。证明排一个有 §0 个元素的列表，花费从不超过 §1 次比较。\n\n你到目前为止做过的一切都帮不上直接的忙。§2 是关于 §3 的，而上一关的全部要点就是\n它关于 §4 什么也没说。两个库里都没有哪条定理的陈述就是这一条。你将要做一次归纳，\n而在开始之前你需要两样配料。\n\n**一次插入是线性的。**§5 从前端起把新元素与列表里的元素逐个比较，找到位置就停下，\n所以它做的比较至多和列表的长度一样多。这是对列表的一次归纳，用 §6 把一步暴露出来，\n再用 §7 的 §8 看出开销会相加。\n\n**排好序的列表长度不变。**插入排序的递归调用产出一个与其输入等长的列表，\n而这正是第一样配料在每一步都好用的原因。你本可以再做一次归纳来证明它，但不必——\n§9 说结果就是 §10，而 §11 说那不改变长度。\n在一个除此之外全是关于开销的证明里，这是那座桥的一处用场。\n\n两样都到手之后，归纳就是算术了：排 §12 的花费等于排 §13 的花费，\n加上插入那部分至多 §14，而 §15。",
+ "The bound you wanted, by way of a statement you did not ask for.\n\nThis is the standard shape of a real invariant proof, and it is worth naming the two\ndirections that can go wrong. An invariant too weak is not preserved by a step, and the\nsingle-step obligation simply fails — that is what happened to §0. An invariant too\nstrong is preserved but false at the start, and the initial obligation fails instead. You are\nlooking for something in between, and §1 is it: true initially because that is\nhow the tokens were distributed, preserved because moving a token conserves the total, and\nstrong enough to give you the bound.\n\nNotice also that truncated subtraction on §2 is quietly doing work here. §3 when\n§4 is §5, not §6, so without the guard §7 the total would not be conserved.\nThe transition relation carries that guard, and your proof used it.":
+ "你想要的那个上界，经由一个你没要求的陈述得到。\n\n这是真实的不变式证明的标准形状，而两个可能出错的方向值得点名。不变式太弱，\n它就挺不过一步，单步义务直接失败——§0 碰到的就是这个。不变式太强，\n它挺得过去但在起点就不成立，于是失败的变成了初始那一项。你要找的是两者之间的东西，\n而 §1 就是：起初为真，因为令牌本来就是那样分的；被保持，因为移动一枚令牌保持总量；\n而且强到足以给你那个上界。\n\n另外请注意，§2 上的截断减法在这里悄悄干了活。§4 为 §5 时 §3 是 §6，\n所以没有 §7 这道守卫，总量就不会守恒。转移关系带着这道守卫，而你的证明用上了它。",
+ "The bank-account transition system of World 3. States are balances (§0), labels are\noperations: §1 always steps, §2 steps only when the balance covers\n§3.":
+ "第 3 世界的银行账户转移系统。状态是余额（§0），标号是操作：\n§1 总能走一步，而 §2 只有在余额足以支付 §3 时才走得了。",
+ "The accumulator changes as the recursion proceeds, so quantify over it:\n§0.":
+ "累加器随着递归推进而改变，所以对它做量化：§0。",
+ "The Words It Accepts": "它接受的词",
+ "The Whole Sort Is a Permutation": "整个排序是一个排列",
+ "The Whole Sort Is Sorted": "整个排序是排好序的",
+ "The Same Argument Without a Machine": "同一个论证，只是没有机器",
+ "The Same Answer, Where It Matters": "在要紧的地方给出同样的答案",
+ "The Same Algorithm, over a Monad": "同一个算法，写在 monad 之上",
+ "The Precondition Is Not Decoration": "前置条件不是摆设",
+ "The Machine Inside the Program": "程序里面的那台机器",
+ "The Division Contract": "除法契约",
+ "The *specification* of World 5: an abstract counter. From §0 it can always §1 to §2,\nand it can §3 to §4 exactly when §5 is positive.":
+ "第 5 世界的*规约*：一个抽象计数器。从 §0 出发它总能 §1 到 §2，\n而只有当 §5 为正时才能 §3 到 §4。",
+ "The *implementation* of World 5: a stack held as a list. From §0 it can always §1, and it\ncan §2 exactly when §3 is non-empty. Note its state type differs from the specification's.":
+ "第 5 世界的*实现*：以列表保存的栈。从 §0 出发它总能 §1，\n而只有当 §3 非空时才能 §2。注意它的状态类型与规约的并不相同。",
+ "Take arbitrary §0 and §1 with §2, then prove both halves of the §3.":
+ "用 §2 取任意的 §0 和 §1，然后证明 §3 的两半。",
+ "Take arbitrary arguments with §0.": "用 §0 取任意的参数。",
+ "Take an arbitrary element of the output together with the evidence that it is one:\n§0.":
+ "取输出中的任意一个元素，连同它确实属于输出的证据：§0。",
+ "Symmetrically, §0 and then §1.": "对称地，先 §0 再 §1。",
+ "Supply the three numbers with §0, leaving only the check that they\nreally are a counterexample.":
+ "用 §0 把三个数都给出来，只留下检查它们\n确实构成反例这一步。",
+ "Supply the function, its sortedness proof, and the offending input in one go:\n§0.":
+ "一口气把函数、它的排好序证明，以及那个出问题的输入都给出来：§0。",
+ "Strong Enough to Pin It Down": "强到能把它钉死",
+ "Strong Enough to Be Inductive": "强到足以成为归纳式",
+ "States of the system that chooses *during* its §0-step: two different §1-transitions leave\n§2, one already committed to §3 and one to §4.":
+ "在 §0 步*之中*就做选择的那个系统的状态：有两条不同的 §1 转移离开\n§2，一条已经承诺 §3，另一条已经承诺 §4。",
+ "States of the system that chooses *after* its §0-step: from §1 both §2 and §3 are still\navailable.":
+ "在 §0 步*之后*才做选择的那个系统的状态：从 §1 出发 §2 与 §3 都仍然\n可选。",
+ "States of the specification, which produces its output immediately.":
+ "那个立刻产出输出的规约的状态。",
+ "States of the implementation that does one invisible step before producing its output.":
+ "那个在产出输出之前先做一步不可见工作的实现的状态。",
+ "State the general version as an auxiliary fact:\n§0": "把一般的版本当作辅助事实陈述出来：\n§0",
+ "State the *strengthened* invariant, not the one you want:\n§0":
+ "陈述*加强后的*不变式，而不是你想要的那个：\n§0",
+ "Starting from a balance that is not negative, no finite sequence of deposits and\nwithdrawals can leave the account overdrawn.":
+ "从一个非负的余额出发，任何有限的存取操作序列都不可能让账户透支。",
+ "Start by replacing §0 with its definition: §1.": "先把 §0 换成它的定义：§1。",
+ "Split on the operation §0: a push and a pop are answered differently.":
+ "就操作 §0 分情况：入栈与出栈的应答方式不同。",
+ "Split on the operation and let §0 turn each abstract transition into an\nequation, after which it is arithmetic:\n§1.":
+ "对操作做分情形，让 §0 把每个抽象转移变成一个等式，\n之后就是算术了：\n§1。",
+ "Split on the first bit: §0. A §1 contributes nothing to either side; a\n§2 flips the parity on one side and adds one to the count on the other.":
+ "对第一个比特做分情形：§0。一个 §1 对两边都没有贡献；一个\n§2 则在一边翻转奇偶性，在另一边把计数加一。",
+ "Split on the comparison: §0.": "对那个比较做分情形：§0。",
+ "Split on the comparison that decides the branch: §0.": "对决定分支的那个比较做分情形：§0。",
+ "Specify, reason about, and verify programs in Lean 4.":
+ "在 Lean 4 中对程序进行规约、推理与验证。",
+ "Specify Correct Behavior": "规定正确的行为",
+ "Specialise the general theorem to the machine's own start state: §0 run from\n§1 computes §2.":
+ "把一般定理特化到机器自己的起始状态：§0 从\n§1 出发运行，算出的是 §2。",
+ "Sorting nothing gives nothing. §0.": "什么也不排就什么也得不到。§0。",
+ "Sorting nothing gives nothing, and the empty list is sorted. §0.":
+ "什么也不排就什么也得不到，而空列表是排好序的。§0。",
+ "Sorting nothing costs nothing. §0.": "什么也不排就不花什么。§0。",
+ "Sortedness Survives an Insertion": "排好序挺得过一次插入",
+ "Sorted, and a Permutation": "既排好序，又是排列",
+ "Sorted Is Not Enough": "排好序还不够",
+ "So far the machine computes a value. Classically, machines are used to *recognise* words: you\nmark some states as accepting, and the machine accepts a word when it finishes in one of them.\n\nCSlib's §0 is that — a §1 together with a set §2 of accepting\nstates — and §3 is the recognition condition:\n\n§4\n\n§5 is our machine with §6, so the words it accepts should be exactly\nthe words with an odd number of §7s. Prove it.\n\nThis is the first statement in the game about an *infinite set* — the language — rather than\nabout a single run. The proof, though, is short, because you already did the work: unfolding\nthe acceptance condition turns the goal into §8.":
+ "到目前为止机器算出一个值。按经典的用法，机器是用来*识别*词的：你把\n一些状态标记为接受状态，机器停在其中之一时就接受这个词。\n\nCSlib 的 §0 就是这个——一个 §1 加上一个接受状态集 §2——\n而 §3 是识别条件：\n\n§4\n\n§5 就是我们这台机器配上 §6，所以它接受的词应当恰好是\n含有奇数个 §7 的那些词。来证明它。\n\n这是游戏里第一个关于*无穷集合*——语言——而不是关于单次运行的陈述。\n不过证明很短，因为该做的你已经做过了：把接受条件展开，目标就变成了 §8。",
+ "Simulation in One Direction": "一个方向上的模拟",
+ "Show the list-based stack refines the counter specification: when the list has length §0,\nevery operation sequence the implementation can perform is permitted by the specification.":
+ "证明基于列表的栈精化了计数器规约：当列表长度为 §0 时，\n实现能执行的每一个操作序列都为规约所允许。",
+ "Show that §0 satisfies §1: it returns one of its arguments, and it is at\nleast as large as both.":
+ "证明 §0 满足 §1：它返回自己的参数之一，而且\n不小于两者。",
+ "Show that §0 pins down §1: every function satisfying it agrees with §2 on\nevery input.":
+ "证明 §0 把 §1 钉死：每个满足它的函数在每个输入上都与 §2 一致。",
+ "Show that §0 is a weak bisimulation (in CSlib's single-challenge form) between the\nimplementation that does internal work and the specification that does not.":
+ "证明 §0 是那个做内部工作的实现与那个不做内部工作的规约之间的一个弱双模拟（用 CSlib 的单挑战形式）。",
+ "Show that §0 is a simulation of §1 by §2.": "证明 §0 是 §2 对 §1 的一个模拟。",
+ "Show that §0 is a behavior the empty list-based stack can exhibit.":
+ "表明 §0 是空的、基于列表的栈能表现出的一条行为。",
+ "Show that §0 fails to pin down §1: exhibit a function that satisfies the\nproposed specification and yet disagrees with §2 on some input.":
+ "证明 §0 钉不死 §1：给出一个函数，它满足所提议的规约，\n却在某个输入上与 §2 不一致。",
+ "Show that §0 contains exactly the elements of §1 together with §2.":
+ "证明 §0 恰好含有 §1 的那些元素连同 §2。",
+ "Show that §0 accepts exactly the words with an odd number of §1s.":
+ "证明 §0 恰好接受含有奇数个 §1 的那些词。",
+ "Show that the traffic-light controller never reaches §0, however many ticks it\nruns.":
+ "证明交通灯控制器不论跑多少拍都到不了 §0。",
+ "Show that the room never holds more than ten people, whatever sequence of arrivals and\ndepartures occurs.":
+ "证明不论发生怎样的进出序列，这个房间都不会容纳超过十个人。",
+ "Show that the precondition of §0 cannot be dropped: exhibit a range and an\ninput for which the clamped value is not inside the range.":
+ "表明 §0 的前置条件不能去掉：给出一个区间和一个\n输入，使得被压过的值并不落在区间里面。",
+ "Show that the permutation clause alone is too weak, by exhibiting a function that\nsatisfies it and is not a sorting function.":
+ "通过举出一个满足它却不是排序函数的函数，表明单有排列这一条太弱。",
+ "Show that the parity automaton abstracts the counting program: it finishes in §0\nexactly when the program's count of §1s is odd.":
+ "证明奇偶自动机是计数程序的抽象：它停在 §0，\n当且仅当程序数出的 §1 的个数为奇数。",
+ "Show that the first bucket never exceeds five tokens, by strengthening the property to\nthe conservation of the total.":
+ "把性质加强为总量守恒，以此证明第一个桶里从不超过五枚令牌。",
+ "Show that the cost-annotated sort charges strictly more for a reverse-sorted list than\nfor an already-sorted list of the same length.":
+ "表明对同样长度的列表，带开销标注的排序对逆序的那个收费严格多于对已排好序的那个。",
+ "Show that the contract *returns a valid index into its argument* is unsatisfiable, by\nrefuting the existence of any function meeting it.":
+ "通过否证任何满足它的函数的存在，表明*返回一个指向其参数的合法下标*\n这个契约是不可满足的。",
+ "Show that the checked lookup returns §0 on every out-of-range index.":
+ "证明带检查的读取在每个越界下标上都返回 §0。",
+ "Show that the accumulating sum never returns a value below its starting accumulator.":
+ "证明带累加器的求和从不返回低于它起始累加器的值。",
+ "Show that sortedness alone is too weak a contract for a sorting function, by exhibiting\na function that satisfies it and is not a sorting function.":
+ "通过举出一个满足它却不是排序函数的函数，表明单有排好序对排序函数而言是太弱的契约。",
+ "Show that reading the word §0 leaves the parity automaton in the state it\nstarted in — whichever state that was.":
+ "证明读完词 §0 后，奇偶自动机仍停在它出发时所在的状态——\n不论那是哪个状态。",
+ "Show that on in-range indices the checked lookup agrees with the unchecked one.":
+ "证明在范围内的下标上，带检查的读取与不带检查的一致。",
+ "Show that no simulation relates §0's initial state to §1's, so the\nsimulation of the previous level has no converse.":
+ "证明没有模拟把 §0 的初始状态与 §1 的初始状态关联起来，所以上一关的模拟没有逆命题。",
+ "Show that every state of the parity automaton is reachable: for each §0, exhibit a word\nthat drives the machine from its start state into §1.":
+ "证明奇偶自动机的每个状态都可达：对每个 §0，给出一个词，\n把机器从起始状态驱动到 §1。",
+ "Show that *a list stands for its length* is a simulation of §0 by\n§1.":
+ "证明*一个列表代表它的长度*是 §1 对 §0 的一个模拟。",
+ "Show that *a list stands for its length* is a bisimulation between §0 and\n§1.":
+ "证明*一个列表代表它的长度*是 §0 与 §1 之间的一个双模拟。",
+ "Second ingredient: sorting does not change the length. The bridge gives it to you:\n§0":
+ "第二样配料：排序不改变长度。那座桥把它给了你：\n§0",
+ "Saying What You Meant": "把你想说的说出来",
+ "Same theorem as the last level. Different proof.\n\nThat is the proof you just wrote by hand. You would write it again for the next system, and\nagain for the next property, and it would be the same proof every time. CSlib has already\nwritten it, once and for all:\n\n§0\n\nSo your obligation shrinks to the single-step case — a finite check over the two kinds of\noperation — and the general theorem does the induction.":
+ "和上一关同一个定理。不同的证明。\n\n那就是你刚刚手写的那个证明。你会为下一个系统再写一遍，为下一条性质再写一遍，\n而且每次都是同一个证明。CSlib 已经一劳永逸地写好了它：\n\n§0\n\n于是你的义务缩成了单步的情形——对两类操作做一次有限的检查——\n而一般的定理把归纳做掉。",
+ "Same shape as before. State the single-step obligation:\n§0":
+ "和之前同样的形状。把单步义务陈述出来：\n§0",
+ "Safety, the Hard Way": "笨办法做安全性",
+ "Safety Is a Different Claim": "安全性是另一回事",
+ "Running §0 from any state §1 over any word §2 lands in the state\n§3: the parity you had, combined with the parity of what you read.":
+ "让 §0 从任意状态 §1 出发读完任意词 §2，它会停在状态 §3：\n你原有的奇偶性，与你所读内容的奇偶性合并起来。",
+ "Run the parity automaton from its start state over the word §0 and\nconfirm it finishes in §1.":
+ "让奇偶自动机从起始状态出发读完词 §0，\n确认它停在 §1。",
+ "Run the cost-annotated sort on a concrete list and confirm the result.":
+ "在一个具体的列表上运行带开销标注的排序，并确认结果。",
+ "Reversing a list does not change its sum. Obvious, and not provable by simply unfolding\nanything — §0 recurses from the front, and §1 puts the front at the back.\n\nWhat makes it work is the theorem you just proved. §2 says\n\n§3\n\nso the induction step turns the goal into a statement about a concatenation, and\n§4 is exactly the tool for those.\n\nThis is the first time in the game that a previous result is load-bearing rather than\ndecorative. It will not be the last: the rest of this world, and all of World 4, is built this\nway.":
+ "反转一个列表不改变它的和。显然，而且不是靠展开什么就能证明的——\n§0 从前端递归，而 §1 把前端挪到后面。\n\n让它行得通的是你刚证过的那个定理。§2 说\n\n§3\n\n于是归纳步骤把目标变成一个关于拼接的陈述，而 §4 正是对付那类陈述的工具。\n\n这是游戏里第一次让先前的结果承重而不只是点缀。它不会是最后一次：本世界余下的部分，\n以及整个第四世界，都是这样搭起来的。",
+ "Refinement and Behavioral Equivalence": "精化与行为等价",
+ "Real implementations do work that is not part of their interface: a cache lookup, a\nreallocation, a bookkeeping update. Those steps are real, and an observer at the interface\ncannot see them.\n\nCSlib marks one label as internal with the class §0. The implementation here does\none invisible step before it produces its output; the specification produces the output\nstraight away:\n\n§1\n\nThey are **not** bisimilar in the strict sense of Level 8: §2 can take a §3-step and §4\ncannot match it with a §5-step of its own. Under a notion of equivalence that counts\ninvisible work, every piece of internal bookkeeping would make an implementation inequivalent\nto its specification, which is useless.\n\n**Weak bisimilarity** is the repair. A challenge must still be answered, but the answer may be\npadded with any number of §6-steps before and after — and a §7-challenge may be answered by\ndoing nothing at all. CSlib's convenient formulation is §8, where the challenge\nis a single transition and the answer is a *saturated* transition §9:\n\n§10\n\nThe relation is §11, which maps both §12 and §13 to §14, precisely because the step\nbetween them cannot be seen.\n\nFor the challenge §15, the implementation must answer from §16 with a saturated\n§17-transition: a §18 to §19, then the real §20. That composite is §21,\nbuilt for you from §22.":
+ "真实的实现会做一些不属于其接口的工作：一次缓存查找、一次重新分配、一次记账更新。\n那些步骤是真实的，而接口处的观察者看不见它们。\n\nCSlib 用类 §0 把一个标号标记为内部的。这里的实现在产出输出之前做一步不可见的工作；\n规约则直接产出输出：\n\n§1\n\n按第八关那种严格意义，它们**不是**双模拟的：§2 能迈出一步 §3，而 §4 没法用自己的一步 §5 来匹配。\n在一个把不可见工作也算进去的等价概念之下，每一点内部记账都会让实现与它的规约不等价，\n那是没用的。\n\n**弱双模拟**是这个修补。挑战仍然必须被应答，但应答前后可以垫上任意多的 §6 步——\n而一个 §7 挑战可以用什么都不做来应答。CSlib 便于使用的表述是 §8，\n其中挑战是单独一个转移，而应答是一个*饱和*转移 §9：\n\n§10\n\n关系是 §11，它把 §12 和 §13 都映到 §14，恰恰因为它们之间那一步看不见。\n\n对挑战 §15，实现必须从 §16 用一个饱和的 §17 转移来应答：先一个 §18 到 §19，\n再是真正的 §20。那个复合步骤是 §21，已经用 §22 为你搭好了。",
+ "Reading a Word": "读一个词",
+ "Read off the case you wanted: §0.": "把你想要的那个情形读出来：§0。",
+ "Proved — and notice how little of that proof was about bank accounts.\n\nThe induction on §0, the base case, the appeal to the induction hypothesis: none of it\nmentions deposits, withdrawals, or the number zero. Only the last line does. Everything above\nit would be word-for-word identical for the traffic light of World 1, for a queue, for a lock,\nfor any transition system and any property whatsoever.\n\nWhich means somebody should write it down once. Somebody has.":
+ "证完了——而且请注意那个证明里关于银行账户的部分有多少。\n\n对 §0 的归纳、基础情形、对归纳假设的调用：这些没有一处提到存款、取款或者数字零。\n只有最后一行提到了。它上面的一切，对第一世界的交通灯、对一个队列、对一把锁、\n对任意转移系统和任意性质，都会是一字不差的同一段。\n\n这意味着应该有人把它写下来一次。已经有人写了。",
+ "Prove §0 correct against the full two-part contract.": "对照完整的两部分契约，证明 §0 正确。",
+ "Prove the cost-annotated insertion sort correct against the two-part contract: the list\nit returns is sorted, **and** it is a permutation of the input.":
+ "对照两部分契约证明带开销标注的插入排序正确：它返回的列表排好序，**并且**是输入的一个排列。",
+ "Prove the contract of §0: every element of its output is non-negative and\neven.":
+ "证明 §0 的契约：它输出的每个元素都非负且是偶数。",
+ "Prove that §0 meets the two-part division contract: nothing is lost, and the\nremainder is smaller than the divisor.":
+ "证明 §0 满足两部分的除法契约：什么也没丢，而且余数小于除数。",
+ "Prove that §0 meets its contract: when the range is non-empty, the clamped value\nlies inside it.":
+ "证明 §0 满足它的契约：当区间非空时，被压过的值\n落在区间里面。",
+ "Prove that §0 always returns a sorted list.": "证明 §0 总是返回一个排好序的列表。",
+ "Prove that §0 always returns a permutation of its input.":
+ "证明 §0 总是返回其输入的一个排列。",
+ "Prove that the result of the cost-annotated sort is exactly Mathlib's ordinary insertion\nsort of the same list.":
+ "证明带开销标注的排序的结果，恰好就是 Mathlib 对同一个列表做普通插入排序的结果。",
+ "Prove that the accumulator version of the sum agrees with the recursive one.":
+ "证明带累加器的求和版本与递归版本一致。",
+ "Prove that summing a concatenation gives the same answer as summing each part and\nadding.":
+ "证明把一次拼接求和，与把每段分别求和再相加，给出相同的答案。",
+ "Prove that reversing a list does not change its sum, using the concatenation lemma from\nthe previous level.":
+ "用上一关的拼接引理，证明反转一个列表不改变它的和。",
+ "Prove that insertion preserves sortedness: inserting into a sorted list yields a sorted\nlist.":
+ "证明插入保持排好序：插进一个排好序的列表，得到的仍是排好序的列表。",
+ "Prove that inserting §0 into §1 yields a permutation of §2.":
+ "证明把 §0 插进 §1 得到的是 §2 的一个排列。",
+ "Prove directly, by induction on the execution, that an account starting in credit never\nbecomes overdrawn.":
+ "直接对执行做归纳，证明一个从有存款开始的账户永远不会透支。",
+ "Prove and Reuse Properties": "证明并复用性质",
+ "Prove a quadratic bound on the number of comparisons the cost-annotated insertion sort\nperforms.":
+ "证明带开销标注的插入排序所做比较次数的一个平方上界。",
+ "Programs are built by composing functions, and so are their contracts.\n\n§0\n\nTwo steps: discard the negatives, then double what is left. What can you promise about the\noutput? That every element of it is non-negative and even.\n\nNeither half of the program establishes that on its own. §1 contributes the sign;\n§2 contributes the doubling. The proof has to take an arbitrary element of the result,\ntrace it back through §3 to the element of the filtered list it came from, and trace that\nback through §4 to learn it was non-negative.\n\n§5 knows how membership in a §6 and a §7 unfolds, so the tracing-back is one\nsimp call. What it leaves you is the element §8 it came from, the fact that §9, and the\nknowledge that your element is §10.":
+ "程序是把函数组合起来搭的，它们的契约也是。\n\n§0\n\n两步：丢掉负的，再把剩下的加倍。关于输出你能承诺什么？它的每个元素都非负且是偶数。\n\n程序的哪一半都没法单独确立这一点。§1 贡献了符号；§2 贡献了加倍。\n证明必须取结果中的任意一个元素，经由 §3 回溯到它所来自的、已过滤列表中的那个元素，\n再经由 §4 回溯过去，得知它当初非负。\n\n§5 知道属于 §6 和属于 §7 该如何展开，所以这一路回溯只需一次 simp 调用。\n它留给你的是它所来自的元素 §8、事实 §9，以及你那个元素就是 §10 这件事。",
+ "One §0 flips the machine out of its start state. §1.":
+ "一个 §0 就把机器从起始状态翻转出去。§1。",
+ "One transition from §0 to §1, then an execution from §2. The induction\nhypothesis §3 handles the rest, provided you can show §4. §5 leaves\nexactly that.":
+ "一个从 §0 到 §1 的转移，然后是一段从 §2 出发的执行。归纳假设 §3\n处理其余部分，前提是你能表明 §4。§5 恰好留下这一项。",
+ "One tick, then the rest. §0\nmakes that visible, because running a word from the front is a transition followed by\nthe remaining run.":
+ "一拍，然后是其余的。§0\n把这一点显式化，因为从词的前端开始运行就是一个转移接上剩下的运行。",
+ "One theorem, every pair of lists.\n\nKeep an eye on *why* the induction worked: the proof followed the recursion of the function.\nThat is the general rule. A function defined by cases on a list is proved correct by induction\non a list; a function defined by cases on a number, by induction on a number. When a proof by\ninduction will not close, the usual reason is that it is inducting on the wrong thing, or\nthat the statement is too weak to feed itself — a problem you will meet twice more in this\nworld.":
+ "一个定理，覆盖每一对列表。\n\n留意归纳*为什么*行得通：证明顺着函数的递归走。这是普遍的规律。按列表分情形定义的\n函数，用对列表的归纳来证明正确；按数分情形定义的，就用对数的归纳。当一个归纳证明\n收不了口时，通常的原因是它归纳错了对象，或者陈述太弱以至于喂不饱自己——\n这个问题你在本世界还会再遇到两次。",
+ "One step takes the accumulator from §0 to §1, and the induction\nhypothesis bounds the rest from there. §2 exposes the step, and then\n§3 chains the two inequalities.":
+ "一步把累加器从 §0 带到 §1，而归纳假设从那里起给出其余部分的界。\n§2 把这一步暴露出来，然后 §3 把两个不等式串起来。",
+ "One last look at the accumulator, because there is an invariant hiding in it.\n\n§0 starts at §1 and never looks back: each recursive call adds something to\nthe accumulator, and nothing ever subtracts. So the value it finally returns is at least the\nvalue it started with.\n\nThat is a safety property of a loop — *this variable never decreases* — and the argument is\nthe one from the first half of this world. The accumulator is the state. Each recursive call\nis a transition. The property §2 holds trivially when there are no steps left, and\neach step only makes it easier.\n\nWhat there is **not** is an §3, and so there is no §4 to reach for. You do\nthe induction yourself. That is the honest summary of this world: recognise the shape\neverywhere, and reach for the general theorem when the system really is a transition system.":
+ "再看累加器最后一眼，因为里面藏着一个不变式。\n\n§0 从 §1 开始，并且从不回头：每次递归调用都往累加器上加点什么，\n而从来没有什么被减掉。所以它最终返回的值不小于它出发时的值。\n\n这是一条循环的安全性性质——*这个变量从不下降*——而论证正是本世界前半段的那个。\n累加器是状态。每次递归调用是一个转移。性质 §2 在没有步骤可走时平凡地成立，\n而每一步只会让它更容易成立。\n\n这里**没有**的是一个 §3，所以也没有 §4 可以去拿。归纳得你自己做。\n这就是本世界诚实的总结：到处都认出这个形状，而当系统确实是一个转移系统时，\n就去拿那个一般的定理。",
+ "One direction holds, the other is impossible. Similarity is not symmetric, and a one-way\nsimulation is not evidence that two systems are interchangeable.\n\nThis is the fact behind the warning in Level 5. If you prove §0 is simulated by §1 and\nconclude *A and B behave the same*, you have asserted something you did not prove, and\nsometimes something false.\n\nWhat makes the two systems differ is not *which* words they can produce — those sets are\nidentical — but *when* they commit. An observer who may interact rather than merely watch can\ntell them apart: offer §2 an §3 and then insist on §4, and it may already have\nchosen §5 and be stuck. §6 never is.\n\nThe relation that rules this out is **bisimulation**, and the next level builds one.":
+ "一个方向成立，另一个不可能。相似性不是对称的，而一个单向的模拟不是两个系统可互换的证据。\n\n这就是第五关那句警告背后的事实。如果你证明了 §0 被 §1 所模拟，就下结论说*A 与 B 表现相同*，\n那你断言了你没有证明的东西，有时还是错的东西。\n\n让这两个系统不同的，不是它们能产生*哪些*词——那两个集合是一样的——而是它们*何时*做承诺。\n一个能交互而不只是旁观的观察者分辨得出来：给 §2 一个 §3，然后坚持要 §4，\n而它可能已经选了 §5 从而卡住。§6 则从不会。\n\n排除掉这种情况的关系是**双模拟**，而下一关搭一个出来。",
+ "One behavior, and the run that produces it.\n\nThe set of all such words is the only thing an observer who can see operations but not states\nhas access to, so it is the natural currency for comparing systems whose states are different\nkinds of thing. That is what the next two levels do with it.\n\nOne warning about traces, which the end of this world returns to. A trace set records *which*\nsequences are possible and forgets *when* the system committed to them. Two systems can offer\nan observer exactly the same words and still differ in a way that matters.":
+ "一条行为，以及产生它的那次运行。\n\n所有这类词构成的集合，是一个能看见操作却看不见状态的观察者所能接触到的全部，\n所以它是比较两个状态类型不同的系统时自然的通货。接下来两关就是拿它来做事。\n\n关于迹有一句警告，本世界结尾会回到它。一个迹集合记录的是*哪些*序列是可能的，\n却忘掉了系统是*何时*对它们做出承诺的。两个系统可以提供给观察者完全相同的词，\n却仍然在要紧的地方不同。",
+ "One Step Is Enough": "一步就够了",
+ "One Step Answered by One Step": "一步由一步应答",
+ "On its domain, the replacement computes what the original computed.\n\nSay exactly that and no more. The theorem does not claim the two functions are the same — they\nare not, and could not be, since one of them can report failure. It claims that a caller who\nonly ever passes in-range indices cannot tell them apart.\n\nThat qualified form is what *equivalence* almost always means in practice, and the next level\nis about the part the qualification leaves out.":
+ "在它的定义域上，替换者算出的正是原来那个所算出的。\n\n就说这么多，不要多说。这个定理并没有论断两个函数相同——它们不相同，也不可能相同，\n因为其中一个能报告失败。它论断的是：一个只会传入范围内下标的调用方，分辨不出它们。\n\n这种带限定的形式，几乎就是实践中*等价*一词的含义，而下一关讲的是这份限定所留在外面的那部分。",
+ "Now unfold §0 everywhere — in the goal and in §1 — and induct on\n§2: §3, then §4.":
+ "现在把 §0 到处展开——在目标里，也在 §1 里——再对 §2 做归纳：先 §3，再 §4。",
+ "Now unfold what membership in the output means: §0. This\npushes through both §1 and §2 at once.":
+ "现在把属于输出意味着什么展开：§0。这一下\n同时穿过 §1 与 §2。",
+ "Now two systems with state. The specification is an abstract counter — it only remembers how\nmany items are stored:\n\n§0\n\nThe implementation keeps the items in a list:\n\n§1\n\nTheir states are not the same type, so there is nothing to compare directly. What *can* be\ncompared is what an outsider sees: the sequences of operations each system is able to perform.\nThat set is §2, and §3 is the notation this game uses for the\nimplementation's traces from state §4.\n\nA word is a trace exactly when some execution performs it — so proving membership means\nexhibiting the execution. §5 lets you give it one step at a time:\n\n§6\n\nShow that pushing twice and popping once is something the empty stack can do.":
+ "现在是两个带状态的系统。规约是一个抽象的计数器——它只记住存了多少件东西：\n\n§0\n\n实现把这些东西放在一个列表里：\n\n§1\n\n它们的状态不是同一个类型，所以没有什么可以直接比较。*可以*比较的是外部看到的东西：\n每个系统有能力执行的操作序列。那个集合是 §2，而 §3 是本游戏用来表示实现从状态 §4\n出发的迹的记号。\n\n一个词是迹，当且仅当某段执行把它走完——所以证明它属于迹集合，意味着把那段执行拿出来。\n§5 让你一步一步地给出它：\n\n§6\n\n表明「压入两次、弹出一次」是空栈做得到的事。",
+ "Now there is a nested §0. §1 gives you one goal per branch, each with the\ncomparison that chose it available as a hypothesis — and every one of them is then linear\narithmetic, which §2 settles. Write §3.":
+ "现在有一个嵌套的 §0。§1 给你每个分支一个目标，每个都带着\n选中该分支的那个比较作为假设——而它们每一个随后都是线性算术，\n由 §2 了结。写 §3。",
+ "Now the specification challenges, and the implementation must answer.":
+ "现在轮到规约发起挑战，而实现必须应答。",
+ "Now the other half, and the other degenerate program:\n\n§0\n\nIts output is always a permutation of its input — the identity permutation. So *the output is\na rearrangement of the input* is too weak as well.\n\nNeither clause is redundant and neither is sufficient. **Sorted** rules out §1; **permutation**\nrules out §2. Only the conjunction says sorting, and that is why the capstone of\nthis world proves two things rather than one.\n\n§3 gives the permutation half. For the counterexample, §4 is unsorted, and\n§5 can see that.":
+ "现在轮到另一半，以及另一个退化的程序：\n\n§0\n\n它的输出总是输入的一个排列——恒等排列。所以*输出是输入的一个重排*同样太弱。\n\n两条都不冗余，两条也都不充分。**排好序**排除掉 §1；**排列**排除掉 §2。\n只有合取才说出了排序，而这正是本世界的压轴要证两件事而不是一件事的原因。\n\n§3 给出排列那一半。至于反例，§4 没有排好序，而 §5 看得出来。",
+ "Now the new direction: the specification steps, and the implementation must answer.\n§0, then §1.":
+ "现在是新的方向：规约迈出一步，而实现必须应答。先 §0，再 §1。",
+ "Now the infinite case.\n\nSeparately from the machine, here is an ordinary recursive Lean function saying what the\nanswer *ought* to be:\n\n§0\n\nThese are two very different objects. One steps through the word carrying a state; the other\nrecurses on the word's structure. One is how the program runs, the other is what the program\nmeans. Your job is to prove they agree — for every word, not for the examples you tried in\nLevel 1.\n\nTwo facts describe how the machine runs, and they are all you need:\n\n§1\n\nNothing is read from the empty word; reading §2 takes one transition and continues.\nThat shape — a base case and a step — is what §3 consumes.\n\nThere is a catch, and it is the real lesson of this level. You cannot prove the statement for\nthe start state alone: after one transition the machine is in a *different* state, so the\ninduction hypothesis you want is not the one you would get. So prove the stronger statement,\nfor **every** starting state at once — which is what §4 is for.":
+ "现在轮到无穷的情形了。\n\n抛开机器不谈，下面是一个普通的递归 Lean 函数，说明答案*应当*是\n什么：\n\n§0\n\n这是两个非常不同的东西。一个带着状态一步步走完这个词；另一个\n沿着词的结构递归。一个是程序如何运行，另一个是程序意味着什么。你的任务是\n证明它们一致——对每个词，而不是对你在第一关里试过的那几个例子。\n\n有两个事实描述了机器如何运行，而你需要的只有它们：\n\n§1\n\n空词什么也读不到；读 §2 会走一个转移然后继续。\n这个形状——一个基础情形加一个步骤——正是 §3 要消化的东西。\n\n这里有个坑，而它正是本关真正的教益。你没法只针对起始状态证明这个陈述：\n走过一个转移之后机器处在一个*不同的*状态，所以你想要的那个归纳假设\n并不是你会拿到的那个。所以要证明更强的陈述，一次覆盖**每个**起始状态——\n这正是 §4 的用处。",
+ "Now the induction hypothesis applies — provided the state after one tick is still\nnot §0. §1 leaves exactly that obligation.":
+ "现在归纳假设就能用了——前提是走完一拍之后的状态仍然不是\n§0。§1 恰好留下这项义务。",
+ "Now the goal is arithmetic about the components of §0. §1 exposes them and\n§2 finishes — but note that you need §3, because subtraction on §4 truncates\nand the equation is only true when the bucket really was non-empty.":
+ "现在目标是关于 §0 各分量的算术。§1 把它们暴露出来，\n§2 收尾——但注意你需要 §3，因为 §4 上的减法是截断的，\n而那个等式只有在桶确实非空时才成立。",
+ "Now the data-structure invariant itself: **if the list was sorted, it still is.**\n\nSortedness in Mathlib is §0 — every element is §1 every element after\nit. The lemma that takes it apart and puts it back together is\n\n§2\n\nso proving a list sorted means proving its head is below everything after it, and that the\ntail is sorted.\n\nBoth branches of §3 need that. When §4 the new head is §5, and you must show §6 is\nbelow §7 and below everything after §8 — the second part by transitivity through §9. When\n§10 the head is still §11, the tail is §12, and to show §13 is below everything in\nit you need to know what is in it. That is Level 7.":
+ "现在轮到数据结构不变式本身了：**如果列表原本排好序，那它仍然排好序。**\n\nMathlib 里的排好序是 §0——每个元素都 §1 它之后的每个元素。把它拆开又装回去的\n引理是\n\n§2\n\n所以证明一个列表排好序，就是证明它的表头不大于其后的一切，并且它的尾部排好序。\n\n§3 的两个分支都需要这一点。当 §4 时新的表头是 §5，你必须表明 §6 不大于 §7，\n也不大于 §8 之后的一切——后半部分靠经由 §9 的传递性。当 §10 时表头仍是 §11，\n尾部是 §12，而要表明 §13 不大于其中的一切，你得知道其中有什么。那就是第七关。",
+ "Now split on which state §0 is: §1. Three of the five cannot be reached by\nan §2 from §3 at all; the other two each lack one of §4's continuations. Take the five\ngoals in constructor order with focus dots.":
+ "现在对 §0 是哪个状态做分情形：§1。五个里有三个根本不可能由从 §3 出发的 §2 抵达；\n另外两个各自缺少 §4 的一条后续。用聚焦点按构造子顺序取这五个目标。",
+ "Now split on which operation §0 was, turn the abstract transition §1 into a\nconcrete equation, and let arithmetic finish:\n§2.":
+ "现在对 §0 是哪种操作做分情形，把抽象的转移 §1 变成一个具体的等式，\n再让算术收尾：\n§2。",
+ "Now split on which operation §0 is. §1 gives you the deposit case and the\nwithdrawal case.":
+ "现在就操作 §0 究竟是哪一种分情况讨论。§1 会给你存款与取款两种情形。",
+ "Now split on which of §0 and §1 is larger: §2.": "现在对 §0 与 §1 哪个更大做分情形：§2。",
+ "Now spend the bridge. The contract is the one from Level 3, applied to CSlib's cost-annotated\nsort:\n\n§0\n\n§1 rewrites both halves into statements about §2, and Mathlib\nhas already proved those:\n\n§3\n\nSo the whole of Levels 4 to 7 — the insertion lemmas, the two inductions, the composition —\nis replaced by a rewrite and two names. That is not a trick; it is what reuse looks like when\nit works. You did the long version first so that you would recognise what was saved.":
+ "现在把这座桥花掉。契约就是第三关那个，用在 CSlib 带开销标注的排序上：\n\n§0\n\n§1 把两半都改写成关于 §2 的陈述，而 Mathlib 已经把那些证明过了：\n\n§3\n\n于是第四到第七关的全部内容——那些插入引理、两次归纳、那次组合——都被一次改写和两个名字\n取代了。这不是什么把戏；这就是复用奏效时的样子。你先做了长的那个版本，\n好让你认得出省下的是什么。",
+ "Now show that there is **no** simulation the other way.\n\n§0 says *some* simulation relates §1 to §2. Refuting\nit means refuting all of them at once, so you do not get to pick the relation — you are handed\none and must find its contradiction.\n\nThe argument is the one the last level's conclusion anticipated. Suppose some simulation §3\nrelates §4 to §5. Then §6 must be answered, so §7 relates §8 to one of §9 or\n§10. But §11 can do §12 **and** §13, while §14 can only do §15 and §16 can only do §17. In\neither case §18 is obliged to answer a step that its partner cannot take.\n\n§19 takes the supposed simulation apart. Applying §20 to a step produces\nthe answering state, which you then split on.":
+ "现在表明反方向上**没有**模拟。\n\n§0 说*存在某个*模拟把 §1 与 §2 关联起来。要否证它，就得一次否证所有的模拟，\n所以你没得挑那个关系——别人把一个交给你，而你必须找出它的矛盾。\n\n论证就是上一关结语所预告的那个。假设某个模拟 §3 把 §4 与 §5 关联起来。那么 §6 必须被应答，\n所以 §7 把 §8 与 §9 或 §10 之一关联起来。但 §11 既能做 §12 **又**能做 §13，\n而 §14 只能做 §15，§16 只能做 §17。两种情形下 §18 都被迫去应答一步，\n而它的伙伴迈不出那一步。\n\n§19 把那个假想的模拟拆开。把 §20 用到一步上会产出那个应答的状态，接着你对它做分情形。",
+ "Now pick any concrete pair of numbers where the two disagree. §0 is as good\nas any.":
+ "现在随便挑一对让两者不一致的具体数字。§0 和别的一样好使。",
+ "Now peel off the steps. §0 asks for the state after the\nfirst push, which is §1: §2.":
+ "现在把那些步骤一步步剥下来。§0 问的是第一次压入之后的状态，也就是 §1：§2。",
+ "Now just compute: §0 is §1, and §2 is §3.": "现在只剩计算：§0 就是 §1，而 §2 就是 §3。",
+ "Now introduce the accumulator for *this* case, unfold one step of each function,\nand rewrite with §0 — which applies at the new accumulator §1, not at the old\none. §2, then §3, then §4 for the bracketing.":
+ "现在为*这一种*情形引入累加器，把两个函数各展开一步，\n再用 §0 改写——它适用的是新的累加器 §1，而不是旧的那个。\n先 §2，再 §3，再用 §4 处理括号。",
+ "Now induct on §0. No §1 is needed this time: neither function carries\na state across the recursion.":
+ "现在对 §0 做归纳。这一次不需要 §1：两个函数都没有\n把状态带过递归。",
+ "Now each half is a library theorem:\n§0.": "现在每一半都是一条库里的定理：\n§0。",
+ "Nothing left to add; the result is the accumulator itself. §0.":
+ "没有什么可加的了；结果就是累加器本身。§0。",
+ "Nor §0.": "§0 也不行。",
+ "Nobody writes a parity checker as an automaton. They write a loop:\n\n§0\n\nwhich in Lean is the recursive function\n\n§1\n\nThis program has a state too — the variable §2 — but it is a natural number, not a bit.\nIt remembers *how many* §3s it has seen, where the automaton remembers only *whether the\nnumber is odd*. The automaton is an **abstraction** of the program: it throws away everything\nthe answer does not depend on.\n\nProve that the abstraction is faithful: the bit the automaton ends in tells you exactly what\nthe program's counter would have told you.\n\nThis is the bridge out of World 1. State machines are a way of modelling programs; from here\non the game proves things about ordinary Lean functions, and reaches for a machine only when\nthere is genuinely a state being carried.":
+ "没有人会把奇偶校验器写成一台自动机。人们写的是循环：\n\n§0\n\n它在 Lean 里就是这个递归函数\n\n§1\n\n这个程序也有状态——变量 §2——但它是自然数，不是一个比特。\n它记住的是它见过*多少个* §3，而自动机只记住*这个个数是否为奇*。\n自动机是这个程序的**抽象**：它丢掉了答案不依赖的一切。\n\n证明这个抽象是忠实的：自动机最后停在的那个比特，恰好告诉你程序的计数器\n本来会告诉你的东西。\n\n这是走出第一世界的桥。状态机是给程序建模的一种方式；从这里往后，\n游戏证明的是关于普通 Lean 函数的事情，只有当确实有状态被带着走时才去找\n机器。",
+ "No ticks have happened, so the machine is still in §0, and that is the\nassumption. §1 rewrites the run away.":
+ "一拍也没走，所以机器还在 §0，而那正是\n假设。§1 把运行改写掉。",
+ "No steps were taken, so the final balance is the initial one, and that is §0.":
+ "一步也没走，所以最终余额就是最初的余额，而那正是 §0。",
+ "Most programmers test. This game is about the other thing you can do: **prove**.\n\nYou will start by describing what a program *does* — states, transitions, runs — then learn to\nsay what it *should* do, then prove that it does. The examples stay small on purpose; the\narguments are the point, and the arguments are the ones that scale.\n\nAlong the way you will use [CSlib](https://github.com/leanprover/cslib), Lean's library of\ncomputer-science abstractions. You will work with automata and labelled transition systems,\napply theorems to prove invariants, verify algorithm correctness, and explore simulation and\nrefinement. Part of the lesson is *why* a library like that is worth having — twice in the core\npath you will get a theorem for nothing that would otherwise have cost you an induction.\n\n**The core path** is Worlds 1 to 4. **World 5 is optional**: it opens once you have met\ntransition systems in World 3, and asks when one implementation may replace another.\n\nNo prior formal-methods, automata or CSlib knowledge is assumed. Some basic Lean tactic\nexperience will help: §0, §1, §2, §3, and elementary induction.":
+ "大多数程序员靠测试。这个游戏讲的是你还能做的另一件事：**证明**。\n\n你会先描述一个程序*做了什么*——状态、转移、运行——再学着说清它*应当*做什么，\n然后证明它确实如此。例子刻意保持短小；要害在论证，而能够放大的正是论证。\n\n一路上你会用到 [CSlib](https://github.com/leanprover/cslib)，Lean 的计算机科学抽象库。\n你会使用自动机与带标号转移系统，运用定理证明不变式，验证算法的正确性，\n并探索模拟与精化。这一课有一部分是*为什么*这样一个库值得拥有——\n在核心路线上你会有两次白得一条定理，而若没有它，这条定理本要花你一次归纳。\n\n**核心路线**是第 1 到第 4 世界。**第 5 世界是可选的**：\n你在第 3 世界见过转移系统之后它就会开启，所问的是一个实现何时可以替换另一个。\n\n不预设任何形式化方法、自动机或 CSlib 的基础。有一点 Lean 策略的经验会有帮助：\n§0、§1、§2、§3，以及初等的归纳。",
+ "Membership in §0 means some execution performs the word.\n§1 turns the goal into that existential, and the state it ends\nin is a one-element stack: §2.":
+ "属于 §0 意味着某段执行把这个词走完。§1 把目标变成那个存在陈述，\n而它停在的状态是一个单元素的栈：§2。",
+ "Level 1 said the checked lookup behaves like the raw one **where the raw one is meaningful**.\nIt said nothing at all about the other indices — and the other indices are the reason anyone\nwould make the change.\n\nSo here is the second claim, and it is independent of the first: out of range, the checked\nlookup returns §0. It does not invent a value, and it does not return something a caller\ncould mistake for data.\n\nTwo separate properties, and it is worth being precise about why they cannot be merged.\n*Behavior preservation under a precondition* is about agreeing with the thing you replaced.\n*Safety* is about what you do where the thing you replaced had nothing sensible to do. A\nreplacement can have the first without the second, and the second without the first.\n\nA caution, since this example is a model of a real situation. In C, reading past the end of an\narray is **undefined behavior**: the program may return a value, may crash, may do something\nthe compiler inferred could never happen. It is not an error return that can be compared with\n§1, and §2 is not a model of it. §3 is a total Lean function with a\ndocumented default, and the theorems here are about that.":
+ "第一关说的是带检查的读取在**不带检查那个有意义的地方**与它表现一致。\n它对其他那些下标什么也没说——而其他那些下标正是有人要做这次更改的原因。\n\n所以这是第二个论断，它独立于第一个：越界时，带检查的读取返回 §0。\n它不编造一个值，也不返回某种调用方可能误当成数据的东西。\n\n两条分开的性质，而它们为什么不能合并，值得说准确。*前置条件之下的行为保持*讲的是与你所替换掉的\n那个东西保持一致。*安全性*讲的是在你所替换掉的那个东西本来就无事可做的地方你做什么。\n一个替换者可以有前者而无后者，也可以有后者而无前者。\n\n一句提醒，因为这个例子是对一个真实情形的建模。在 C 里，读到数组末尾之外是**未定义行为**：\n程序可能返回一个值，可能崩溃，也可能做出编译器推断永远不会发生的事。它不是一个可以拿来与\n§1 作比较的错误返回，而 §2 也不是它的模型。§3 是一个带有明确默认值的全 Lean 函数，\n而这里的定理讲的是那个。",
+ "Learn program verification with CSlib abstractions: explore state-based models,\nwrite specifications that describe intended behavior, prove invariants that hold across executions,\nand verify a complete sorting implementation. An optional branch covers refinement, simulation and\nbisimulation.":
+ "借助 CSlib 抽象学习程序验证：探索基于状态的模型，\n写出描述预期行为的规约，证明在所有执行中都成立的不变式，\n并验证一个完整的排序实现。一条可选支线涵盖精化、模拟与双模拟。",
+ "Labels with an internal action: §0, which is §1, and the observable §2.":
+ "带有内部动作的标号：§0，也就是 §1，以及可观察的 §2。",
+ "It sorts. On one input.\n\nYou are back where World 1 started, and for the same reason: the first thing to establish about\nan unfamiliar definition is what it does, and the cheapest way to find out is to run it. The\ndifference is that you now know exactly how far that gets you.\n\nThe next level runs it twice, and the two answers differ in a way worth noticing.":
+ "它确实排序。在一个输入上。\n\n你回到了第一世界的起点，而且是出于同样的理由：关于一个陌生定义，首先要弄清的是它做什么，\n而最省事的办法是让它跑一下。不同的是，你现在清楚地知道这能带你走多远。\n\n下一关让它跑两次，而那两个答案的差别值得注意。",
+ "It is §0, and this branch assumed §1, so §2. §3 extracts\nthat from §4.":
+ "它是 §0，而这个分支假设了 §1，所以 §2。§3 从 §4 把它取出来。",
+ "It is §0, and that is the branch assumption §1.": "它是 §0，而那正是分支假设 §1。",
+ "It is further along, so it is at least §0 by §1, and §2. Chain them\nwith §3.":
+ "它在更后面，所以由 §1 它不小于 §0，而且 §2。用 §3 把它们串起来。",
+ "It came from §0, so §1 already says it is at least §2.":
+ "它来自 §0，所以 §1 已经说了它不小于 §2。",
+ "Invariants are not only for state machines. A **data-structure invariant** is a property every\noperation on a structure is supposed to preserve, and the argument has the same shape: check\neach operation, inherit the rest.\n\nThe structure is a sorted list, and the operation is insertion:\n\n§0\n\nBefore proving that insertion preserves sortedness — the next level — prove the smaller fact\nthe argument will need: insertion adds the new element and nothing else.\n\nThat is a lemma of the kind you met in Level 2, chosen for its shape. The sortedness proof\nwill reach a point where it has an element of §1 in hand and needs to know where it\ncame from, and this is the theorem that answers.\n\nThe proof is induction, with a case split on the comparison. §2 names the\ncomparison explicitly, which is what you want, because the two branches of the §3 are the two\ncases of the proof.":
+ "不变式不只属于状态机。**数据结构不变式**是结构上的每个操作都应当保持的性质，\n而论证的形状是一样的：检查每个操作，其余的继承下来。\n\n结构是一个排好序的列表，操作是插入：\n\n§0\n\n在证明插入保持排好序——也就是下一关——之前，先证明论证将会需要的那个更小的事实：\n插入只添上新元素，别的什么也没添。\n\n这是你在第二关见过的那一类引理，是按形状挑出来的。排好序的证明会走到这样一步：\n手里有 §1 的一个元素，而需要知道它是从哪儿来的，正是这个定理给出答案。\n\n证明是归纳，外加对那个比较做分情形。§2 把这个比较显式地命名，这正是你想要的，\n因为 §3 的两个分支就是证明的两种情形。",
+ "Introduction to Program Verification": "程序验证入门",
+ "Introduce the two states, the operation, the transition and the assumption.":
+ "把两个状态、操作、转移和假设都引入进来。",
+ "Introduce the states and the relating equation, then hand the bisimulation to\n§0: §1, then §2.":
+ "把状态和那条关联等式引入进来，再把双模拟交给 §0：先 §1，再 §2。",
+ "Introduce the state and the word, then induct on the word — §0, so the\nhypothesis covers every state.":
+ "引入状态和词，然后对词做归纳——§0，这样\n假设才覆盖每个状态。",
+ "Introduce the related states, the label, the implementation's step, and the evidence\nthat it is one: §0.":
+ "把相关的两个状态、标号、实现的那一步，以及它确实是一步的证据都引入进来：§0。",
+ "Introduce the related states, the label and the step: §0.":
+ "把相关的两个状态、标号和那一步引入进来：§0。",
+ "Introduce the related states and the label: §0.": "把相关的两个状态和标号引入进来：§0。",
+ "Introduce the related states and the label, then split the two directions:\n§0, then §1.":
+ "把相关的两个状态和标号引入进来，然后把两个方向分开：先 §0，再 §1。",
+ "Introduce the list, then induct on it. The accumulator must stay quantified, so do\nnot introduce it before the induction: §0, then §1.":
+ "引入列表，然后对它做归纳。累加器必须保持被量化，所以不要在归纳之前就把它引入：\n先 §0，再 §1。",
+ "Introduce everything, then split on the move.": "把一切都引入进来，然后对移动做分情形。",
+ "Instantiate the specification at these particular arguments and name its three\ncomponents: §0.":
+ "把规约实例化到这两个具体的参数上，并给它的三个分量命名：\n§0。",
+ "Instantiate the general theorem with the homomorphism that throws the cost away:\n§0":
+ "用那个把开销丢掉的同态把一般定理实例化：\n§0",
+ "Insertion sort is insertion, repeated:\n\n§0\n\nSort the tail, then insert the head into the result. Prove the whole thing returns a sorted\nlist.\n\nThis is where the preparation pays. The induction hypothesis says the sorted tail is sorted;\n§1 says inserting into a sorted list keeps it sorted; and that is the entire\nargument. There is no new reasoning about order anywhere in this level — it was all done once,\nfor one insertion, in World 3.\n\nThat is what *compositional* means, and it is the only reason verifying real programs is\npossible at all.":
+ "插入排序就是反复插入：\n\n§0\n\n先排好尾部，再把表头插进结果里。证明整个东西返回一个排好序的列表。\n\n准备工作在这里得到回报。归纳假设说排好序的尾部是排好序的；§1 说插进一个排好序的列表\n会让它仍然排好序；而这就是全部的论证。本关里任何地方都没有关于顺序的新推理——\n那些在第三世界已经为单次插入一次做完了。\n\n这就是*可组合*的意思，也是验证真实程序根本得以可能的唯一原因。",
+ "Insertion satisfies both obligations now: it keeps the list sorted, and it loses nothing.\n\nThe two proofs looked quite different — the sortedness one needed §0 and transitivity\nof §1, this one needed the permutation algebra — but they share a structure, because both\nfollow the recursion of §2. That is the reward for defining the operation cleanly: every\nproperty of it is proved by the same case split.\n\nTwo more levels lift these from the single insertion to the whole sort.":
+ "插入现在满足两项义务了：它保持列表排好序，而且什么也没丢。\n\n这两个证明看起来相当不同——排好序那个需要 §0 以及 §1 的传递性，这一个需要排列代数——\n但它们共享一个结构，因为两者都顺着 §2 的递归走。这是把操作定义干净的回报：\n关于它的每条性质都用同一次分情形来证明。\n\n再有两关，就把这些从单次插入提升到整个排序。",
+ "Insertion adds one element and loses none.\n\nOn its own this says nothing about order, which is deliberate: it is the part of the story\nthat the *sortedness* argument will need as an ingredient, and keeping the two apart is what\nlets each be proved cleanly. Separating a structural fact from an ordering fact, proving each\nonce, and combining them, is how the whole of World 4 is going to be organised.":
+ "插入添上一个元素，一个也没丢。\n\n它本身对顺序只字未提，这是有意的：它是故事里*排好序*那段论证需要当作配料的部分，\n而把两者分开，正是让每一个都能干净地证明出来的原因。把一个结构性事实与一个顺序性事实\n分开、各证一次、再合起来，正是整个第四世界的组织方式。",
+ "Insertion Is a Permutation": "插入是一个排列",
+ "Inserting into the empty list gives §0, which is §1. §2.":
+ "插进空列表得到 §0，也就是 §1。§2。",
+ "Inserting into the empty list gives §0, so membership is just equality with §1.\n§2.":
+ "插进空列表得到 §0，所以属于关系不过是与 §1 相等。§2。",
+ "Inserting into the empty list compares nothing. §0.": "插进空列表什么也不比较。§0。",
+ "Inherit the strengthened property over the whole execution, then weaken it to what\nyou were asked for: §0, and §1.":
+ "把加强后的性质沿整段执行继承下来，再把它弱化成你被要求的那个：\n§0，然后 §1。",
+ "Induct on §0.": "对 §0 做归纳。",
+ "Induct on the word §0. Remember to write §1, so that the\ninduction hypothesis holds for *every* state, not just §2.":
+ "对词 §0 作归纳。记得写成 §1，好让归纳假设对*每一个*状态都成立，\n而不只是对 §2 成立。",
+ "Induct on the list.": "对列表做归纳。",
+ "Induct on the list being inserted into.": "对被插入的那个列表做归纳。",
+ "Induct on the first list: §0.": "对第一个列表做归纳：§0。",
+ "Induct on the execution itself: §0. Lean will carry §1 along,\nre-stating it about whichever state the current case begins in.":
+ "对执行本身做归纳：§0。Lean 会把 §1 一路带着，\n并把它重新陈述成关于当前情形所起始的那个状态。",
+ "Here §0, so the maximum is §1. §2, then §3.": "这里 §0，所以最大值是 §1。先 §2，再 §3。",
+ "Here §0, so the maximum is §1 — the right disjunct. §2 selects it,\nand §3 proves it.":
+ "这里 §0，所以最大值是 §1——右边那个析取支。§2 选中它，\n而 §3 证明它。",
+ "Here is the sharpest thing you can say about a specification: **it determines the\nimplementation.** Not *§0 satisfies it*, but *anything satisfying it is §1*.\n\nThat is a much stronger claim, and it is the one that tells you the contract is finished. If\ntwo different functions could both satisfy it, the contract has not decided something it ought\nto have decided — which is exactly the defect §2 had, and exactly what your\ncounterexample in Level 3 exhibited.\n\nSo let §3 be *any* function satisfying §4, and prove it agrees with §5\neverywhere.\n\nThe proof has the shape you would use on paper. The specification tells you §6 is §7 or\n§8, and that it is at least both. Those three facts, plus knowing which of §9 and §10 is\nlarger, leave only one possibility.":
+ "关于一个规约，你能说出的最锋利的话是：**它决定了实现。**\n不是*§0 满足它*，而是*任何满足它的都是 §1*。\n\n这是强得多的论断，也正是它告诉你这个契约写完了。如果两个不同的函数都能\n满足它，那这个契约就有件本该决定的事没决定——而这恰恰是 §2 的毛病，\n也恰恰是你在第三关里举出的反例所展示的。\n\n那么，设 §3 是*任何*满足 §4 的函数，证明它处处与 §5 一致。\n\n这个证明的形状和你在纸上会用的一样。规约告诉你 §6 是 §7 或\n§8，而且它不小于两者。这三个事实，加上知道 §9 与 §10 哪个更大，\n就只剩一种可能。",
+ "Here is the obstacle. §0 is §1 at §2, and Mathlib's\ntheorems about sorting are about §3, which is an entirely different\ndefinition. Nothing connects them syntactically.\n\nWhat connects them is an idea. Throwing the cost away and keeping the result is a **monad\nhomomorphism**: it commutes with §4, with §5, with everything the §6 notation is made\nof. CSlib states both halves of that:\n\n§7\n\nThe second says a monad homomorphism may be pushed through an entire sort. Apply it to the\nfirst and the instrumented sort collapses to the plain one — which is where Mathlib's theorems\nlive.\n\nProve that bridge. It is the single most useful line in this world, and the next two levels\nboth begin with it.\n\nOne wrinkle: the homomorphism leaves a §8 wrapper on one side and a §9\nwhere the goal wants §10. Simplifying the hypothesis **and** the goal together —\n§11 — clears both. Simplifying only the hypothesis does not.":
+ "障碍在这里。§0 是 §2 处的 §1，而 Mathlib 关于排序的定理是关于 §3 的，\n那是一个完全不同的定义。它们在语法上毫无关联。\n\n把它们联系起来的是一个想法。把开销丢掉、只留下结果，这是一个 **monad 同态**：\n它与 §4 交换，与 §5 交换，与 §6 记号所由构成的一切都交换。CSlib 把两半都陈述了出来：\n\n§7\n\n第二条说一个 monad 同态可以被推过整个排序。把它用到第一条上，被插桩的排序就塌缩成\n朴素的那个——而那正是 Mathlib 的定理所在之处。\n\n证明这座桥。它是本世界里最有用的一行，而接下来两关都从它开始。\n\n有一个小别扭：同态在一边留下一个 §8 包装，以及一个 §9，而目标要的是 §10。\n把假设**和**目标一起化简——§11——就能把两者都清掉。只化简假设不行。",
+ "Here is a traffic-light controller. It cycles §0, one step per\ntick, and it has a fourth state called §1:\n\n§2\n\n![The traffic-light controller: green, yellow and red in a cycle, and nothing leading into broken](images/light-automaton.svg)\n\nNothing leads *into* §3. So the controller, started in §4, never breaks — no matter\nhow long it runs.\n\nTo prove it you cannot exhibit a witness, and you cannot try all the words. You need the first\ngenuine **safety argument** in the game, and it has a shape you will use for the rest of your\nlife:\n\n> Find a property that holds at the start and that one transition cannot destroy. Then no\n> number of transitions can destroy it either.\n\nHere the property is simply *not being §5*. It holds in §6. And one tick maps every\nnon-§7 state to a non-§8 state. The induction turns those two facts into a\nstatement about every run.\n\nAs in Level 3 you will need the stronger, §9 form: the induction step runs the\nmachine from a state that is not the one you started in.":
+ "这是一个交通灯控制器。它按 §0 循环，每一拍走一步，\n另外还有第四个状态叫 §1：\n\n§2\n\n![交通灯控制器：green、yellow、red 构成一个循环，没有任何转移通向 broken](images/light-automaton.svg)\n\n没有任何转移*通向* §3。所以这个控制器从 §4 出发后永远不会出故障——\n不论它运行多久。\n\n要证明这件事，你给不出见证，也试不完所有的词。你需要游戏里第一个\n真正的**安全性论证**，而它的形状你这辈子都会用到：\n\n> 找一个在起点成立、而且一个转移破坏不了的性质。那么无论多少个转移\n> 也破坏不了它。\n\n这里的性质很简单，就是*不是 §5*。它在 §6 成立。而且一拍把每个\n非 §7 的状态映到非 §8 的状态。归纳法把这两个事实变成一个\n关于每次运行的陈述。\n\n和第三关一样，你会需要更强的、带 §9 的形式：归纳步骤让机器\n从一个并非你出发时所在的状态开始跑。",
+ "Here is a sorting algorithm that always returns a sorted list:\n\n§0\n\nIt is not a joke so much as a test. If *the output is sorted* were the contract, this would\nsatisfy it, and so the contract is too weak — in exactly the sense of World 2, Level 3, and\nyou break it the same way: by exhibiting the wrong program.\n\nProduce the function, prove its output is always sorted, and point at an input where the\noutput is not a rearrangement of it. §1 is Mathlib's *is a permutation of*; §2 is\nnot a permutation of §3, and §4 knows it.":
+ "这是一个总是返回排好序列表的排序算法：\n\n§0\n\n与其说它是个笑话，不如说它是个检验。如果契约就是*输出是排好序的*，那它就满足了契约，\n所以这个契约太弱——正是第二世界第三关那个意义上的太弱，而你也用同样的办法把它打破：\n举出那个错的程序。\n\n把这个函数造出来，证明它的输出总是排好序的，再指出一个输入，使得输出并不是它的重排。\n§1 是 Mathlib 的*是……的一个排列*；§2 不是 §3 的排列，而 §4 知道这一点。",
+ "Here is a claim that is not about one run but about *all* of them: **reading §0 always\nbrings the machine back where it started.**\n\nTwo flips cancel. That is obvious from the picture, and it is obvious for each of the two\nstates if you check them one at a time. The point of this level is that *checking them one at\na time is a proof* — as long as there are finitely many of them, and you leave none out.\n\n§1 does exactly that: it splits the proof into one goal per constructor of §2. Since\n§3, you get two goals, one with §4 replaced by §5 and one with §6 replaced by\n§7. In each, everything is concrete again.\n\nYou could write the two cases out with focus dots §8. It is shorter to write\n§9, which means *split into cases, then run §10 on every goal the split\nproduced*.":
+ "下面这个论断不是关于某一次运行，而是关于*所有*运行的：**读 §0 总是\n把机器带回它出发的地方。**\n\n翻转两次互相抵消。这从图上看是显然的，而且若你一个一个检查那两个状态，\n对每一个也是显然的。本关的要点在于，*一个一个检查它们就是一个证明*——\n只要它们只有有限多个，而且你一个也没漏。\n\n§1 做的正是这件事：它把证明按 §2 的构造子拆成每个一个目标。既然\n§3，你会得到两个目标，一个把 §4 换成 §5，另一个把 §6 换成\n§7。在每个目标里，一切又都是具体的了。\n\n你可以用聚焦点 §8 把两种情形分别写出来。更短的写法是\n§9，意思是*拆成各种情形，然后对拆出来的每个目标都跑一遍 §10*。",
+ "Half a contract admits a program that throws its input away.\n\nThe lesson is the one from World 2 restated on a bigger example: ask of every specification\nwhat else satisfies it. And the degenerate programs are always the same few — return nothing,\nreturn the input, return a constant — so they are cheap to check against.":
+ "半个契约容纳了一个把自己输入丢掉的程序。\n\n这条教训就是第二世界那条，只是换到了更大的例子上：对每个规约都问一句还有什么满足它。\n而那些退化的程序来来去去总是那几个——什么也不返回、原样返回输入、返回一个常数——\n所以拿它们来对照的代价很低。",
+ "From §0, answering §1 requires doing the invisible step first. That composite\nis §2: §3, then §4.":
+ "从 §0 出发，要应答 §1 就得先做那步不可见的。那个复合步骤是 §2：先 §3，再 §4。",
+ "From §0 the §1 is immediate:\n§2, then §3.": "从 §0 出发 §1 是立刻的：先 §2，再 §3。",
+ "Four relations, and the discipline for choosing between them.\n\n* **Conditional functional equivalence.** The replacement computes the same answers, on the\n  inputs where the original was meaningful. Say which inputs.\n* **Trace inclusion — refinement.** Every behavior of the implementation is permitted by the\n  specification. One-directional, and that asymmetry is a feature.\n* **Simulation.** A local condition implying trace inclusion, and strictly stronger than it.\n  A simulation one way says nothing about the other.\n* **Bisimulation.** One relation answering challenges from both sides. Implies trace\n  equivalence, and is implied by it only under extra assumptions such as determinism. Weakened\n  to ignore internal steps, it is the usual notion of *this implementation realises this\n  specification*.\n\nThe habit to carry away is to ask what an observer of your system can actually do before\nchoosing. If they only read a log, trace equivalence is what you need and anything stronger is\nwork you did not have to do. If they can interact — hold a handle, make a request and insist\non a response — trace equivalence is not enough, and proving it would be proving something true\nthat does not mean what you wanted.\n\nAnd the caveat from Level 5 one last time, because it is the easiest thing in this world to\noverclaim. Everything here is about the Lean models on this page. A relation between two\nmodels is evidence about two programs only to the extent that the models are faithful, and\nestablishing *that* is a different kind of work than anything this game has asked you to do.":
+ "四个关系，以及在它们之间做选择的规矩。\n\n* **条件函数等价。**在原来那个有意义的那些输入上，替换者算出相同的答案。要说清是哪些输入。\n* **迹包含——精化。**实现的每条行为都被规约所允许。单向的，而这份不对称是一个特性。\n* **模拟。**一个蕴涵迹包含、并且严格强于它的局部条件。一个方向上的模拟对另一个方向什么也没说。\n* **双模拟。**一个应答两边挑战的关系。它蕴涵迹等价，而只有在额外假设（例如确定性）之下才被迹等价\n  所蕴涵。把它弱化成忽略内部步骤，就是*这个实现实现了这个规约*的通常含义。\n\n要带走的习惯是：在挑选之前，先问你系统的观察者实际上能做什么。如果他们只读日志，\n那迹等价就是你需要的，任何更强的都是你本不必做的工作。如果他们能交互——\n握着一个句柄，发出一个请求并坚持要一个响应——那迹等价就不够，而证明它就会是\n证明了一件为真、却不是你本来想说的事。\n\n还有第五关那条告诫，最后再说一遍，因为它是本世界里最容易说过头的东西。这里的一切都是关于本页上的\nLean 模型的。两个模型之间的一个关系，只在模型忠实的限度内才是关于两个程序的证据，\n而确立*那件事*，是一种与本游戏所要求过的任何事情都不同的工作。",
+ "First take the assumption apart: §0 splits §1 into\n*§2 is below everything in §3* and *§4 is sorted*.":
+ "先把假设拆开：§0 把 §1 拆成*§2 不大于 §3 中的一切*与*§4 排好序*。",
+ "First replace the machine by what it computes, using §0. That leaves a\nstatement about two ordinary recursive functions.":
+ "先用 §0 把机器替换成它算出的东西。剩下的是一个\n关于两个普通递归函数的陈述。",
+ "First ingredient: one insertion costs at most the length of the list it inserts into.\n§0":
+ "第一样配料：一次插入的花费至多是它所插入的那个列表的长度。\n§0",
+ "Everything so far has been one technique at a time. This world puts them together on one\nalgorithm, and follows it all the way through.\n\nIt starts with the contract, because that is where verification starts: what does *sorted*\nmean, and why is it not enough on its own? Two degenerate programs will show you that it takes\ntwo obligations to say *sorting*.\n\nThen insertion sort, twice. First a version you write and prove yourself, so that every step\nof the argument is visible. Then CSlib's §0, which is written over a monad\nso that the same code can run plainly or with its comparisons counted — and which you will\nrelate to Mathlib's ordinary sort by a general theorem about monad homomorphisms, getting both\ncorrectness obligations for almost nothing.\n\nThe world ends where that shortcut runs out. Cost is exactly the information the shortcut\ndiscards, so a bound on the number of comparisons has to be proved from first principles, in\nthe cost monad, by an induction of your own. Cost here is something you *model* and prove\nabout, never something measured.":
+ "到目前为止每次都只有一种技术。本世界把它们合到一个算法上，并一路跟到底。\n\n它从契约开始，因为验证就是从那里开始的：*排好序*是什么意思，它单独为什么不够？\n两个退化的程序会让你看到，说出*排序*需要两项义务。\n\n然后是插入排序，两遍。先是一个你自己写、自己证的版本，好让论证的每一步都看得见。\n然后是 CSlib 的 §0，它写在 monad 之上，使得同一段代码既能朴素地跑，也能带着比较计数跑——\n而你会用一条关于 monad 同态的一般定理把它与 Mathlib 普通的排序联系起来，\n几乎不费力地拿到两项正确性义务。\n\n本世界结束在那条捷径用尽的地方。开销恰恰是那条捷径所丢弃的信息，所以一个关于比较次数的界\n必须从第一性原理出发，在开销 monad 里，用你自己的一次归纳证出来。这里的开销是你*建模*\n并证明的东西，绝不是被测量出来的东西。",
+ "Everything here is concrete and decidable. §0.": "这里的一切都是具体而可判定的。§0。",
+ "Everything here is a concrete value, so there is nothing to reason about — only\nsomething to compute. §0 evaluates both sides and checks they agree.":
+ "这里的一切都是具体的值，所以没有什么要推理的——只有要计算的。\n§0 把两边求值出来并检查它们是否一致。",
+ "Every level so far told you which relation to prove. This one does not; it tells you what you\nneed to know about two pairs of systems, and leaves you to notice that the answers come from\ndifferent places.\n\n**First.** A caller of the stack wants to know it cannot tell the stack from the counter —\nthat they are **trace equivalent**, §0. You could try to compute\nboth trace sets and compare them. You should not: you proved a bisimulation in Level 8, and\n§1 says bisimilar states have the same traces. Picking the strong\nrelation first made the weak one free.\n\n**Second.** Someone proposes replacing §2 with §3, on the grounds that\nthey have the same traces — which they do. Show that they are nevertheless **not bisimilar**.\nYou do not need a new argument: a bisimulation is in particular a simulation, via\n§4, and Level 7 showed there is no simulation in that direction.\n\nTogether these are the shape of the whole world. Trace equivalence is what an observer who\nonly watches can detect. Bisimilarity is what an observer who interacts can detect. They are\ndifferent, bisimilarity is strictly stronger, and which one you need is a question about your\nsetting — not about Lean.":
+ "到目前为止每一关都告诉你要证明哪个关系。这一关不告诉你；它告诉你关于两对系统你需要知道什么，\n然后留给你自己去注意：答案来自不同的地方。\n\n**第一对。**栈的一个调用方想知道它分辨不出栈和计数器——也就是它们**迹等价**，§0。\n你可以试着把两个迹集合都算出来再比较。你不该这么做：你在第八关证明了一个双模拟，\n而 §1 说双模拟的状态有相同的迹。先挑那个强的关系，弱的就白得了。\n\n**第二对。**有人提议用 §3 替换 §2，理由是它们有相同的迹——它们确实有。\n请表明它们仍然**不是双模拟的**。你不需要新的论证：双模拟特别地也是一个模拟，经由 §4，\n而第七关表明那个方向上没有模拟。\n\n合起来，这两对就是整个世界的形状。迹等价是一个只旁观的观察者能察觉的东西。\n双模拟是一个会交互的观察者能察觉的东西。它们不同，双模拟严格更强，而你需要哪一个，\n是一个关于你所处场景的问题——不是关于 Lean 的问题。",
+ "Every implementation of this contract is §0. The specification is tight.\n\nThat is the standard you are aiming at, and it is worth saying plainly what it costs. Writing\na contract that *admits* your implementation is easy and nearly worthless; §1 did\nthat. Writing one that *excludes everything else* is the work, and the way to check you have\ndone it is to prove uniqueness, or to go hunting for a second implementation and fail.\n\nIn practice you often cannot pin a function down completely, and should not want to — a\nspecification that permits several correct implementations is what lets an implementation be\nreplaced. World 5 is about exactly that freedom. The skill is knowing which parts of behavior\nyou meant to fix and which you meant to leave open.":
+ "这个契约的每个实现都是 §0。规约是紧的。\n\n这就是你要达到的标准，而它的代价值得明说。写一个*容纳*你的实现的契约既容易\n又几乎毫无价值；§1 干的就是这个。写一个*把其他一切都排除在外*的契约才是\n正经活，而检验你是否做到了的办法，是去证明唯一性，或者去找第二个实现却找不到。\n\n实践中你往往钉不死一个函数，也不该想钉死——一个容许好几个正确实现的规约，\n正是实现可以被替换的前提。第五世界讲的就是这份自由。手艺在于知道行为的哪些部分\n你本来要固定，哪些你本来要留白。",
+ "Every Starting State at Once": "一次覆盖所有起始状态",
+ "Establish both halves of the comparison: the stack and the counter are trace equivalent,\nand the two choice systems are not bisimilar even though they are.":
+ "把比较的两半都确立起来：栈与计数器迹等价；而那两个选择系统尽管迹等价，却不是双模拟的。",
+ "Do not induct on §0. State the single-step obligation first:\n§1":
+ "不要对 §0 作归纳。先把单步义务叙述出来：\n§1",
+ "Discarding the Cost": "把开销丢掉",
+ "Cross the bridge first: §0 turns both obligations into statements\nabout Mathlib's ordinary insertion sort.":
+ "先过桥：§0 把两项义务都变成关于 Mathlib 普通插入排序的陈述。",
+ "Correct from the Start": "从起点就是对的",
+ "Contracts That Compose": "能组合的契约",
+ "Confirm that §0 satisfies the sortedness predicate and §1 does not.":
+ "确认 §0 满足排好序这个谓词，而 §1 不满足。",
+ "Concrete input, concrete output, so this is a computation: §0.":
+ "具体的输入、具体的输出，所以这是一次计算：§0。",
+ "Comparing trace sets directly means reasoning about words of arbitrary length — the same\nproblem World 3 had with executions, and it has the same solution: find a local condition and\nlet a general theorem do the induction.\n\nThe local condition is a **simulation**. Relate states of the two systems, and require that\nwhenever related states are given and the first takes a step, the second can answer with a\nstep on the same label, landing in related states again:\n\n![A step of the implementation answered by a step of the specification](images/en/simulation.svg)\n\n§0\n\nFor the stack and the counter the relation is the obvious one: a list stands for its length.\n\nProve that it is a simulation. There are two cases, one per operation, and neither mentions\nwords at all — which is the point.":
+ "直接比较迹集合，意味着要对任意长度的词做推理——这和第三世界在执行上遇到的是同一个问题，\n而它也有同一个解法：找一个局部条件，让一条一般的定理去做归纳。\n\n那个局部条件就是**模拟**。把两个系统的状态关联起来，并要求：只要给定一对相关的状态、\n而第一个迈出一步，第二个就能用同标号的一步来应答，并重新落在一对相关的状态上：\n\n![实现的一步由规约的一步应答](images/zh/simulation.svg)\n\n§0\n\n对栈和计数器而言，这个关系是显然的那个：一个列表代表它的长度。\n\n证明它是一个模拟。有两种情形，每个操作一种，而且两者都完全没有提到词——这正是要点。",
+ "Collect the three facts the arithmetic needs: the insertion's cost, the length of\nwhat it inserts into, and the expansion of §0.\n§1,\n§2,\n§3":
+ "把算术所需的三个事实收拢起来：插入的花费、它所插入的那个列表的长度，以及 §0 的展开。\n§1，\n§2，\n§3",
+ "Choosing the Right Relation": "挑对关系",
+ "Check the four states one at a time: §0, and in each the transition is a\nconcrete value. §1 does all four.":
+ "一个一个检查这四个状态：§0，而在每一种情形里转移都是一个\n具体的值。§1 把四个一起做完。",
+ "CSlib's insertion sort is written once, over an arbitrary monad:\n\n§0\n\nThe comparison §1 is a monadic operation, so *what a comparison costs* is a parameter.\nInstantiate §2 at §3 and you get an ordinary sort. Instantiate it at\n§4 — a pair of a result and an accumulated cost — and every\ncomparison is charged:\n\n§5\n\n§6 is the sorted list and §7 is the number of comparisons\nit performed.\n\nBe clear about what that number is. It is **not** a measurement. It is the value of an\nannotation in a declared cost model — *a comparison costs 1, everything else is free* — which\nyou chose and which the library takes on trust. The theorem you prove about it is a theorem\nabout the model.\n\nStart by running it.":
+ "CSlib 的插入排序只写了一次，写在任意 monad 之上：\n\n§0\n\n比较 §1 是一个 monad 运算，所以*一次比较要花多少*是一个参数。\n把 §2 实例化到 §3 就得到一个普通的排序。把它实例化到 §4——\n一个由结果和累计开销构成的序对——每次比较就都被计费：\n\n§5\n\n§6 是排好序的列表，而 §7 是它所做的比较次数。\n\n要把那个数字是什么说清楚。它**不是**测量值。它是你所声明的开销模型里一个标注的取值——\n*一次比较花 1，别的都免费*——这个模型是你选的，而库对它照单全收。\n你关于它证明的定理，是关于这个模型的定理。\n\n先让它跑起来。",
+ "Both states reachable, and the proof is the two words that reach them.\n\nIt is worth noticing how little this says. *Reachable* is an existence claim, so a single\nwitness settles it — no induction, no generality. The interesting direction is the other one:\nshowing a state is **un**reachable means ruling out every word, and no finite list of examples\ncan do that. That is the next level.":
+ "两个状态都可达，而证明就是抵达它们的那两个词。\n\n值得注意的是这说得有多少。*可达*是存在性论断，所以单个见证就能了结它——\n不用归纳，也不用一般性。有意思的是反方向：要表明一个状态**不**可达，\n就得排除每一个词，而任何有限的例子清单都做不到这件事。那就是下一关。",
+ "Both state spaces are finite, so split on all four and let §0 discard every\ncombination that is not a real transition of a related pair:\n§1.":
+ "两个状态空间都是有限的，所以对这四样都做分情形，让 §0 把每个「不是一对相关状态的真实转移」的\n组合都丢掉：§1。",
+ "Both sides are the accumulator: §0 and §1.": "两边都是累加器：§0 与 §1。",
+ "Both obligations are now proved for §0, separately.\n\nSeparately is how they should be proved — they are about different things, and mixing them\nwould make both arguments worse. But separately is not how they should be *stated*: a caller\nwants one theorem it can rely on. That is the next level, and it is shorter than this one.":
+ "两项义务现在都为 §0 证明了，各自分开地。\n\n分开正是它们该被证明的方式——它们讲的是不同的事情，混在一起会让两个论证都变糟。\n但分开不是它们该被*陈述*的方式：调用方想要一个可以依赖的定理。那就是下一关，\n而且它比这一关更短。",
+ "Both halves are now library facts:\n§0.": "两半现在都是库里的事实：\n§0。",
+ "Both halves are now arithmetic about §0 given §1, which §2 handles.":
+ "两半现在都是在 §1 之下关于 §0 的算术，由 §2 处理。",
+ "Both halves are already theorems. §0.": "两半都已经是定理了。§0。",
+ "Both functions on the empty word are immediate: §0.": "两个函数在空词上的值都是立刻可得的：§0。",
+ "Both costs are concrete numbers, so this is a computation: §0.":
+ "两个开销都是具体的数，所以这是一次计算：§0。",
+ "Both Obligations at Once": "一次把两项义务都办了",
+ "Bisimulation Across Representations": "跨表示的双模拟",
+ "Best Case and Worst Case": "最好情形与最坏情形",
+ "Before you can say what a program *should* do, you need a way to say what it *does*.\n\nThis world introduces the vocabulary: **states**, **transitions**, **runs**, **reachability**\nand **invariants**. We work with a deterministic automaton from CSlib, small enough to hold in\nyour head, and build up from running it on one word to proving properties that hold for every\npossible input — and for a second machine, properties that hold for every possible run.\n\nThe machine here reads bits and tracks parity. It is a toy, but the move you make in this\nworld is the one you will make for the rest of the game: replace *I ran it and it looked\nright* with *here is an argument covering all runs*.\n\nThe last level is the bridge. A state machine is a model of a program, not a replacement for\none, and World 2 onwards proves things about ordinary Lean functions.":
+ "在你能说出一个程序*应当*做什么之前，你得先有办法说出它*做了*什么。\n\n本世界引入这套词汇：**状态**、**转移**、**运行**、**可达性**\n和**不变式**。我们用 CSlib 里的一台确定性自动机，小到能装在脑子里，\n从让它跑一个词开始，一步步做到证明对每个可能输入都成立的性质——\n以及对第二台机器，证明对每次可能运行都成立的性质。\n\n这里的机器读比特并跟踪奇偶性。它是个玩具，但你在本世界迈出的这一步，\n也是你在游戏余下部分会一直迈的那一步：把*我跑了一下看起来没问题*\n换成*这里有一个覆盖所有运行的论证*。\n\n最后一关是桥。状态机是程序的模型，不是程序的替代品，而从第二世界起\n我们证明的是关于普通 Lean 函数的事情。",
+ "Back to state. Here is the question every safety argument has to answer: *the account never\ngoes overdrawn, no matter which sequence of operations a customer performs.* There are\ninfinitely many such sequences, so you cannot check them.\n\nThe account is modelled as a §0 — a labelled transition system. Unlike World 1's\nautomaton, a transition here is a **relation** rather than a function, because a withdrawal is\nonly a legal step when the balance covers it:\n\n§1\n\n§2 says there is a finite execution from §3 to §4 performing exactly\nthe operations §5. It is an inductive relation with two constructors: §6, an execution\nof no steps, and §7, one transition followed by an execution. (§8 is also the name of\na general reflexivity lemma in Mathlib; writing it as a case name here means the constructor,\nand the inventory unlocks both.)\n\nProve the safety property by inducting directly on that execution. This is the honest,\nfrom-first-principles version, and it is the same argument you made for the traffic light in\nWorld 1 — strengthened statement and all. The next level does it again with a library theorem,\nand the contrast is the point.":
+ "回到状态上来。这是每个安全性论证都必须回答的问题：*不论客户执行哪一串操作，\n账户都不会透支。*这样的操作串有无穷多条，所以你检查不完。\n\n账户建模为一个 §0——带标号转移系统。与第一世界的自动机不同，这里的转移是一个\n**关系**而不是函数，因为取款只有在余额够的时候才是一个合法的步骤：\n\n§1\n\n§2 说存在一段从 §3 到 §4 的有限执行，所执行的操作恰好是 §5。\n它是一个归纳定义的关系，有两个构造子：§6，零步的执行；以及 §7，一个转移\n接上一段执行。（§8 同时也是 Mathlib 里一个一般自反性引理的名字；在这里把它写成情形名\n指的是那个构造子，而物品栏把两者都解锁了。）\n\n直接对那段执行做归纳来证明这条安全性性质。这是诚实的、从第一性原理出发的版本，\n也正是你在第一世界对交通灯做过的那个论证——连加强陈述这一步都一样。下一关会用一条\n库里的定理再做一次，而对比正是要点。",
+ "Assume such a function exists and take it apart: §0.": "假设这样的函数存在，并把它拆开：§0。",
+ "Assume one exists and name its parts: §0.": "假设存在一个，并给它的各部分命名：§0。",
+ "Assume a bisimulation and take it apart: §0.": "假设有一个双模拟并把它拆开：§0。",
+ "Appending to the empty list changes nothing, and §0.\n§1 does both.":
+ "拼到空列表上什么也不改变，而 §0。§1 把两件事一起做了。",
+ "And the pop takes it back to §0, where the execution stops. A pop needs a witness\nfor the tail: §1.":
+ "而弹出把它带回 §0，执行就在那里停下。一次弹出需要给出尾部的见证：§1。",
+ "And inherit the rest: §0.": "然后把其余部分继承下来：§0。",
+ "And Not the Other": "而另一个方向不行",
+ "An Implementation Refines Its Specification": "一个实现精化了它的规约",
+ "An Accumulator Needs Generalizing": "累加器需要被推广",
+ "A §0 takes one token from one bucket and puts it in the other: §1 or §2.":
+ "一次 §0 把一枚令牌从一个桶取出放进另一个桶：§1 或 §2。",
+ "A §0 move. §1 gives you that the second bucket was\nnon-empty and what the new pair is; §2 names both, and §3\nreplaces §4 by it.":
+ "一次 §0 移动。§1 告诉你第二个桶当时非空，以及新的序对是什么；\n§2 把两者都命名，而 §3 把 §4 换成它。",
+ "A withdrawal. Here §0 gives you two facts: the withdrawal was\naffordable, and what the new balance is.":
+ "取款。这里 §0 给了你两条事实：这笔取款付得起，以及新的余额是多少。",
+ "A verified sorting algorithm, from scratch, in four levels and a lemma borrowed from World 3.\n\nNow the question this world exists to ask. You wrote §0 and §1 yourself, and the proofs\nfollowed their structure. What happens when the algorithm is not yours — when it comes from a\nlibrary, is written over an arbitrary monad so that it can be instrumented, and does not look\nlike anything you can induct on directly?\n\nThat is CSlib's §2, and the rest of this world is about it.":
+ "一个从零写起的、被验证过的排序算法，用了四关，外加一条从第三世界借来的引理。\n\n现在轮到本世界存在的理由那个问题了。§0 和 §1 是你自己写的，证明也顺着它们的结构走。\n那么当算法不是你写的时候会怎样——当它来自一个库，为了能被插桩而写在任意 monad 之上，\n而且看起来根本不像你能直接对之归纳的任何东西？\n\n那就是 CSlib 的 §2，而本世界余下的部分讲的就是它。",
+ "A statement about every starting state, proved by exhausting the starting states.\n\nThat worked because §0 has two inhabitants. The *words* the machine reads are a different\nmatter: there are infinitely many of them, and no amount of case splitting will enumerate\nthem. For those you need induction, which is the next level.\n\nKnowing which of the two situations you are in is most of the skill. Finite? Split. Infinite\nbut built up step by step? Induct.":
+ "一个关于每个起始状态的陈述，靠穷尽起始状态证明出来。\n\n这之所以行得通，是因为 §0 只有两个元素。机器读的那些*词*则是另一回事：\n它们有无穷多个，再多的分情形也枚举不完。对付那些要用归纳，也就是下一关。\n\n知道自己处在两种处境中的哪一种，是这门手艺的大半。有限？就拆。无穷\n但逐步搭建起来？就归纳。",
+ "A state is **reachable** when some input word drives the machine into it from the start.\n\nThat is an existence claim, and existence claims in Lean are proved the way you would prove\nthem on paper: by producing the thing. §0 supplies the word, and then Lean asks you to\ncheck that it works — which, for a concrete word, is a computation.\n\nBoth states of §1 are reachable. The empty word leaves the machine in §2; the\none-letter word §3 flips it to §4. Prove that every state is reachable by handling\nthe two states separately.":
+ "一个状态是**可达**的，当某个输入词能把机器从起点驱动到它那里。\n\n这是一个存在性论断，而 Lean 里证明存在性论断的办法，和你在纸上会用的\n一样：把那个东西拿出来。§0 提供这个词，然后 Lean 让你\n检查它确实管用——对具体的词而言，这是一次计算。\n\n§1 的两个状态都可达。空词让机器留在 §2；\n单字母的词 §3 把它翻转成 §4。分别处理这两个状态，\n来证明每个状态都可达。",
+ "A specification is a claim about an implementation. In Lean you can write one as an ordinary\nproposition — no special logic required. The pattern that covers almost everything is\n\n§0\n\n*if the input satisfies the precondition §1, then the input and the output together satisfy\nthe postcondition §2.* You do not need Hoare triples for a pure function; the arrow **is** the\ncontract, and §3 is the only connective involved.\n\nHere is the function. §4 forces §5 into the range §6:\n\n§7\n\nIts contract: *given §8, the result lies between §9 and §10.* The precondition is\n§11; the postcondition is the conjunction of the two bounds.\n\nTo prove it, unfold the definition and consider the three branches of the nested §12. That is\nwhat §13 does: it replaces the goal with one goal per branch, each carrying the\ncondition that led there as a hypothesis. After that it is arithmetic, and §14 does\narithmetic.":
+ "规约是关于某个实现的论断。在 Lean 里你可以把它写成一个普通的\n命题——不需要什么特别的逻辑。覆盖几乎一切的模式是\n\n§0\n\n*若输入满足前置条件 §1，则输入与输出合起来满足\n后置条件 §2。*对一个纯函数你不需要 Hoare 三元组；那个箭头**就是**\n契约，而 §3 是其中唯一牵涉到的联结词。\n\n这是那个函数。§4 把 §5 压进区间 §6：\n\n§7\n\n它的契约：*给定 §8，结果落在 §9 与 §10 之间。*前置条件是\n§11；后置条件是两个界的合取。\n\n要证明它，先把定义展开，再考虑那个嵌套 §12 的三个分支。这正是\n§13 做的事：它把目标换成每个分支一个目标，每个都带上\n通向该分支的条件作为假设。之后就是算术了，而 §14 会做\n算术。",
+ "A refinement between two systems with different state representations, and the only thing you\nreasoned about was a single step.\n\nThree distinctions worth keeping straight, because they are easy to blur and the rest of this\nworld takes them apart one at a time:\n\n* **Trace inclusion is one-directional.** The specification here happens to permit exactly the\n  same behaviors, but in general it may permit more.\n* **Simulation implies trace inclusion and is strictly stronger.** It demands a step-by-step\n  correspondence; trace inclusion only compares sets of words. Two systems can have the same\n  traces with no simulation between them, because a trace set forgets *when* a choice was\n  made.\n* **A simulation in one direction says nothing about the other.** Levels 6 and 7 exhibit a\n  pair where one direction holds and the other provably does not.\n\nAnd a caution that applies to everything in this world. These are statements about the Lean\nmodels written here, and about nothing else. A proof that this list-based stack refines this\ncounter is not a proof about any C or Rust program, and a model in which a bad operation\nsimply has no transition says nothing about what a real language does when a program performs\none.":
+ "两个状态表示不同的系统之间的一次精化，而你所推理的只有单独一步。\n\n有三个区分值得保持清楚，因为它们很容易被混淆，而本世界余下的部分会一个一个把它们拆开：\n\n* **迹包含是单向的。**这里的规约恰好允许完全相同的行为，但一般而言它可以允许更多。\n* **模拟蕴涵迹包含，而且严格更强。**它要求一步一步的对应；迹包含只比较词的集合。\n  两个系统可以有相同的迹而它们之间没有模拟，因为迹集合忘掉了选择是*何时*做出的。\n* **一个方向上的模拟对另一个方向什么也没说。**第六、第七关给出一对系统，\n  一个方向成立而另一个方向可证地不成立。\n\n还有一句适用于本世界一切内容的提醒。这些都是关于写在这里的 Lean 模型的陈述，不关于别的任何东西。\n「这个基于列表的栈精化这个计数器」的证明，不是关于任何 C 或 Rust 程序的证明；\n而一个「坏操作干脆没有转移」的模型，对真实语言在程序执行这种操作时会做什么只字未言。",
+ "A push. The specification can always push, so the state it moves to is §0.\nSupply it and the proof that it is a legal step, and leave the relation:\n§1.":
+ "一次压入。规约总是可以压入，所以它转移到的状态是 §0。把它和「这是合法的一步」的证明供上，\n把关系留下来：§1。",
+ "A push. The implementation can always push, producing §0:\n§1, and then the lengths match.":
+ "一次压入。实现总是可以压入，产出 §0：§1，然后长度就对上了。",
+ "A precondition, a postcondition, an arrow between them, and a proof. That is a verified\nfunction.\n\nTwo things to notice. The contract is an ordinary §0, so everything you already know about\nproving propositions applies — there is no separate program logic to learn. And the\nprecondition did real work: it appears in the proof, because without it the statement is\nfalse. The next level makes that concrete.":
+ "一个前置条件、一个后置条件、它们之间的一个箭头，再加一个证明。这就是一个\n被验证过的函数。\n\n有两点值得注意。契约是一个普通的 §0，所以你已经知道的关于证明命题的一切\n都适用——没有另一套程序逻辑要学。而且前置条件干了实事：它出现在证明里，\n因为没有它这个陈述就是假的。下一关把这一点落到实处。",
+ "A pop. §0 tells you exactly what §1 looked like; then\n§2 replaces it.":
+ "出栈。§0 会原原本本告诉你 §1 长什么样；随后 §2 把它替换掉。",
+ "A pop. §0 gives you §1 and what the new count is;\n§2 names them.":
+ "一次弹出。§0 给你 §1 以及新的计数是什么；§2 把它们命名。",
+ "A one-step condition, checked on two operations, between systems with different state types.\n\nNotice what the relation had to do. It is not a function from one state space to the other —\nit is a relation, and nothing requires it to be injective or surjective. Many lists stand for\nthe same count. That freedom is what makes simulations usable: the implementation may carry\ninformation the specification does not, as long as every step it takes is one the\nspecification permits.\n\nThe next level turns this into the statement about behaviors it was built for.":
+ "一个单步条件，在两个操作上检查了一遍，连接的是两个状态类型不同的系统。\n\n注意这个关系必须做到什么。它不是从一个状态空间到另一个的函数——它是一个关系，\n而且没有什么要求它是单射或满射。很多个列表代表同一个计数。正是这份自由让模拟可用：\n实现可以携带规约所没有的信息，只要它迈出的每一步都是规约所允许的。\n\n下一关把它变成它本来要服务的那个关于行为的陈述。",
+ "A one-element list is sorted. §0.": "单元素列表是排好序的。§0。",
+ "A deposit. §0 turns the abstract transition into a concrete\nequation about §1, and the arithmetic is then routine.":
+ "存款。§0 把抽象的转移变成关于 §1 的一条具体等式，剩下的算术就是例行公事了。",
+ "A cost bound on a library algorithm, proved where the cost actually lives.\n\nThis is the level the whole world was built to reach, and it is worth saying why it could not\nhave been shorter. No existing theorem states it. The bridge that made correctness free is\nuseless for cost by construction, and could only be borrowed here for an incidental fact about\nlengths. Everything else — that one insertion is linear, that the costs of a bind add, that\nthe recursion accumulates them — you established yourself, using exactly the techniques of\nWorlds 1 to 3: follow the recursion, strengthen until the hypothesis is usable, factor the\ningredients out before the induction that needs them.\n\nTwo last cautions about what you have proved. The bound is quadratic and insertion sort really\nis quadratic in the worst case, but §0 is not tight — the true worst case is §1, and\nproving *that* is a different and harder induction. And the number counted is comparisons in a\nmodel you declared, not time on a machine. §2's own documentation is blunt about this:\nthe annotations are trusted, not verified. A cost model is a specification like any other, and\nlike any other it can be wrong about the thing it was meant to describe.\n\nThat is the core path. World 5 is optional, and asks a question none of this has touched: when\nmay one implementation replace another?":
+ "一个库算法的开销上界，在开销真正所在的地方证明出来。\n\n这是整个世界为之而建的那一关，而它为什么不可能更短，值得说明。没有现成的定理陈述它。\n那座让正确性变免费的桥，按其构造对开销毫无用处，在这里只能被借来处理一个关于长度的\n附带事实。别的一切——一次插入是线性的、一次 bind 的开销相加、递归把它们累积起来——\n都是你自己确立的，用的恰好是第一到第三世界的技术：顺着递归走、加强到假设可用为止、\n在需要它的那次归纳之前把配料提取出来。\n\n关于你所证明的东西，最后两点提醒。这个界是平方的，而插入排序在最坏情形下确实是平方的，\n但 §0 并不紧——真正的最坏情形是 §1，而证明*那个*是另一次不同且更难的归纳。\n还有，被数出来的是你所声明的模型里的比较次数，不是机器上的时间。§2 自己的文档对此说得很直白：\n那些标注是被信任的，不是被验证的。开销模型和任何别的规约一样是一个规约，\n也和任何别的规约一样，可能对它本来要描述的东西说错话。\n\n这就是核心路线。第五世界是可选的，它问一个这里从未触及的问题：一个实现何时可以替换另一个？",
+ "A contract can fail in the other direction too: by demanding more than any program could\ndeliver.\n\nHere is one. *Write a function that, given a list of numbers, returns a valid index into it* —\nin other words, a function §0 with §1 for every §2.\n\nIt sounds reasonable until you think about the empty list. There are no valid indices into\n§3, so no number §4 can be below §5.\n\nProve that no such function exists. The statement is a negation, so assume you were handed one\nand derive a contradiction: §6 names the supposed function and its supposed\nproperty, and then you only have to ask §7 about the empty list.":
+ "契约也可能朝另一个方向失败：要求的比任何程序能交付的都多。\n\n这里就有一个。*写一个函数，给定一个数的列表，返回一个指向它的合法下标*——\n换句话说，一个函数 §0，对每个 §2 都有 §1。\n\n听起来还算合理，直到你想起空列表。指向 §3 的合法下标一个也没有，\n所以没有任何数 §4 能低于 §5。\n\n证明这样的函数不存在。这个陈述是一个否定，所以假设有人把一个交给了你，\n然后导出矛盾：§6 给那个假想的函数和它假想的性质起名字，\n接着你只需要拿空列表去问 §7。",
+ "A capstone needs a subject. This world's is insertion sort, and before proving anything about\nit the contract has to be written down. That turns out to be the part worth slowing over.\n\n*Sorted* in Mathlib v4.35 is not a definition of its own; it is an instance of a more general\none. §0 says the relation §1 holds between every element and every element\n**after** it:\n\n§2\n\nSo §3 is exactly *ascending order, duplicates allowed*. Note what it\ndoes **not** say: nothing about adjacent pairs only, and nothing about which elements are\npresent.\n\nGet a feel for it by checking two concrete lists — one that is sorted and one that is not.\nBoth sides are decidable, so §4 settles the whole conjunction.":
+ "压轴需要一个题材。本世界的题材是插入排序，而在证明任何关于它的事情之前，\n契约得先写下来。这件事恰恰值得放慢速度。\n\nMathlib v4.35 里的*排好序*不是一个独立的定义；它是一个更一般的定义的实例。\n§0 说关系 §1 在每个元素与它**之后**的每个元素之间成立：\n\n§2\n\n所以 §3 恰好就是*按升序排好序，允许重复*。注意它**没有**说什么：\n没有说只管相邻的那一对，也没有说哪些元素在场。\n\n检查两个具体的列表来找找感觉——一个排好序，一个没有。两边都是可判定的，\n所以 §4 把整个合取一并了结。",
+ "A bisimulation is a simulation, and Level 7 ruled those out:\n§0.":
+ "双模拟是一个模拟，而第七关已经把那些排除掉了：§0。",
+ "A Step Nobody Can See": "一个谁也看不见的步骤",
+ "A State You Never Reach": "一个你永远到不了的状态",
+ "A Specification That Is Too Weak": "一份太弱的规约",
+ "A Specification Nothing Can Satisfy": "一个什么也满足不了的规约",
+ "A Proof That Covers Every List": "一个覆盖每个列表的证明",
+ "A Permutation Is Not Enough": "是个排列也还不够",
+ "A Lemma Worth Factoring Out": "一条值得提取出来的引理",
+ "A Different System Entirely": "一个完全不同的系统",
+ "A Contract for a Function": "一个函数的契约",
+ "A Bound on the Comparisons": "比较次数的一个上界",
+ "A **state machine** is the simplest honest picture of a running program: a set of states, and\na rule saying which state you move to when the next input arrives.\n\nCSlib packages exactly that as §0 — a transition function §1 and a §2\nstate. Our machine is §3. It reads a word of bits and keeps one bit of state: whether\nit has seen an odd number of §4s so far.\n\n![The parity automaton](images/en/parity-automaton.svg)\n\nReading §5 leaves the state alone; reading §6 flips it. The machine starts in §7, which\nin Lean is written §8.\n\nTo *run* the machine over a whole word, CSlib gives you §9:\n§10 is the state you reach by starting in §11 and reading every symbol of\n§12 in turn.\n\nBefore proving anything about every word, run the machine on one. The word\n§13 has two §14s in it, so the machine should finish in §15.\n\nThis is a goal Lean can settle by *computing*: both sides are concrete values, and §16\nevaluates them and compares.":
+ "**状态机**是对运行中的程序最朴素而诚实的刻画：一组状态，加上一条\n规则，说明下一个输入到来时你会转移到哪个状态。\n\nCSlib 把这件事恰好封装成 §0——一个转移函数 §1 和一个 §2\n状态。我们的机器是 §3。它读一个比特构成的词，并保留一个比特的状态：\n到目前为止它是否读到过奇数个 §4。\n\n![奇偶自动机](images/zh/parity-automaton.svg)\n\n读到 §5 状态不变；读到 §6 则翻转。机器从 §7 出发，在 Lean 里\n写作 §8。\n\n要让机器*运行*完整个词，CSlib 给了你 §9：\n§10 就是从 §11 出发、依次读完\n§12 的每个符号后所到达的状态。\n\n在证明任何关于所有词的事情之前，先让机器跑一个词。词\n§13 里有两个 §14，所以机器应当停在 §15。\n\n这个目标 Lean 可以靠*计算*解决：两边都是具体的值，而 §16\n把它们求值出来再作比较。",
+ "A **bisimulation** is a single relation that works in both directions at once:\n\n§0\n\nNote that it is not *a simulation whose converse is also a simulation* — it is one relation\nrequired to answer challenges from both sides. That is strictly stronger than mutual\nsimulation by two unrelated relations, and it is the right notion of *these two systems are\ninterchangeable*.\n\nGo back to the stack and the counter. In Level 4 you showed that a list standing for its\nlength simulates. Show now that the **same relation** is a bisimulation: not only can the\nspecification answer the implementation, the implementation can answer the specification.\n\nThe new half is the pop. The specification's pop requires only §1. To answer it the\nimplementation must produce an actual list to pop, so you have to get from *the length is\npositive* to *the list is non-empty* — which means splitting on the list.":
+ "**双模拟**是一个同时在两个方向上都奏效的单一关系：\n\n§0\n\n注意它不是*一个逆也是模拟的模拟*——它是一个被要求应答两边挑战的关系。\n这严格强于由两个互不相干的关系给出的相互模拟，而它才是*这两个系统可互换*的正确概念。\n\n回到栈和计数器。第四关里你表明了「列表代表它的长度」构成一个模拟。现在表明**同一个关系**\n是一个双模拟：不仅规约能应答实现，实现也能应答规约。\n\n新的那一半是弹出。规约的弹出只要求 §1。要应答它，实现必须拿出一个真实的列表来弹，\n所以你得从*长度为正*走到*列表非空*——这意味着对列表做分情形。",
+ "*Optional branch.* You can finish the core path without this world, and nothing later depends\non it. It is here because the question it asks comes up constantly in practice: **may I\nreplace this component with that one?**\n\nSometimes the honest answer is *yes, they compute the same thing* — but only on inputs that\nsatisfy some condition. Sometimes it is *the replacement is safer, and that is a different\nclaim from behaving the same*. Sometimes the two systems do not even have the same notion of\nstate, and the only thing you can compare is what an outside observer sees. And sometimes the\nimplementation does internal work that no observer can see at all, and the right notion of\nequivalence has to ignore it.\n\nSo this world is about choosing the right relation: conditional equivalence, trace inclusion,\none-way simulation, bisimulation, and weak bisimulation. They are not interchangeable, and\npicking the wrong one is how people end up proving something true that does not mean what they\nwanted. You will see a pair of systems that are related in one direction and provably not in\nthe other, and a pair that offer an observer identical behavior and are still not\ninterchangeable.\n\nA caution before you start. These are statements about the Lean models written here, and about\nnothing else. A proof that this list-based stack refines this counter is not a proof about any\nC or Rust program, and a model in which a bad operation simply has no transition says nothing\nabout what a real language does when a program performs one.":
+ "*可选分支。*没有本世界你也能走完核心路线，而且后面没有任何内容依赖它。它在这里，\n是因为它所问的问题在实践中不断出现：**我可以拿那个组件替换这个吗？**\n\n有时诚实的答案是*可以，它们算出同样的东西*——但只在满足某个条件的输入上。有时答案是\n*替换者更安全，而这与表现相同是不同的论断*。有时两个系统连状态的概念都不相同，\n唯一可比的只有外部观察者看到的东西。还有时实现做的内部工作观察者根本看不见，\n而正确的等价概念必须忽略它。\n\n所以本世界讲的是挑对关系：条件等价、迹包含、单向模拟、双模拟，以及弱双模拟。\n它们不可互换，而挑错了正是人们最终证明出一件为真、却不是他们本来想说的事的来由。\n你会看到一对系统在一个方向上相关、而在另一个方向上可证地不相关，\n还会看到一对系统提供给观察者的行为完全相同，却仍然不可互换。\n\n开始之前的一句提醒。这些都是关于写在这里的 Lean 模型的陈述，不关于别的任何东西。\n「这个基于列表的栈精化这个计数器」的证明，不是关于任何 C 或 Rust 程序的证明；\n而一个「坏操作干脆没有转移」的模型，对真实语言在程序执行这种操作时会做什么只字未言。",
+ "*Optional branch.* Nothing in the core path depends on this world, and you can come back to it\nwhenever you like.\n\nThe question it asks is the one that comes up every time a component is rewritten: **may I\nreplace this with that?** The answer is almost never a plain yes, and the interesting part is\nwhat qualifies it.\n\nStart with the smallest version. Two ways to read an element out of a list:\n\n§0\n\nThe first is what a language without bounds checks gives you: out of range it quietly hands\nback a default. The second reports the failure instead.\n\nThey do not even have the same return type, so *equal* is not available. What is available is\na claim about the inputs where both behave: **when the index is in range, the checked version\nreturns exactly what the raw version returns.** That is **conditional functional equivalence**,\nand the condition is the whole content of it.":
+ "*可选分支。*核心路线没有任何部分依赖本世界，你可以随时再回来。\n\n它问的问题，是每次有组件被重写时都会冒出来的那个：**我可以拿这个替换那个吗？**\n答案几乎从来不是一句干脆的「可以」，而有意思的部分正是那些限定条件。\n\n从最小的版本开始。从列表里读出一个元素的两种办法：\n\n§0\n\n第一种是不做边界检查的语言给你的：越界时它悄悄递回一个默认值。第二种则报告这次失败。\n\n它们连返回类型都不相同，所以*相等*这个说法用不上。用得上的是一个关于两者都正常工作的\n那些输入的论断：**当下标在范围内时，带检查的版本返回的恰好就是不带检查的版本所返回的。**\n这就是**条件函数等价**，而那个条件就是它的全部内容。",
+ "**Refinement** is the claim that every behavior the implementation can exhibit is one the\nspecification already permits:\n\n§0\n\nNote the direction, because it is the whole content of the idea. It does **not** say the two\ndo the same things. The specification may permit behaviors the implementation never produces,\nand that is not a defect — it is what lets a specification be loose and still be a promise. A\nspecification is a bound on behavior, not a description of it.\n\nYou have the simulation. §1 turns it into the trace\ninclusion, given that the starting states are related:\n\n§2\n\nThat theorem contains the induction over words that you did not have to do.":
+ "**精化**是这样一个论断：实现能表现出的每条行为，都是规约已经允许的：\n\n§0\n\n注意方向，因为这就是这个想法的全部内容。它**没有**说两者做同样的事情。规约可以允许实现从不产生的\n行为，而这不是缺陷——正是它让一个规约可以宽松，同时仍然是一份承诺。规约是对行为的一个界，\n不是对行为的一份描述。\n\n模拟你已经有了。§1 把它变成迹包含，前提是起始状态是相关的：\n\n§2\n\n那条定理里面装着你不必自己做的、对词的归纳。",
+ "**Introduction to Program Verification**\n\nAn introduction to program verification in Lean 4, built on\n[CSlib](https://github.com/leanprover/cslib) abstractions.\n\nAvailable in English and Simplified Chinese — switch under *Menu → Preferences*.\n\nBuilt with the [Lean 4 Game Server](https://github.com/leanprover-community/lean4game).\nDiagrams are original and shipped with the game.":
+ "**程序验证入门**\n\n一份基于 [CSlib](https://github.com/leanprover/cslib) 抽象的 Lean 4 程序验证入门。\n\n提供英文与简体中文——在*菜单 → 偏好设置*中切换。\n\n使用 [Lean 4 Game Server](https://github.com/leanprover-community/lean4game) 构建。\n图示均为原创，随游戏一同发布。"}

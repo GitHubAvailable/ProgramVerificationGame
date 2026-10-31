@@ -15,6 +15,21 @@ jobs:
         with:
           use-github-cache: false
 
+      - name: Offline checks (build, axioms, world tree, inventory, shortcuts, translation)
+        run: bash test/run_checks.sh
+
+      - name: Show the check logs on the run page
+        # Written to the job summary, not uploaded: the Game Server imports a repository's newest
+        # artifact whatever its name, so the built game must be the only artifact this repo makes.
+        if: always()
+        run: |
+          shopt -s nullglob
+          for f in test/results/*.log; do
+            printf '<details><summary>%s</summary>\n\n```text\n' "$f"
+            cat "$f"
+            printf '\n```\n</details>\n\n'
+          done >> "$GITHUB_STEP_SUMMARY"
+
       - name: compress built game
         #run: tar -czvf ../game.tar.gz .
         run: zip game.zip * .lake/ .i18n/ -r
