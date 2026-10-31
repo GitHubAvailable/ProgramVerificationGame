@@ -53,7 +53,7 @@ the public cache.
 ## Build
 
 ```bash
-git clone <this repo> ProgramVerificationGame
+git clone https://github.com/GitHubAvailable/ProgramVerificationGame ProgramVerificationGame
 cd ProgramVerificationGame
 lake exe cache get      # fetch the Mathlib cache (~7 GB); skip and it will build from source
 lake build
