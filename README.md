@@ -233,6 +233,11 @@ and a clickable link invites crawlers and link previews to do that.
   setup twice, which makes it likely. Reloading may not clear it; opening the same link in a
   new tab does.
 
+## Acknowledgements
+
+The initial implementation was developed with the assistance of [Argus](https://argusbot.cn),
+an AI agent framework.
+
 ## Licence
 
 See [`LICENSE`](LICENSE).
