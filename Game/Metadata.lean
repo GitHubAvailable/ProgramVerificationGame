@@ -1,4 +1,4 @@
-import GameServer
+import GameApi
 import Game.Machines
 import Game.Doc.Tactics
 import Game.Doc.Definitions

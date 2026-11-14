@@ -1,14 +1,5 @@
-build/
-lake-packages/
-.lake/
-**/.DS_Store
-.i18n/**/*.mo
-__pycache__/
+.DS_Store
 
-# Durable-runner logs and notes from automated agents
-.argus_subagents/
-.autors
-.scratch
-
-# Output paths
-test/results
+# Lean
+**/.lake
+**/.i18n/**/*.mo

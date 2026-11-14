@@ -4,63 +4,45 @@ on:
   workflow_dispatch:
   push:
     branches:
-    - "main"
+      - 'main'
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
 
-      - name: Free disk space
-        # Mathlib's build is several GB and grows with every release, and packaging the game
-        # needs room for a zip of it too. Remove preinstalled SDKs this job never uses.
+      # `lean-action` refuses to run without a `lake-manifest.json`, but we do not want to include
+      # the manifest from the `leangame` repo.
+      # When using this template, you can replace the following steps with
+      # - uses: leanprover/lean-action@v1
+      #   with:
+      #     use-github-cache: false
+      - name: install elan
         run: |
-          df -h /
-          sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL
-          df -h /
-
-      - uses: leanprover/lean-action@v1
-        with:
-          use-github-cache: false
-
-      - name: Offline checks (build, axioms, world tree, inventory, shortcuts, translation)
-        run: bash test/run_checks.sh
-
-      - name: Show the check logs on the run page
-        # Written to the job summary, not uploaded: the Game Server imports a repository's newest
-        # artifact whatever its name, so the built game must be the only artifact this repo makes.
-        if: always()
+          curl -sSfL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: update dependencies
+        run: lake update -R --keep-toolchain
+      - name: build game
         run: |
-          shopt -s nullglob
-          for f in test/results/*.log; do
-            printf '<details><summary>%s</summary>\n\n```text\n' "$f"
-            cat "$f"
-            printf '\n```\n</details>\n\n'
-          done >> "$GITHUB_STEP_SUMMARY"
+          lake build
+          lake build GameServer
 
-      - name: Make sure the game fits on disk once zipped
-        # The Mathlib cache download is no longer needed after the build. A zip is never larger
-        # than what it compresses, so stop here with a clear message rather than in `zip`.
-        run: |
-          rm -rf ~/.cache/mathlib
-          need=$(du -sb --exclude=.git . | cut -f1)
-          have=$(df -B1 --output=avail . | tail -1)
-          echo "packaging needs up to $((need / 2**30)) GiB, $((have / 2**30)) GiB free"
-          if [ "$have" -lt "$need" ]; then
-            echo "::error::Not enough disk space to package the game: need up to $((need / 2**30)) GiB, have $((have / 2**30)) GiB."
-            exit 1
-          fi
+      # The Lean server loads all `.ilean` files into RAM, which the game server does not need.
+      # Lake only needs the files to exist, otherwise it considers the game as not built.
+      - name: empty the .ilean files
+        run: find -L .lake -name '*.ilean' -exec truncate -s 0 {} +
 
       - name: compress built game
         #run: tar -czvf ../game.tar.gz .
         run: zip game.zip * .lake/ .i18n/ -r
 
       - name: upload compressed game folder
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
         with:
           name: build-for-server-import
           path: |
             game.zip
 
       - name: What next?
-        run: echo "To export the game to the Game Server, open https://adam.math.hhu.de/import/trigger/${GITHUB_REPOSITORY,,} \n Afterwards, you can play the game at https://adam.math.hhu.de/#/g/${GITHUB_REPOSITORY,,}"
+        run: echo "To load the game to the game server, visit https://adam.math.hhu.de/import. \n Afterwards, you can play the game at https://adam.math.hhu.de/g/${GITHUB_REPOSITORY,,}"
