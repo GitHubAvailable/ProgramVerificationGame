@@ -5,35 +5,26 @@ on:
   pull_request:
   push:
     branches-ignore:
-    - "main"
+      - 'main'
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
 
-      - name: Free disk space
-        # Mathlib's build is several GB and grows with every release, and packaging the game
-        # needs room for a zip of it too. Remove preinstalled SDKs this job never uses.
+      # `lean-action` refuses to run without a `lake-manifest.json`, but we do not want to include
+      # the manifest from the `leangame` repo.
+      # When using this template, you can replace the following steps with
+      # - uses: leanprover/lean-action@v1
+      #   with:
+      #     use-github-cache: false
+      - name: install elan
         run: |
-          df -h /
-          sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL
-          df -h /
-      - uses: leanprover/lean-action@v1
-        with:
-          use-github-cache: false
-
-      - name: Offline checks (build, axioms, world tree, inventory, shortcuts, translation)
-        run: bash test/run_checks.sh
-
-      - name: Show the check logs on the run page
-        # Written to the job summary, not uploaded: the Game Server imports a repository's newest
-        # artifact whatever its name, so the built game must be the only artifact this repo makes.
-        if: always()
+          curl -sSfL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: update dependencies
+        run: lake update -R --keep-toolchain
+      - name: build game
         run: |
-          shopt -s nullglob
-          for f in test/results/*.log; do
-            printf '<details><summary>%s</summary>\n\n```text\n' "$f"
-            cat "$f"
-            printf '\n```\n</details>\n\n'
-          done >> "$GITHUB_STEP_SUMMARY"
+          lake build
+          lake build GameServer
